@@ -1,0 +1,31 @@
+\doxysection{projectile.\+h}
+\hypertarget{projectile_8h_source}{}\label{projectile_8h_source}\index{gamelogic/elements/towers/projectile.h@{gamelogic/elements/towers/projectile.h}}
+\mbox{\hyperlink{projectile_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ PROJECTILE\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ PROJECTILE\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{enemy_8h}{gamelogic/elements/enemies/enemy.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{tower__constructors_8h}{gamelogic/elements/towers/tower\_constructors.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{p__list_8h}{gamelogic/utils/p\_list.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00025\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{projectile_8h_ae451e26322bb2e6ab6ec8dfe0b88cd4a}{projectile\_init}}(\mbox{\hyperlink{struct_projectile}{Projectile}}\ *projectile,\ \textcolor{keywordtype}{int}\ x1,\ \textcolor{keywordtype}{int}\ x2,\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}},\ \textcolor{keywordtype}{int}\ target\_id,\ \textcolor{keywordtype}{float}\ speed,\ \textcolor{keywordtype}{int}\ damage);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00033\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{projectile_8h_a2ca869dc0119e3f59caff02d1a26ba3f}{projectile\_is\_alive}}(\mbox{\hyperlink{struct_projectile}{Projectile}}\ *projectile);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00045\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{projectile_8h_ae77d273601be49de916d98ccf6894b17}{projectile\_check\_collision}}(\mbox{\hyperlink{struct_projectile}{Projectile}}\ *projectile,\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}},\ \textcolor{keywordtype}{float}\ x2,\ \textcolor{keywordtype}{float}\ y2);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00053\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{projectile_8h_a2d60d7dc8af09e739a5c9a766413290a}{projectile\_is\_active}}(\mbox{\hyperlink{struct_projectile}{Projectile}}\ *projectile);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00061\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{projectile_8h_a550cb33423144744acf36bf3d9ff748f}{projectile\_set\_active}}(\mbox{\hyperlink{struct_projectile}{Projectile}}\ *projectile,\ \textcolor{keywordtype}{int}\ active);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00069\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{projectile_8h_af7249fec569f529303f09dcd9e7831c6}{projectile\_get\_damage}}(\mbox{\hyperlink{struct_projectile}{Projectile}}\ *projectile);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00083\ \mbox{\hyperlink{struct_projectile}{Projectile}}\ *\mbox{\hyperlink{projectile_8h_a341a1234ea2fde34e92ecb696fa6a8ec}{create\_projectile}}(\textcolor{keywordtype}{int}\ x1,\ \textcolor{keywordtype}{int}\ x2,\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}},\ \textcolor{keywordtype}{int}\ target\_id,\ \textcolor{keywordtype}{float}\ speed,\ \textcolor{keywordtype}{int}\ damage);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00091\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{projectile_8h_aa282b7967f9599ba599f134055a4da36}{get\_target}}(\mbox{\hyperlink{struct_projectile}{Projectile}}\ *projectile);}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

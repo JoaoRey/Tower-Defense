@@ -1,0 +1,10 @@
+<map id="keyboard_interrupt_handler" name="keyboard_interrupt_handler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,135,63"/>
+<area shape="rect" id="Node000002" href="$kbd_8c.html#a1c21008d59e58629f0d0c5e4a83be6a9" title=" " alt="" coords="183,31,311,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,41,169,41,169,46,135,46"/>
+<area shape="rect" id="Node000003" href="$kbd_8c.html#a3b89c4a3032fc7d8ce74ab0aa03b4750" title=" " alt="" coords="359,5,484,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="311,31,345,26,346,32,311,37"/>
+<area shape="rect" id="Node000004" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="532,31,623,56"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="311,41,518,41,518,46,311,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="485,26,519,31,518,36,484,31"/>
+</map>

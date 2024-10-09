@@ -1,0 +1,5 @@
+<map id="create_archer_tower" name="create_archer_tower">
+<area shape="rect" id="Node000001" title="Create an archer tower." alt="" coords="5,5,144,31"/>
+<area shape="rect" id="Node000002" href="$tower_8c.html#aaa88dd6938c92318f4755d07aa9b53ed" title="Initialize a tower." alt="" coords="192,5,269,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,15,178,15,178,21,144,21"/>
+</map>

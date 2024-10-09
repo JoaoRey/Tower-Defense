@@ -1,0 +1,6 @@
+<map id="sprites" name="sprites">
+<area shape="rect" id="node1" href="dir_08bb120665109797b5051b9ad871a2ef.html" title="sprites" alt="" coords="7,5,69,31"/>
+<area shape="rect" id="node2" href="dir_07b86ffc266b39efa5bbdc0e9fdb330a.html" title="devices" alt="" coords="5,79,71,104"/>
+<area shape="poly" id="edge1" href="dir_000009_000000.html" alt="" coords="41,31,41,65,35,65,35,31"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000009_000000.html" title="3" alt="" coords="42,53,50,68"/>
+</map>

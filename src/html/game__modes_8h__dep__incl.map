@@ -1,0 +1,9 @@
+<map id="macros/game_modes.h" name="macros/game_modes.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="202,5,361,31"/>
+<area shape="rect" id="Node000002" href="$game_8c.html" title=" " alt="" coords="5,79,173,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,38,122,81,120,76,237,33"/>
+<area shape="rect" id="Node000003" href="$menu_8c.html" title=" " alt="" coords="197,79,365,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="284,44,284,79,279,79,279,44"/>
+<area shape="rect" id="Node000004" href="$main_8c.html" title=" " alt="" coords="389,79,451,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="317,34,399,76,396,81,314,39"/>
+</map>

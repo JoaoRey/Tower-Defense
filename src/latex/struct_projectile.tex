@@ -1,0 +1,121 @@
+\doxysection{Projectile Struct Reference}
+\hypertarget{struct_projectile}{}\label{struct_projectile}\index{Projectile@{Projectile}}
+
+
+Structure representing a projectile.  
+
+
+
+
+{\ttfamily \#include $<$p\+\_\+list.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{struct_projectile_a90f5793efb184c30d6c74544a6b91bb4}{damage}}
+\item 
+float \mbox{\hyperlink{struct_projectile_a70ff500bdae54f3ad1e9e759b0ecd1fe}{speed}}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{struct_projectile_a1664dcbd5fa128ac680fcaaf1c9ca3f2}{x}}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{struct_projectile_a8ede7c0a16e91cca2b949cc3494aac55}{y}}
+\item 
+float \mbox{\hyperlink{struct_projectile_abfabdaabe2da50619b0fea79a9a331cf}{x\+Velocity}}
+\item 
+float \mbox{\hyperlink{struct_projectile_a0f4b2c61bdca3b943ad60cf21a5b062b}{y\+Velocity}}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{struct_projectile_adf17efc99b04360ba3e64b97971c299b}{active}}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{struct_projectile_ab77c450966bb793ce3ffc9ba55955495}{target\+\_\+id}}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{struct_projectile_ad5233694299bddbad187dc4452ada17b}{alive}}
+\item 
+long \mbox{\hyperlink{struct_projectile_afe2e7c212f9277423863da4c08b3d4b4}{past\+Time}}
+\item 
+long \mbox{\hyperlink{struct_projectile_a2bc72a188ca409e6950433182e20a0f7}{creation\+Time}}
+\item 
+const long \mbox{\hyperlink{struct_projectile_aadedc264bf65459bb1c090024e0f57c5}{MAX\+\_\+\+LIFETIME}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure representing a projectile. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_projectile_adf17efc99b04360ba3e64b97971c299b}\index{Projectile@{Projectile}!active@{active}}
+\index{active@{active}!Projectile@{Projectile}}
+\doxysubsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily \label{struct_projectile_adf17efc99b04360ba3e64b97971c299b} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} Projectile\+::active}
+
+Whether the projectile is active. \Hypertarget{struct_projectile_ad5233694299bddbad187dc4452ada17b}\index{Projectile@{Projectile}!alive@{alive}}
+\index{alive@{alive}!Projectile@{Projectile}}
+\doxysubsubsection{\texorpdfstring{alive}{alive}}
+{\footnotesize\ttfamily \label{struct_projectile_ad5233694299bddbad187dc4452ada17b} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} Projectile\+::alive}
+
+Whether the projectile is alive. \Hypertarget{struct_projectile_a2bc72a188ca409e6950433182e20a0f7}\index{Projectile@{Projectile}!creationTime@{creationTime}}
+\index{creationTime@{creationTime}!Projectile@{Projectile}}
+\doxysubsubsection{\texorpdfstring{creationTime}{creationTime}}
+{\footnotesize\ttfamily \label{struct_projectile_a2bc72a188ca409e6950433182e20a0f7} 
+long Projectile\+::creation\+Time}
+
+Creation time of the projectile. \Hypertarget{struct_projectile_a90f5793efb184c30d6c74544a6b91bb4}\index{Projectile@{Projectile}!damage@{damage}}
+\index{damage@{damage}!Projectile@{Projectile}}
+\doxysubsubsection{\texorpdfstring{damage}{damage}}
+{\footnotesize\ttfamily \label{struct_projectile_a90f5793efb184c30d6c74544a6b91bb4} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} Projectile\+::damage}
+
+Damage dealt by the projectile. \Hypertarget{struct_projectile_aadedc264bf65459bb1c090024e0f57c5}\index{Projectile@{Projectile}!MAX\_LIFETIME@{MAX\_LIFETIME}}
+\index{MAX\_LIFETIME@{MAX\_LIFETIME}!Projectile@{Projectile}}
+\doxysubsubsection{\texorpdfstring{MAX\_LIFETIME}{MAX\_LIFETIME}}
+{\footnotesize\ttfamily \label{struct_projectile_aadedc264bf65459bb1c090024e0f57c5} 
+const long Projectile\+::\+MAX\+\_\+\+LIFETIME}
+
+Maximum lifetime of the projectile. \Hypertarget{struct_projectile_afe2e7c212f9277423863da4c08b3d4b4}\index{Projectile@{Projectile}!pastTime@{pastTime}}
+\index{pastTime@{pastTime}!Projectile@{Projectile}}
+\doxysubsubsection{\texorpdfstring{pastTime}{pastTime}}
+{\footnotesize\ttfamily \label{struct_projectile_afe2e7c212f9277423863da4c08b3d4b4} 
+long Projectile\+::past\+Time}
+
+Past time since creation. \Hypertarget{struct_projectile_a70ff500bdae54f3ad1e9e759b0ecd1fe}\index{Projectile@{Projectile}!speed@{speed}}
+\index{speed@{speed}!Projectile@{Projectile}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily \label{struct_projectile_a70ff500bdae54f3ad1e9e759b0ecd1fe} 
+float Projectile\+::speed}
+
+Speed of the projectile. \Hypertarget{struct_projectile_ab77c450966bb793ce3ffc9ba55955495}\index{Projectile@{Projectile}!target\_id@{target\_id}}
+\index{target\_id@{target\_id}!Projectile@{Projectile}}
+\doxysubsubsection{\texorpdfstring{target\_id}{target\_id}}
+{\footnotesize\ttfamily \label{struct_projectile_ab77c450966bb793ce3ffc9ba55955495} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} Projectile\+::target\+\_\+id}
+
+ID of the target. \Hypertarget{struct_projectile_a1664dcbd5fa128ac680fcaaf1c9ca3f2}\index{Projectile@{Projectile}!x@{x}}
+\index{x@{x}!Projectile@{Projectile}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \label{struct_projectile_a1664dcbd5fa128ac680fcaaf1c9ca3f2} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} Projectile\+::x}
+
+X-\/coordinate of the projectile. \Hypertarget{struct_projectile_abfabdaabe2da50619b0fea79a9a331cf}\index{Projectile@{Projectile}!xVelocity@{xVelocity}}
+\index{xVelocity@{xVelocity}!Projectile@{Projectile}}
+\doxysubsubsection{\texorpdfstring{xVelocity}{xVelocity}}
+{\footnotesize\ttfamily \label{struct_projectile_abfabdaabe2da50619b0fea79a9a331cf} 
+float Projectile\+::x\+Velocity}
+
+X velocity of the projectile. \Hypertarget{struct_projectile_a8ede7c0a16e91cca2b949cc3494aac55}\index{Projectile@{Projectile}!y@{y}}
+\index{y@{y}!Projectile@{Projectile}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \label{struct_projectile_a8ede7c0a16e91cca2b949cc3494aac55} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} Projectile\+::y}
+
+Y-\/coordinate of the projectile. \Hypertarget{struct_projectile_a0f4b2c61bdca3b943ad60cf21a5b062b}\index{Projectile@{Projectile}!yVelocity@{yVelocity}}
+\index{yVelocity@{yVelocity}!Projectile@{Projectile}}
+\doxysubsubsection{\texorpdfstring{yVelocity}{yVelocity}}
+{\footnotesize\ttfamily \label{struct_projectile_a0f4b2c61bdca3b943ad60cf21a5b062b} 
+float Projectile\+::y\+Velocity}
+
+Y velocity of the projectile. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+gamelogic/utils/\mbox{\hyperlink{p__list_8h}{p\+\_\+list.\+h}}\end{DoxyCompactItemize}

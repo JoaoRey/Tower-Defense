@@ -1,0 +1,18 @@
+<map id="display_leaderboard" name="display_leaderboard">
+<area shape="rect" id="Node000001" title="Displays the leaderboard on the screen." alt="" coords="5,56,143,81"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#a767db3358ad703b089b6ef3ee2a3a8df" title="Draws a digit on the screen." alt="" coords="193,31,273,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,55,179,49,180,54,143,60"/>
+<area shape="rect" id="Node000007" href="$sprite_8c.html#abcda38f5250526f86969acc555797801" title="Draws a letter on the screen." alt="" coords="191,80,276,105"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="143,76,178,82,177,87,142,82"/>
+<area shape="rect" id="Node000003" href="$sprite_8c.html#a607cfeb4f019a84c346eb3bce9da0420" title="Destroys a sprite, freeing its resources." alt="" coords="324,5,428,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="273,34,310,27,311,32,274,39"/>
+<area shape="rect" id="Node000004" href="$sprite_8c.html#a858c1454a817fd7dca9e21bafa491242" title="Draws a sprite on the screen." alt="" coords="332,55,420,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="274,47,319,55,318,60,273,53"/>
+<area shape="rect" id="Node000006" href="$sprite_8c.html#a0987ce5dadd745a52f29e654f38d7e33" title="Initializes a sprite with given properties." alt="" coords="337,104,415,129"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="259,54,325,89,338,96,336,100,323,94,257,59"/>
+<area shape="rect" id="Node000005" href="$graphics_8c.html#abcd14d829edc3257916bdcc1a9aca216" title=" " alt="" coords="476,55,559,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="420,65,462,65,462,70,420,70"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="255,78,323,40,333,34,336,39,325,44,257,82"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="276,83,318,75,319,80,277,88"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="277,97,324,105,323,110,276,102"/>
+</map>

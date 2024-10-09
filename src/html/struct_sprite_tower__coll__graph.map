@@ -1,0 +1,12 @@
+<map id="SpriteTower" name="SpriteTower">
+<area shape="rect" id="Node000001" title="Structure representing a tower with its associated sprite." alt="" coords="21,181,112,207"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="126,185,135,188,139,194,130,202,112,205,112,199,128,197,133,194,132,192,125,190"/>
+<area shape="rect" id="Node000002" href="$struct_sprite.html" title="Structure representing a sprite." alt="" coords="5,93,61,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="37,132,42,156,58,180,53,183,38,158,32,133"/>
+<area shape="rect" id="Node000003" href="$struct_tower.html" title="Structure representing a tower." alt="" coords="85,93,141,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="103,132,75,182,71,180,98,129"/>
+<area shape="rect" id="Node000004" href="$struct_position.html" title="Structure representing a position with x and y coordinates." alt="" coords="28,5,97,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="75,42,88,68,105,91,101,94,83,71,70,45"/>
+<area shape="rect" id="Node000005" href="$struct_tower_type.html" title="Structure representing the type of a tower." alt="" coords="122,5,206,31"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="153,44,137,71,123,94,118,92,132,68,148,41"/>
+</map>

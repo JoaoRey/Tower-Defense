@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/diogovieira/Desktop/FACUL/LCOM - Laboratório de Computadores/MINIX-LCOM/shared/lab02/g1/proj/src/gamelogic/utils",
+      "program": "/Users/diogovieira/Desktop/FACUL/LCOM - Laboratório de Computadores/MINIX-LCOM/shared/lab02/g1/proj/src/gamelogic/utils/build/Debug/outDebug"
+    }
+  ]
+}

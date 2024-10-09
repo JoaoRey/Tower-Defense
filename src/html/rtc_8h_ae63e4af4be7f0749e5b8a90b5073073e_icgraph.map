@@ -1,0 +1,31 @@
+<map id="bcd_to_bin" name="bcd_to_bin">
+<area shape="rect" id="Node000001" title=" " alt="" coords="883,129,968,155"/>
+<area shape="rect" id="Node000002" href="$rtc_8c.html#abbc8e503cf7483b2cc1d784f0843efd6" title=" " alt="" coords="710,5,821,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="906,119,875,81,833,44,812,33,814,28,836,40,879,77,910,116"/>
+<area shape="rect" id="Node000008" href="$rtc_8c.html#a83be56777ac9043e1afeb07c59c25cf6" title=" " alt="" coords="704,55,827,80"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="891,124,834,94,805,82,807,78,836,89,893,120"/>
+<area shape="rect" id="Node000009" href="$rtc_8c.html#ae6c598e55646d41ae30818c20cd9326d" title=" " alt="" coords="697,104,833,129"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="869,136,833,130,834,125,870,131"/>
+<area shape="rect" id="Node000010" href="$rtc_8c.html#ad37aadbdd5866cdf286d423f9f4e5153" title=" " alt="" coords="702,153,829,179"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="869,153,829,159,829,154,869,148"/>
+<area shape="rect" id="Node000011" href="$rtc_8c.html#a7ad84a28524d5b6698308ca78ea6adf3" title=" " alt="" coords="696,203,835,228"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="892,164,836,192,805,205,803,200,834,188,889,159"/>
+<area shape="rect" id="Node000012" href="$rtc_8c.html#ad63ac80cc57d475b2a694673c3a69e2b" title=" " alt="" coords="708,252,823,277"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="910,168,878,206,836,243,814,254,812,250,833,238,875,202,906,164"/>
+<area shape="rect" id="Node000003" href="$rtc_8c.html#ae22bdeb51eb630e1d579dfc1cd1b2f11" title=" " alt="" coords="533,129,648,155"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="708,38,697,44,669,65,643,89,604,131,600,127,639,85,665,61,695,40,706,34"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a04e415c2c57bcb7efab2055169302eed" title=" " alt="" coords="163,129,248,155"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="520,145,248,145,248,139,520,139"/>
+<area shape="rect" id="Node000006" href="$rtc_8c.html#abc313237e00236eec84b5263f56e08ab" title=" " alt="" coords="415,155,485,180"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="520,157,486,164,485,158,519,152"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,129,115,155"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="149,145,115,145,115,139,149,139"/>
+<area shape="rect" id="Node000007" href="$sprite_8c.html#a0944e45dab2b95345c29e01b548eb1ab" title="Draws the current time from the RTC on the screen." alt="" coords="296,155,367,180"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="401,170,367,170,367,165,401,165"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="282,160,248,153,249,148,283,155"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="714,87,697,94,617,132,615,127,695,89,712,82"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="684,131,649,136,648,131,683,126"/>
+<area shape="poly" id="edge13_Node000010_Node000003" title=" " alt="" coords="688,158,648,152,649,147,689,153"/>
+<area shape="poly" id="edge15_Node000011_Node000003" title=" " alt="" coords="715,200,695,192,617,157,619,152,697,188,717,195"/>
+<area shape="poly" id="edge17_Node000012_Node000003" title=" " alt="" coords="706,249,695,243,665,222,639,198,600,156,604,153,643,194,669,218,697,238,708,244"/>
+</map>

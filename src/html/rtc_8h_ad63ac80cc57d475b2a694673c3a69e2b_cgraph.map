@@ -1,0 +1,9 @@
+<map id="rtc_update_year" name="rtc_update_year">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,120,56"/>
+<area shape="rect" id="Node000002" href="$rtc_8c.html#ae63e4af4be7f0749e5b8a90b5073073e" title=" " alt="" coords="176,5,261,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,31,162,24,163,30,121,37"/>
+<area shape="rect" id="Node000003" href="$rtc_8c.html#a89e115c178abb54efda45511912c9de1" title=" " alt="" coords="168,55,269,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,49,155,55,154,60,120,55"/>
+<area shape="rect" id="Node000004" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="317,55,408,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="269,65,303,65,303,70,269,70"/>
+</map>

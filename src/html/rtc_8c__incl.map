@@ -1,0 +1,9 @@
+<map id="devices/rtc/rtc.c" name="devices/rtc/rtc.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="60,5,175,31"/>
+<area shape="rect" id="Node000002" href="$rtc_8h.html" title=" " alt="" coords="93,79,141,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,31,120,65,115,65,115,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,112,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,106,79,143,75,140,106,103"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="137,152,215,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="129,103,160,140,156,143,125,106"/>
+</map>

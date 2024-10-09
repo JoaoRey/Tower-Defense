@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "i8254.h": "c",
+    "*.xpm": "c",
+    "enemy_constructors.h": "c",
+    "list.h": "c",
+    "sprite.h": "c",
+    "position.h": "c",
+    "p_list.h": "c",
+    "enemy.h": "c"
+  },
+  "C_Cpp_Runner.msvcBatchPath": ""
+}

@@ -1,0 +1,335 @@
+\doxysection{devices/rtc/rtc.c File Reference}
+\hypertarget{rtc_8c}{}\label{rtc_8c}\index{devices/rtc/rtc.c@{devices/rtc/rtc.c}}
+{\ttfamily \#include "{}rtc.\+h"{}}\newline
+Include dependency graph for rtc.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{rtc_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{rtc_8c_a89e115c178abb54efda45511912c9de1}{rtc\+\_\+write\+Read}} (uint8\+\_\+t rtc\+\_\+command, uint8\+\_\+t \texorpdfstring{$\ast$}{*}rtc\+\_\+output)
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{rtc_8c_abf62c1d05de41d9bfdb3f5b3796f1b26}{check\+\_\+rtc\+\_\+mode}} ()
+\item 
+void \mbox{\hyperlink{rtc_8c_abc313237e00236eec84b5263f56e08ab}{rtc\+\_\+start}} ()
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{rtc_8c_a7ad84a28524d5b6698308ca78ea6adf3}{rtc\+\_\+update\+\_\+seconds}} ()
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{rtc_8c_ae6c598e55646d41ae30818c20cd9326d}{rtc\+\_\+update\+\_\+minutes}} ()
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{rtc_8c_a83be56777ac9043e1afeb07c59c25cf6}{rtc\+\_\+update\+\_\+hours}} ()
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{rtc_8c_ad63ac80cc57d475b2a694673c3a69e2b}{rtc\+\_\+update\+\_\+year}} ()
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{rtc_8c_ad37aadbdd5866cdf286d423f9f4e5153}{rtc\+\_\+update\+\_\+month}} ()
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{rtc_8c_abbc8e503cf7483b2cc1d784f0843efd6}{rtc\+\_\+update\+\_\+day}} ()
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{rtc_8c_ae22bdeb51eb630e1d579dfc1cd1b2f11}{rtc\+\_\+update\+\_\+time}} ()
+\item 
+void \mbox{\hyperlink{rtc_8c_a824765cdfb4895451dfc393a6ce18e20}{refresh\+\_\+timer}} ()
+\item 
+void \mbox{\hyperlink{rtc_8c_ac283813670cd919efac281decb3e477d}{refresh\+\_\+rtc}} ()
+\item 
+uint8\+\_\+t \mbox{\hyperlink{rtc_8c_ae63e4af4be7f0749e5b8a90b5073073e}{bcd\+\_\+to\+\_\+bin}} (uint8\+\_\+t bcd\+\_\+number)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{rtc_8c_a371c24ead7f642dbc479d7bab7b8f800}{interrupts}} = 0
+\item 
+uint8\+\_\+t \mbox{\hyperlink{rtc_8c_ae3cc8340a2a87ce82ff4e31225ca2895}{rtc\+\_\+binary}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{rtc_8c_ac93fcba5d1ccdf8176ddc0510ab5e1d8}{rtc\+\_\+data}} \mbox{[}6\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{rtc_8c_ae63e4af4be7f0749e5b8a90b5073073e}\index{rtc.c@{rtc.c}!bcd\_to\_bin@{bcd\_to\_bin}}
+\index{bcd\_to\_bin@{bcd\_to\_bin}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{bcd\_to\_bin()}{bcd\_to\_bin()}}
+{\footnotesize\ttfamily \label{rtc_8c_ae63e4af4be7f0749e5b8a90b5073073e} 
+uint8\+\_\+t bcd\+\_\+to\+\_\+bin (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{bcd\+\_\+number}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_ae63e4af4be7f0749e5b8a90b5073073e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8c_abf62c1d05de41d9bfdb3f5b3796f1b26}\index{rtc.c@{rtc.c}!check\_rtc\_mode@{check\_rtc\_mode}}
+\index{check\_rtc\_mode@{check\_rtc\_mode}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{check\_rtc\_mode()}{check\_rtc\_mode()}}
+{\footnotesize\ttfamily \label{rtc_8c_abf62c1d05de41d9bfdb3f5b3796f1b26} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} check\+\_\+rtc\+\_\+mode (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_abf62c1d05de41d9bfdb3f5b3796f1b26_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_abf62c1d05de41d9bfdb3f5b3796f1b26_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8c_ac283813670cd919efac281decb3e477d}\index{rtc.c@{rtc.c}!refresh\_rtc@{refresh\_rtc}}
+\index{refresh\_rtc@{refresh\_rtc}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{refresh\_rtc()}{refresh\_rtc()}}
+{\footnotesize\ttfamily \label{rtc_8c_ac283813670cd919efac281decb3e477d} 
+void refresh\+\_\+rtc (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{rtc_8c_ac283813670cd919efac281decb3e477d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8c_a824765cdfb4895451dfc393a6ce18e20}\index{rtc.c@{rtc.c}!refresh\_timer@{refresh\_timer}}
+\index{refresh\_timer@{refresh\_timer}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{refresh\_timer()}{refresh\_timer()}}
+{\footnotesize\ttfamily \label{rtc_8c_a824765cdfb4895451dfc393a6ce18e20} 
+void refresh\+\_\+timer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{rtc_8c_a824765cdfb4895451dfc393a6ce18e20_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8c_abc313237e00236eec84b5263f56e08ab}\index{rtc.c@{rtc.c}!rtc\_start@{rtc\_start}}
+\index{rtc\_start@{rtc\_start}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_start()}{rtc\_start()}}
+{\footnotesize\ttfamily \label{rtc_8c_abc313237e00236eec84b5263f56e08ab} 
+void rtc\+\_\+start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_abc313237e00236eec84b5263f56e08ab_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_abc313237e00236eec84b5263f56e08ab_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8c_abbc8e503cf7483b2cc1d784f0843efd6}\index{rtc.c@{rtc.c}!rtc\_update\_day@{rtc\_update\_day}}
+\index{rtc\_update\_day@{rtc\_update\_day}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_update\_day()}{rtc\_update\_day()}}
+{\footnotesize\ttfamily \label{rtc_8c_abbc8e503cf7483b2cc1d784f0843efd6} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} rtc\+\_\+update\+\_\+day (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_abbc8e503cf7483b2cc1d784f0843efd6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_abbc8e503cf7483b2cc1d784f0843efd6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8c_a83be56777ac9043e1afeb07c59c25cf6}\index{rtc.c@{rtc.c}!rtc\_update\_hours@{rtc\_update\_hours}}
+\index{rtc\_update\_hours@{rtc\_update\_hours}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_update\_hours()}{rtc\_update\_hours()}}
+{\footnotesize\ttfamily \label{rtc_8c_a83be56777ac9043e1afeb07c59c25cf6} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} rtc\+\_\+update\+\_\+hours (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_a83be56777ac9043e1afeb07c59c25cf6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_a83be56777ac9043e1afeb07c59c25cf6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8c_ae6c598e55646d41ae30818c20cd9326d}\index{rtc.c@{rtc.c}!rtc\_update\_minutes@{rtc\_update\_minutes}}
+\index{rtc\_update\_minutes@{rtc\_update\_minutes}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_update\_minutes()}{rtc\_update\_minutes()}}
+{\footnotesize\ttfamily \label{rtc_8c_ae6c598e55646d41ae30818c20cd9326d} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} rtc\+\_\+update\+\_\+minutes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_ae6c598e55646d41ae30818c20cd9326d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_ae6c598e55646d41ae30818c20cd9326d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8c_ad37aadbdd5866cdf286d423f9f4e5153}\index{rtc.c@{rtc.c}!rtc\_update\_month@{rtc\_update\_month}}
+\index{rtc\_update\_month@{rtc\_update\_month}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_update\_month()}{rtc\_update\_month()}}
+{\footnotesize\ttfamily \label{rtc_8c_ad37aadbdd5866cdf286d423f9f4e5153} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} rtc\+\_\+update\+\_\+month (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_ad37aadbdd5866cdf286d423f9f4e5153_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_ad37aadbdd5866cdf286d423f9f4e5153_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8c_a7ad84a28524d5b6698308ca78ea6adf3}\index{rtc.c@{rtc.c}!rtc\_update\_seconds@{rtc\_update\_seconds}}
+\index{rtc\_update\_seconds@{rtc\_update\_seconds}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_update\_seconds()}{rtc\_update\_seconds()}}
+{\footnotesize\ttfamily \label{rtc_8c_a7ad84a28524d5b6698308ca78ea6adf3} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} rtc\+\_\+update\+\_\+seconds (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_a7ad84a28524d5b6698308ca78ea6adf3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_a7ad84a28524d5b6698308ca78ea6adf3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8c_ae22bdeb51eb630e1d579dfc1cd1b2f11}\index{rtc.c@{rtc.c}!rtc\_update\_time@{rtc\_update\_time}}
+\index{rtc\_update\_time@{rtc\_update\_time}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_update\_time()}{rtc\_update\_time()}}
+{\footnotesize\ttfamily \label{rtc_8c_ae22bdeb51eb630e1d579dfc1cd1b2f11} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} rtc\+\_\+update\+\_\+time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_ae22bdeb51eb630e1d579dfc1cd1b2f11_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_ae22bdeb51eb630e1d579dfc1cd1b2f11_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8c_ad63ac80cc57d475b2a694673c3a69e2b}\index{rtc.c@{rtc.c}!rtc\_update\_year@{rtc\_update\_year}}
+\index{rtc\_update\_year@{rtc\_update\_year}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_update\_year()}{rtc\_update\_year()}}
+{\footnotesize\ttfamily \label{rtc_8c_ad63ac80cc57d475b2a694673c3a69e2b} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} rtc\+\_\+update\+\_\+year (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_ad63ac80cc57d475b2a694673c3a69e2b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_ad63ac80cc57d475b2a694673c3a69e2b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8c_a89e115c178abb54efda45511912c9de1}\index{rtc.c@{rtc.c}!rtc\_writeRead@{rtc\_writeRead}}
+\index{rtc\_writeRead@{rtc\_writeRead}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_writeRead()}{rtc\_writeRead()}}
+{\footnotesize\ttfamily \label{rtc_8c_a89e115c178abb54efda45511912c9de1} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} rtc\+\_\+write\+Read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{rtc\+\_\+command}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{rtc\+\_\+output}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{rtc_8c_a89e115c178abb54efda45511912c9de1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_a89e115c178abb54efda45511912c9de1_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{rtc_8c_a371c24ead7f642dbc479d7bab7b8f800}\index{rtc.c@{rtc.c}!interrupts@{interrupts}}
+\index{interrupts@{interrupts}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{interrupts}{interrupts}}
+{\footnotesize\ttfamily \label{rtc_8c_a371c24ead7f642dbc479d7bab7b8f800} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} interrupts = 0}
+
+\Hypertarget{rtc_8c_ae3cc8340a2a87ce82ff4e31225ca2895}\index{rtc.c@{rtc.c}!rtc\_binary@{rtc\_binary}}
+\index{rtc\_binary@{rtc\_binary}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_binary}{rtc\_binary}}
+{\footnotesize\ttfamily \label{rtc_8c_ae3cc8340a2a87ce82ff4e31225ca2895} 
+uint8\+\_\+t rtc\+\_\+binary}
+
+\Hypertarget{rtc_8c_ac93fcba5d1ccdf8176ddc0510ab5e1d8}\index{rtc.c@{rtc.c}!rtc\_data@{rtc\_data}}
+\index{rtc\_data@{rtc\_data}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_data}{rtc\_data}}
+{\footnotesize\ttfamily \label{rtc_8c_ac93fcba5d1ccdf8176ddc0510ab5e1d8} 
+uint8\+\_\+t rtc\+\_\+data\mbox{[}6\mbox{]}}
+

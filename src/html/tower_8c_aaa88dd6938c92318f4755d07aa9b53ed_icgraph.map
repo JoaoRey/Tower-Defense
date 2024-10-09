@@ -1,0 +1,15 @@
+<map id="tower_init" name="tower_init">
+<area shape="rect" id="Node000001" title="Initialize a tower." alt="" coords="483,55,560,80"/>
+<area shape="rect" id="Node000002" href="$tower__constructors_8c.html#a08e88ac9ac8483a23232c97e7fffec97" title="Create an archer tower." alt="" coords="296,5,435,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="469,54,406,33,407,28,470,49"/>
+<area shape="rect" id="Node000005" href="$tower__constructors_8c.html#aa9b16fc705ec40296f5e62130f0488bf" title="Create a cannon tower." alt="" coords="296,55,435,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="469,70,435,70,435,65,469,65"/>
+<area shape="rect" id="Node000006" href="$tower__constructors_8c.html#a96bce4f7824132fd872a8997a93c2c15" title="Create a mage tower." alt="" coords="298,104,433,129"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="470,86,407,106,406,101,469,81"/>
+<area shape="rect" id="Node000003" href="$main_8c.html#a04e415c2c57bcb7efab2055169302eed" title=" " alt="" coords="163,55,248,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="311,37,248,57,247,52,310,32"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,55,115,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="149,70,115,70,115,65,149,65"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="282,70,248,70,248,65,282,65"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="310,102,247,83,248,78,311,97"/>
+</map>

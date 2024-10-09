@@ -1,0 +1,92 @@
+\doxysection{devices/timer/timer.h File Reference}
+\hypertarget{timer_8h}{}\label{timer_8h}\index{devices/timer/timer.h@{devices/timer/timer.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/timer.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include "{}macros/i8254.\+h"{}}\newline
+Include dependency graph for timer.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{timer_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{timer_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{timer_8h_a1ab572f5864814b2cd96ceb0fb6939b6}{configure\+\_\+timer\+\_\+freq}} (uint8\+\_\+t timer, uint32\+\_\+t frequency)
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{timer_8h_a8f2176d7f7d2194086a0b984e452798c}{subscription\+\_\+of\+\_\+timer\+\_\+interrupts}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}bit\+\_\+number)
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{timer_8h_ab8d77319a6072abc7c33cd7a1a09e4f0}{unsubscription\+\_\+of\+\_\+timer\+\_\+interrupts}} ()
+\item 
+void \mbox{\hyperlink{timer_8h_a74401f595637e2a33b8d3205c2858c1f}{handler\+\_\+of\+\_\+timer\+\_\+interrupts}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{timer_8h_a1ab572f5864814b2cd96ceb0fb6939b6}\index{timer.h@{timer.h}!configure\_timer\_freq@{configure\_timer\_freq}}
+\index{configure\_timer\_freq@{configure\_timer\_freq}!timer.h@{timer.h}}
+\doxysubsubsection{\texorpdfstring{configure\_timer\_freq()}{configure\_timer\_freq()}}
+{\footnotesize\ttfamily \label{timer_8h_a1ab572f5864814b2cd96ceb0fb6939b6} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} configure\+\_\+timer\+\_\+freq (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{timer}{, }\item[{uint32\+\_\+t}]{frequency}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer_8h_a1ab572f5864814b2cd96ceb0fb6939b6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer_8h_a1ab572f5864814b2cd96ceb0fb6939b6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{timer_8h_a74401f595637e2a33b8d3205c2858c1f}\index{timer.h@{timer.h}!handler\_of\_timer\_interrupts@{handler\_of\_timer\_interrupts}}
+\index{handler\_of\_timer\_interrupts@{handler\_of\_timer\_interrupts}!timer.h@{timer.h}}
+\doxysubsubsection{\texorpdfstring{handler\_of\_timer\_interrupts()}{handler\_of\_timer\_interrupts()}}
+{\footnotesize\ttfamily \label{timer_8h_a74401f595637e2a33b8d3205c2858c1f} 
+void handler\+\_\+of\+\_\+timer\+\_\+interrupts (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{timer_8h_a8f2176d7f7d2194086a0b984e452798c}\index{timer.h@{timer.h}!subscription\_of\_timer\_interrupts@{subscription\_of\_timer\_interrupts}}
+\index{subscription\_of\_timer\_interrupts@{subscription\_of\_timer\_interrupts}!timer.h@{timer.h}}
+\doxysubsubsection{\texorpdfstring{subscription\_of\_timer\_interrupts()}{subscription\_of\_timer\_interrupts()}}
+{\footnotesize\ttfamily \label{timer_8h_a8f2176d7f7d2194086a0b984e452798c} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} subscription\+\_\+of\+\_\+timer\+\_\+interrupts (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{bit\+\_\+number}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer_8h_a8f2176d7f7d2194086a0b984e452798c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{timer_8h_ab8d77319a6072abc7c33cd7a1a09e4f0}\index{timer.h@{timer.h}!unsubscription\_of\_timer\_interrupts@{unsubscription\_of\_timer\_interrupts}}
+\index{unsubscription\_of\_timer\_interrupts@{unsubscription\_of\_timer\_interrupts}!timer.h@{timer.h}}
+\doxysubsubsection{\texorpdfstring{unsubscription\_of\_timer\_interrupts()}{unsubscription\_of\_timer\_interrupts()}}
+{\footnotesize\ttfamily \label{timer_8h_ab8d77319a6072abc7c33cd7a1a09e4f0} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} unsubscription\+\_\+of\+\_\+timer\+\_\+interrupts (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer_8h_ab8d77319a6072abc7c33cd7a1a09e4f0_icgraph}
+\end{center}
+\end{figure}

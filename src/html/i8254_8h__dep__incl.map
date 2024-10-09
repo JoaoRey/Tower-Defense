@@ -1,0 +1,10 @@
+<map id="macros/i8254.h" name="macros/i8254.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="93,5,204,31"/>
+<area shape="rect" id="Node000002" href="$timer_8h.html" title=" " alt="" coords="23,79,165,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,43,105,80,101,77,129,40"/>
+<area shape="rect" id="Node000004" href="$main_8c.html" title=" " alt="" coords="173,152,234,177"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="164,42,180,78,203,151,198,152,176,80,159,44"/>
+<area shape="rect" id="Node000003" href="$timer_8c.html" title=" " alt="" coords="5,152,148,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,118,82,153,77,151,85,117"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="124,109,187,150,184,154,122,114"/>
+</map>

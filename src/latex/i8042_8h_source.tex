@@ -1,0 +1,67 @@
+\doxysection{i8042.\+h}
+\hypertarget{i8042_8h_source}{}\label{i8042_8h_source}\index{macros/i8042.h@{macros/i8042.h}}
+\mbox{\hyperlink{i8042_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_LCOM\_I8042\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_LCOM\_I8042\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{comment}{//Definir\ a\ irq\ line\ do\ teclado\ a\ 1,\ pq\ timer\ é\ o\ 0}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ KBD\_IRQ\_LINE\ 1}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{comment}{//Definir\ hook\_id\ para\ o\ keyboard}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ KBD\_HOOK\_ID\ BIT(1)}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ KBD\_OUT\_BUF\ 0x60}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ KBD\_IN\_BUF\ 0x64}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ ESC\_KEY\ 0x81}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{comment}{//Definir\ macros\ para\ os\ bits\ mais\ importantes\ do\ status\ code}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ STATUS\_CODE\_OBF\ BIT(0)}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ STATUS\_CODE\_IBF\ BIT(1)}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ STATUS\_CODE\_AUX\ BIT(5)}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ STATUS\_CODE\_TIMEOUT\ BIT(6)}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ STATUS\_CODE\_PARITY\ BIT(7)}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{comment}{//Macros\ para\ as\ portas\ de\ escrita\ e\ leitura\ do\ command\ byte}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ READ\_CMD\_BYTE\_PORT\ 0x20}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ WRITE\_CMD\_BYTE\_PORT\ 0x60}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ COOLDOWN\ 20000}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ TENTATIVAS\ 5}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{comment}{//Definir\ a\ irq\ line\ do\ rato\ a\ 12}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ MOUSE\_IRQ\_LINE\ 12}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{comment}{//Definir\ hook\_id\ para\ o\ mouse}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ MOUSE\_HOOK\_ID\ BIT(2)}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ ACKNOLEDGMENT\_BYTE\ 0xFA}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ ENABLE\_MOUSE\ 0xA8}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ DISABLE\_MOUSE\ 0xA7}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ WRITE\_BYTE\_TO\_MOUSE\ 0xD4}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{comment}{//Comandos\ para\ o\ rato}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#define\ FIRST\_BYTE\ \ \ \ \ \ \ \ \ \ BIT(3)}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ MOUSE\_RESET\ 0xFF}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#define\ MOUSE\_RESEND\ 0xFE}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ MOUSE\_SET\_DEFAULTS\ 0xF6}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ MOUSE\_DISABLE\_DATA\_REPORTING\ 0xF5}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#define\ MOUSE\_ENABLE\_DATA\_REPORTING\ 0xF4}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#define\ MOUSE\_SAMPLE\_RATE\ 0xF3}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ SET\_MOUSE\_REMOTE\_MODE\ 0xF0}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#define\ SET\_MOUSE\_STREAM\_MODE\ 0xEA}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#define\ READ\_DATA\ 0xEB}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#define\ STATUS\_REQUEST\ 0xE9}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{comment}{//Resultados\ do\ Ackoledgment\ Byte,\ este\ deve\ ser\ colocado\ no\ OUT\_BUT\ do\ KBD\ 0x60}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#define\ ACK\ 0xFA}}
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#define\ NACK\ 0xFE}}
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#define\ ERROR\ 0xFC}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00061\ }
+
+\end{DoxyCode}

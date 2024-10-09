@@ -1,0 +1,191 @@
+\doxysection{gamelogic/states/menu.h File Reference}
+\hypertarget{menu_8h}{}\label{menu_8h}\index{gamelogic/states/menu.h@{gamelogic/states/menu.h}}
+
+
+Header file for menu-\/related functions.  
+
+
+{\ttfamily \#include "{}devices/graphic/graphics.\+h"{}}\newline
+{\ttfamily \#include "{}devices/keyboard/kbd.\+h"{}}\newline
+{\ttfamily \#include "{}devices/mouse/mouse.\+h"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/xpm.\+h$>$}\newline
+Include dependency graph for menu.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{menu_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{menu_8h_a103cd634724d5b73027bd2ab62632608}{draw\+\_\+menu}} (uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Draws the menu on the screen at the specified coordinates. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{menu_8h_a6d858f35d10a145ffe5c87bf1abcd7ce}{click\+Play}} (uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Handles a click event on the "{}\+Play"{} button. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{menu_8h_aa4d8f2c4e2d14a77f775edcd35adbc90}{click\+Quit}} (uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}, bool \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{menu_8c_ad9b3c6c4c5ea5d002bb6c6787f5c39b6}{quit}})
+\begin{DoxyCompactList}\small\item\em Handles a click event on the "{}\+Quit"{} button. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{menu_8h_a8b59d927c291450b42df50e7a1923afa}{click\+Leaderboard}} (uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Handles a click event on the "{}\+Leaderboard"{} button. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{menu_8h_af2685c459071113298ce77fb46747de9}{click\+Options}} (uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Handles a click event on the "{}\+Settings"{} button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for menu-\/related functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{menu_8h_a8b59d927c291450b42df50e7a1923afa}\index{menu.h@{menu.h}!clickLeaderboard@{clickLeaderboard}}
+\index{clickLeaderboard@{clickLeaderboard}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{clickLeaderboard()}{clickLeaderboard()}}
+{\footnotesize\ttfamily \label{menu_8h_a8b59d927c291450b42df50e7a1923afa} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} click\+Leaderboard (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Handles a click event on the "{}\+Leaderboard"{} button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the click. \\
+\hline
+{\em y} & The y-\/coordinate of the click. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 if the click is within the "{}\+Leaderboard"{} button, and non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_8h_a8b59d927c291450b42df50e7a1923afa_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{menu_8h_af2685c459071113298ce77fb46747de9}\index{menu.h@{menu.h}!clickOptions@{clickOptions}}
+\index{clickOptions@{clickOptions}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{clickOptions()}{clickOptions()}}
+{\footnotesize\ttfamily \label{menu_8h_af2685c459071113298ce77fb46747de9} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} click\+Options (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Handles a click event on the "{}\+Settings"{} button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the click. \\
+\hline
+{\em y} & The y-\/coordinate of the click. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 if the click is within the "{}\+Settings"{} button, and non-\/zero otherwise. 
+\end{DoxyReturn}
+\Hypertarget{menu_8h_a6d858f35d10a145ffe5c87bf1abcd7ce}\index{menu.h@{menu.h}!clickPlay@{clickPlay}}
+\index{clickPlay@{clickPlay}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{clickPlay()}{clickPlay()}}
+{\footnotesize\ttfamily \label{menu_8h_a6d858f35d10a145ffe5c87bf1abcd7ce} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} click\+Play (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Handles a click event on the "{}\+Play"{} button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the click. \\
+\hline
+{\em y} & The y-\/coordinate of the click. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 if the click is within the "{}\+Play"{} button, and non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_8h_a6d858f35d10a145ffe5c87bf1abcd7ce_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{menu_8h_aa4d8f2c4e2d14a77f775edcd35adbc90}\index{menu.h@{menu.h}!clickQuit@{clickQuit}}
+\index{clickQuit@{clickQuit}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{clickQuit()}{clickQuit()}}
+{\footnotesize\ttfamily \label{menu_8h_aa4d8f2c4e2d14a77f775edcd35adbc90} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} click\+Quit (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{, }\item[{bool \texorpdfstring{$\ast$}{*}}]{quit}{}\end{DoxyParamCaption})}
+
+
+
+Handles a click event on the "{}\+Quit"{} button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the click. \\
+\hline
+{\em y} & The y-\/coordinate of the click. \\
+\hline
+{\em quit} & Pointer to a boolean variable indicating if the game should quit. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 if the click is within the "{}\+Quit"{} button, and non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_8h_aa4d8f2c4e2d14a77f775edcd35adbc90_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{menu_8h_a103cd634724d5b73027bd2ab62632608}\index{menu.h@{menu.h}!draw\_menu@{draw\_menu}}
+\index{draw\_menu@{draw\_menu}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{draw\_menu()}{draw\_menu()}}
+{\footnotesize\ttfamily \label{menu_8h_a103cd634724d5b73027bd2ab62632608} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} draw\+\_\+menu (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Draws the menu on the screen at the specified coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the menu. \\
+\hline
+{\em y} & The y-\/coordinate of the menu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{menu_8h_a103cd634724d5b73027bd2ab62632608_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_8h_a103cd634724d5b73027bd2ab62632608_icgraph}
+\end{center}
+\end{figure}

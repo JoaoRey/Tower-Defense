@@ -1,0 +1,39 @@
+<map id="destroy_sprite" name="destroy_sprite">
+<area shape="rect" id="Node000001" title="Destroys a sprite, freeing its resources." alt="" coords="708,253,812,279"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#a767db3358ad703b089b6ef3ee2a3a8df" title="Draws a digit on the screen." alt="" coords="569,127,649,152"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="735,245,700,210,658,173,631,154,634,150,662,169,704,206,739,241"/>
+<area shape="rect" id="Node000007" href="$sprite_8c.html#abcda38f5250526f86969acc555797801" title="Draws a letter on the screen." alt="" coords="567,55,652,80"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="743,243,707,183,658,116,624,82,628,78,662,112,711,180,747,240"/>
+<area shape="rect" id="Node000010" href="$list_8c.html#a145adb7a572e6f8209e8c933cab73d29" title="Destroys an EnemyList, freeing all associated memory." alt="" coords="565,279,654,304"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="695,280,655,286,654,281,694,274"/>
+<area shape="rect" id="Node000011" href="$list_8c.html#a36fd1ce5f0fc7ed9f9c47bba75258ac6" title="Destroys a TowerList, freeing all associated memory." alt="" coords="394,179,490,204"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="705,252,659,239,490,203,491,197,661,234,706,247"/>
+<area shape="rect" id="Node000012" href="$p__list_8c.html#a9a0b4676d2f6907ae47091db4fd1a20b" title="Destroys a list of projectiles, freeing all associated memory." alt="" coords="391,228,493,253"/>
+<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="694,263,494,247,494,242,695,258"/>
+<area shape="rect" id="Node000013" href="$list_8c.html#a5af8bf8b5843133a7ebc98406ea4b677" title="Removes an enemy from the given EnemyList." alt="" coords="566,380,653,405"/>
+<area shape="poly" id="edge19_Node000001_Node000013" title=" " alt="" coords="739,291,704,326,662,363,634,382,631,378,658,359,700,322,735,287"/>
+<area shape="rect" id="Node000014" href="$p__list_8c.html#a4b50247db27a81b4821afb458526f6e5" title="Removes a projectile from the given list." alt="" coords="559,429,660,455"/>
+<area shape="poly" id="edge20_Node000001_Node000014" title=" " alt="" coords="750,293,716,355,691,389,662,420,645,431,642,427,658,416,687,386,711,352,745,290"/>
+<area shape="rect" id="Node000015" href="$sprite_8c.html#ad4b767668b6816f2ca63fba102c77356" title="Unloads sprites for the screen." alt="" coords="163,279,325,304"/>
+<area shape="poly" id="edge21_Node000001_Node000015" title=" " alt="" coords="730,288,698,306,661,319,611,328,560,333,460,331,368,320,296,307,297,301,369,315,460,326,560,328,611,323,659,314,696,301,728,284"/>
+<area shape="rect" id="Node000003" href="$sprite_8c.html#a42f58fbd029e732df842ce224e72d8ec" title="Displays the leaderboard on the screen." alt="" coords="373,80,511,105"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="555,127,488,108,489,103,557,122"/>
+<area shape="rect" id="Node000006" href="$sprite_8c.html#a0944e45dab2b95345c29e01b548eb1ab" title="Draws the current time from the RTC on the screen." alt="" coords="407,129,477,155"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="555,143,478,144,478,139,555,138"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a04e415c2c57bcb7efab2055169302eed" title=" " alt="" coords="201,179,287,204"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="389,113,374,119,314,151,266,181,263,176,312,146,372,114,387,108"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,255,115,280"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="201,212,93,257,91,252,199,207"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="394,157,287,183,286,178,393,151"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="553,78,512,85,511,80,553,73"/>
+<area shape="rect" id="Node000008" href="$leaderboard_8c.html#a004ce432283fa47148b512f2c8d7e599" title="Draws the leaderboard on the screen." alt="" coords="183,5,305,31"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="576,50,545,33,510,21,457,12,403,9,306,13,306,7,403,3,458,6,511,15,547,28,579,45"/>
+<area shape="rect" id="Node000009" href="$sprite_8c.html#a8ed28d9498ae4bf8a808eb0ed29497ca" title="Draws the player&#39;s name on the screen." alt="" coords="377,31,507,56"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="553,62,508,55,508,50,553,57"/>
+<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="385,64,375,70,338,97,305,127,257,180,253,177,301,124,334,93,372,65,382,59"/>
+<area shape="poly" id="edge11_Node000009_Node000008" title=" " alt="" coords="362,36,305,28,306,23,363,31"/>
+<area shape="poly" id="edge14_Node000010_Node000004" title=" " alt="" coords="551,294,466,287,418,279,372,267,309,238,261,206,264,202,312,233,374,262,420,274,466,282,551,289"/>
+<area shape="poly" id="edge16_Node000011_Node000004" title=" " alt="" coords="380,194,287,194,287,189,380,189"/>
+<area shape="poly" id="edge18_Node000012_Node000004" title=" " alt="" coords="376,227,286,204,288,199,378,222"/>
+<area shape="poly" id="edge22_Node000015_Node000005" title=" " alt="" coords="149,282,115,277,115,272,150,276"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="sprite_set_x" name="sprite_set_x">
+<area shape="rect" id="Node000001" title="Sets the x&#45;coordinate of a sprite." alt="" coords="453,5,547,31"/>
+<area shape="rect" id="Node000002" href="$game_8c.html#ab26d7e122c3013b259f1dd9e907d0cf3" title="Displays the mouse cursor on the screen." alt="" coords="296,5,405,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="440,21,406,21,406,15,440,15"/>
+<area shape="rect" id="Node000003" href="$main_8c.html#a04e415c2c57bcb7efab2055169302eed" title=" " alt="" coords="163,5,248,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="282,21,248,21,248,15,282,15"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,5,115,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="149,21,115,21,115,15,149,15"/>
+</map>

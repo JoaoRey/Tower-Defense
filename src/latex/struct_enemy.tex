@@ -1,0 +1,91 @@
+\doxysection{Enemy Struct Reference}
+\hypertarget{struct_enemy}{}\label{struct_enemy}\index{Enemy@{Enemy}}
+
+
+Structure representing an enemy.  
+
+
+
+
+{\ttfamily \#include $<$enemy.\+h$>$}
+
+
+
+Collaboration diagram for Enemy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{struct_enemy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{struct_enemy_a70490642cc6e18ad3d0284dfa1930af3}{id}}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{struct_enemy_a1574a4ad3153fc9281901590a34b0d78}{is\+Dead}}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{struct_enemy_a859b730c4f0402522d853ccb660a5fe8}{act\+HP}}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{struct_enemy_ac0b923a1b213dd0fe5717a61cef7abdb}{hidden\+HP}}
+\item 
+\mbox{\hyperlink{struct_position}{Position}} \mbox{\hyperlink{struct_enemy_af208804217fd225c2ff8824e81cc2e64}{position}}
+\item 
+\mbox{\hyperlink{struct_position}{Position}} \mbox{\hyperlink{struct_enemy_aad2f3e4fb0247b6627d8e73c4403d3f3}{death\+Position}}
+\item 
+const \mbox{\hyperlink{struct_enemy_type}{Enemy\+Type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_enemy_a9225dcb5da2d1d2050576aac3e35f85b}{type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure representing an enemy. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_enemy_a859b730c4f0402522d853ccb660a5fe8}\index{Enemy@{Enemy}!actHP@{actHP}}
+\index{actHP@{actHP}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{actHP}{actHP}}
+{\footnotesize\ttfamily \label{struct_enemy_a859b730c4f0402522d853ccb660a5fe8} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} Enemy\+::act\+HP}
+
+The current health points of the enemy. \Hypertarget{struct_enemy_aad2f3e4fb0247b6627d8e73c4403d3f3}\index{Enemy@{Enemy}!deathPosition@{deathPosition}}
+\index{deathPosition@{deathPosition}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{deathPosition}{deathPosition}}
+{\footnotesize\ttfamily \label{struct_enemy_aad2f3e4fb0247b6627d8e73c4403d3f3} 
+\mbox{\hyperlink{struct_position}{Position}} Enemy\+::death\+Position}
+
+The position where the enemy died. \Hypertarget{struct_enemy_ac0b923a1b213dd0fe5717a61cef7abdb}\index{Enemy@{Enemy}!hiddenHP@{hiddenHP}}
+\index{hiddenHP@{hiddenHP}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{hiddenHP}{hiddenHP}}
+{\footnotesize\ttfamily \label{struct_enemy_ac0b923a1b213dd0fe5717a61cef7abdb} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} Enemy\+::hidden\+HP}
+
+The hidden health points of the enemy. \Hypertarget{struct_enemy_a70490642cc6e18ad3d0284dfa1930af3}\index{Enemy@{Enemy}!id@{id}}
+\index{id@{id}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily \label{struct_enemy_a70490642cc6e18ad3d0284dfa1930af3} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} Enemy\+::id}
+
+The ID of the enemy. \Hypertarget{struct_enemy_a1574a4ad3153fc9281901590a34b0d78}\index{Enemy@{Enemy}!isDead@{isDead}}
+\index{isDead@{isDead}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{isDead}{isDead}}
+{\footnotesize\ttfamily \label{struct_enemy_a1574a4ad3153fc9281901590a34b0d78} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} Enemy\+::is\+Dead}
+
+Flag indicating if the enemy is dead (1) or alive (0). \Hypertarget{struct_enemy_af208804217fd225c2ff8824e81cc2e64}\index{Enemy@{Enemy}!position@{position}}
+\index{position@{position}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \label{struct_enemy_af208804217fd225c2ff8824e81cc2e64} 
+\mbox{\hyperlink{struct_position}{Position}} Enemy\+::position}
+
+The position of the enemy. \Hypertarget{struct_enemy_a9225dcb5da2d1d2050576aac3e35f85b}\index{Enemy@{Enemy}!type@{type}}
+\index{type@{type}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \label{struct_enemy_a9225dcb5da2d1d2050576aac3e35f85b} 
+const \mbox{\hyperlink{struct_enemy_type}{Enemy\+Type}}\texorpdfstring{$\ast$}{*} Enemy\+::type}
+
+Pointer to the type of the enemy. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+gamelogic/elements/enemies/\mbox{\hyperlink{enemy_8h}{enemy.\+h}}\end{DoxyCompactItemize}

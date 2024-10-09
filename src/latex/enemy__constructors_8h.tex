@@ -1,0 +1,197 @@
+\doxysection{gamelogic/elements/enemies/enemy\+\_\+constructors.h File Reference}
+\hypertarget{enemy__constructors_8h}{}\label{enemy__constructors_8h}\index{gamelogic/elements/enemies/enemy\_constructors.h@{gamelogic/elements/enemies/enemy\_constructors.h}}
+
+
+Header file for enemy constructors.  
+
+
+{\ttfamily \#include "{}enemy.\+h"{}}\newline
+Include dependency graph for enemy\+\_\+constructors.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{enemy__constructors_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{enemy__constructors_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{enemy__constructors_8h_a71e056679a1b93516b67de3a34a45cb5}{orc\+\_\+symbol}} ()
+\begin{DoxyCompactList}\small\item\em Get the symbol representing an orc enemy. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{enemy__constructors_8h_aa80bcec06a38216b14d77736eba3535b}{skeleton\+\_\+symbol}} ()
+\begin{DoxyCompactList}\small\item\em Get the symbol representing a skeleton enemy. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{enemy__constructors_8h_a650ff36e53a76335ef625f7f9b40a194}{golem\+\_\+symbol}} ()
+\begin{DoxyCompactList}\small\item\em Get the symbol representing a golem enemy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{enemy__constructors_8h_a971a9685589e9cf13aa1a22812edfb14}{create\+\_\+orc}} (\mbox{\hyperlink{struct_enemy}{Enemy}} \texorpdfstring{$\ast$}{*}enemy, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} id)
+\begin{DoxyCompactList}\small\item\em Create an orc enemy with the specified parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{enemy__constructors_8h_acec6c2cfe2b9e6538c863742c4e4ba1b}{create\+\_\+skeleton}} (\mbox{\hyperlink{struct_enemy}{Enemy}} \texorpdfstring{$\ast$}{*}enemy, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} id)
+\begin{DoxyCompactList}\small\item\em Create a skeleton enemy with the specified parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{enemy__constructors_8h_a35214af2db3777f8f47a250d57ac5824}{create\+\_\+golem}} (\mbox{\hyperlink{struct_enemy}{Enemy}} \texorpdfstring{$\ast$}{*}enemy, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} id)
+\begin{DoxyCompactList}\small\item\em Create a golem enemy with the specified parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for enemy constructors. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{enemy__constructors_8h_a35214af2db3777f8f47a250d57ac5824}\index{enemy\_constructors.h@{enemy\_constructors.h}!create\_golem@{create\_golem}}
+\index{create\_golem@{create\_golem}!enemy\_constructors.h@{enemy\_constructors.h}}
+\doxysubsubsection{\texorpdfstring{create\_golem()}{create\_golem()}}
+{\footnotesize\ttfamily \label{enemy__constructors_8h_a35214af2db3777f8f47a250d57ac5824} 
+void create\+\_\+golem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_enemy}{Enemy}} \texorpdfstring{$\ast$}{*}}]{enemy}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{x}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{y}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Create a golem enemy with the specified parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & Pointer to the \doxylink{struct_enemy}{Enemy} structure to be initialized. \\
+\hline
+{\em x} & The x-\/coordinate of the golem enemy. \\
+\hline
+{\em y} & The y-\/coordinate of the golem enemy. \\
+\hline
+{\em id} & The ID of the golem enemy. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enemy__constructors_8h_a35214af2db3777f8f47a250d57ac5824_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enemy__constructors_8h_a35214af2db3777f8f47a250d57ac5824_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{enemy__constructors_8h_a971a9685589e9cf13aa1a22812edfb14}\index{enemy\_constructors.h@{enemy\_constructors.h}!create\_orc@{create\_orc}}
+\index{create\_orc@{create\_orc}!enemy\_constructors.h@{enemy\_constructors.h}}
+\doxysubsubsection{\texorpdfstring{create\_orc()}{create\_orc()}}
+{\footnotesize\ttfamily \label{enemy__constructors_8h_a971a9685589e9cf13aa1a22812edfb14} 
+void create\+\_\+orc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_enemy}{Enemy}} \texorpdfstring{$\ast$}{*}}]{enemy}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{x}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{y}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Create an orc enemy with the specified parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & Pointer to the \doxylink{struct_enemy}{Enemy} structure to be initialized. \\
+\hline
+{\em x} & The x-\/coordinate of the orc enemy. \\
+\hline
+{\em y} & The y-\/coordinate of the orc enemy. \\
+\hline
+{\em id} & The ID of the orc enemy. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{enemy__constructors_8h_a971a9685589e9cf13aa1a22812edfb14_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enemy__constructors_8h_a971a9685589e9cf13aa1a22812edfb14_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{enemy__constructors_8h_acec6c2cfe2b9e6538c863742c4e4ba1b}\index{enemy\_constructors.h@{enemy\_constructors.h}!create\_skeleton@{create\_skeleton}}
+\index{create\_skeleton@{create\_skeleton}!enemy\_constructors.h@{enemy\_constructors.h}}
+\doxysubsubsection{\texorpdfstring{create\_skeleton()}{create\_skeleton()}}
+{\footnotesize\ttfamily \label{enemy__constructors_8h_acec6c2cfe2b9e6538c863742c4e4ba1b} 
+void create\+\_\+skeleton (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_enemy}{Enemy}} \texorpdfstring{$\ast$}{*}}]{enemy}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{x}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{y}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Create a skeleton enemy with the specified parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & Pointer to the \doxylink{struct_enemy}{Enemy} structure to be initialized. \\
+\hline
+{\em x} & The x-\/coordinate of the skeleton enemy. \\
+\hline
+{\em y} & The y-\/coordinate of the skeleton enemy. \\
+\hline
+{\em id} & The ID of the skeleton enemy. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enemy__constructors_8h_acec6c2cfe2b9e6538c863742c4e4ba1b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enemy__constructors_8h_acec6c2cfe2b9e6538c863742c4e4ba1b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{enemy__constructors_8h_a650ff36e53a76335ef625f7f9b40a194}\index{enemy\_constructors.h@{enemy\_constructors.h}!golem\_symbol@{golem\_symbol}}
+\index{golem\_symbol@{golem\_symbol}!enemy\_constructors.h@{enemy\_constructors.h}}
+\doxysubsubsection{\texorpdfstring{golem\_symbol()}{golem\_symbol()}}
+{\footnotesize\ttfamily \label{enemy__constructors_8h_a650ff36e53a76335ef625f7f9b40a194} 
+char golem\+\_\+symbol (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get the symbol representing a golem enemy. 
+
+\begin{DoxyReturn}{Returns}
+The symbol representing a golem enemy. 
+\end{DoxyReturn}
+\Hypertarget{enemy__constructors_8h_a71e056679a1b93516b67de3a34a45cb5}\index{enemy\_constructors.h@{enemy\_constructors.h}!orc\_symbol@{orc\_symbol}}
+\index{orc\_symbol@{orc\_symbol}!enemy\_constructors.h@{enemy\_constructors.h}}
+\doxysubsubsection{\texorpdfstring{orc\_symbol()}{orc\_symbol()}}
+{\footnotesize\ttfamily \label{enemy__constructors_8h_a71e056679a1b93516b67de3a34a45cb5} 
+char orc\+\_\+symbol (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get the symbol representing an orc enemy. 
+
+\begin{DoxyReturn}{Returns}
+The symbol representing an orc enemy. 
+\end{DoxyReturn}
+\Hypertarget{enemy__constructors_8h_aa80bcec06a38216b14d77736eba3535b}\index{enemy\_constructors.h@{enemy\_constructors.h}!skeleton\_symbol@{skeleton\_symbol}}
+\index{skeleton\_symbol@{skeleton\_symbol}!enemy\_constructors.h@{enemy\_constructors.h}}
+\doxysubsubsection{\texorpdfstring{skeleton\_symbol()}{skeleton\_symbol()}}
+{\footnotesize\ttfamily \label{enemy__constructors_8h_aa80bcec06a38216b14d77736eba3535b} 
+char skeleton\+\_\+symbol (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get the symbol representing a skeleton enemy. 
+
+\begin{DoxyReturn}{Returns}
+The symbol representing a skeleton enemy. 
+\end{DoxyReturn}

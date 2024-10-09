@@ -1,0 +1,17 @@
+<map id="draw_leaderboard" name="draw_leaderboard">
+<area shape="rect" id="Node000001" title="Draws the leaderboard on the screen." alt="" coords="5,53,128,79"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#abcda38f5250526f86969acc555797801" title="Draws a letter on the screen." alt="" coords="355,53,440,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,51,176,38,241,32,307,38,348,47,346,52,306,43,241,38,176,43,112,56"/>
+<area shape="rect" id="Node000004" href="$sprite_8c.html#a858c1454a817fd7dca9e21bafa491242" title="Draws a sprite on the screen." alt="" coords="496,104,584,129"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="119,76,176,87,343,105,482,112,482,118,342,110,176,93,118,81"/>
+<area shape="rect" id="Node000007" href="$sprite_8c.html#a8ed28d9498ae4bf8a808eb0ed29497ca" title="Draws the player&#39;s name on the screen." alt="" coords="176,53,307,79"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="128,63,162,63,162,69,128,69"/>
+<area shape="rect" id="Node000003" href="$sprite_8c.html#a607cfeb4f019a84c346eb3bce9da0420" title="Destroys a sprite, freeing its resources." alt="" coords="488,5,592,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="435,51,488,33,489,38,437,56"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="435,76,491,97,489,102,433,81"/>
+<area shape="rect" id="Node000006" href="$sprite_8c.html#a0987ce5dadd745a52f29e654f38d7e33" title="Initializes a sprite with given properties." alt="" coords="501,55,579,80"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="440,64,487,64,487,70,440,69"/>
+<area shape="rect" id="Node000005" href="$graphics_8c.html#abcd14d829edc3257916bdcc1a9aca216" title=" " alt="" coords="640,104,723,129"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="584,114,626,114,626,119,584,119"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="307,63,341,63,341,69,307,69"/>
+</map>

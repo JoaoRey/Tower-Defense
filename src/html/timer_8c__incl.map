@@ -1,0 +1,17 @@
+<map id="devices/timer/timer.c" name="devices/timer/timer.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="216,5,359,31"/>
+<area shape="rect" id="Node000002" href="$timer_8h.html" title=" " alt="" coords="200,79,263,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="280,33,251,69,247,66,276,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="192,225,271,251"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="307,29,341,55,377,92,391,113,399,135,400,157,391,179,369,201,342,217,313,228,285,235,284,229,312,223,340,213,366,197,386,176,395,156,394,136,386,116,373,96,338,59,303,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,152,100,177"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="269,33,190,81,84,147,81,142,187,76,267,29"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="311,152,376,177"/>
+<area shape="poly" id="edge9_Node000001_Node000005" title=" " alt="" coords="294,30,336,138,331,140,289,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="212,106,186,126,166,153,163,170,170,187,184,202,200,215,197,220,180,206,166,190,158,171,161,151,182,122,209,102"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="204,107,95,149,93,144,202,102"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="251,102,315,142,312,147,248,106"/>
+<area shape="rect" id="Node000006" href="$i8254_8h.html" title=" " alt="" coords="176,152,287,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="234,104,234,138,229,138,229,104"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="234,178,234,212,229,212,229,178"/>
+</map>

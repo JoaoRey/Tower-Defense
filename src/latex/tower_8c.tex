@@ -1,0 +1,283 @@
+\doxysection{gamelogic/elements/towers/tower.c File Reference}
+\hypertarget{tower_8c}{}\label{tower_8c}\index{gamelogic/elements/towers/tower.c@{gamelogic/elements/towers/tower.c}}
+{\ttfamily \#include "{}gamelogic/elements/towers/tower.\+h"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for tower.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tower_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{tower_8c_aaa88dd6938c92318f4755d07aa9b53ed}{tower\+\_\+init}} (\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}tower, const \mbox{\hyperlink{struct_tower_type}{Tower\+Type}} \texorpdfstring{$\ast$}{*}type, float \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, float \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Initialize a tower. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{tower_8c_a43c2b1efb4252986a2a6dfc99d8930a5}{tower\+\_\+get\+\_\+symbol}} (\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}tower)
+\begin{DoxyCompactList}\small\item\em Get the symbol representing a tower. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_position}{Position}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{tower_8c_a784f6f0f30dfa028e3ee18f08f46d765}{tower\+\_\+get\+\_\+position}} (\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}tower)
+\begin{DoxyCompactList}\small\item\em Get the position of a tower. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{tower_8c_a5ada7605e607c12e127868c4bb4c161e}{tower\+\_\+get\+\_\+life}} (\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}tower)
+\begin{DoxyCompactList}\small\item\em Get the life of a tower. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{tower_8c_a7d935b61f24fd78105fb04cd96bca567}{tower\+\_\+get\+\_\+level}} (\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}tower)
+\begin{DoxyCompactList}\small\item\em Get the level of a tower. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{tower_8c_ac9d994682225cbe1107e7d7b531d6d20}{tower\+\_\+get\+\_\+range}} (\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}tower)
+\begin{DoxyCompactList}\small\item\em Get the range of a tower. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{tower_8c_aab6ee046b13adbf7ad1292e69bb93f7c}{tower\+\_\+get\+\_\+cost}} (\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}tower)
+\begin{DoxyCompactList}\small\item\em Get the cost of a tower. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{tower_8c_a90711b1f9c3b5ef664621b9bf735397d}{tower\+\_\+is\+\_\+targeted}} (\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}tower)
+\begin{DoxyCompactList}\small\item\em Check if a tower is targeted. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tower_8c_a57c8bdbefdda95985585ce80a50cb1c5}{tower\+\_\+set\+\_\+targeted}} (\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}tower, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} targeted)
+\begin{DoxyCompactList}\small\item\em Set the targeted status of a tower. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tower_8c_a52360176db2f54e75c0874e6260f2196}{set\+\_\+target}} (\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}tower, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} enemy\+\_\+target\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Set the target of a tower to a specific enemy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{tower_8c_ae418235fd35dc2a3c572d90622884835}{calculate\+\_\+distance}} (\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}tower, \mbox{\hyperlink{struct_enemy}{Enemy}} \texorpdfstring{$\ast$}{*}enemy)
+\begin{DoxyCompactList}\small\item\em Calculate the distance between a tower and an enemy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tower_8c_aaf0dfd552f5c53259955641aa527e6ea}{upgrade\+\_\+tower}} (\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}tower)
+\begin{DoxyCompactList}\small\item\em Upgrade a tower. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{tower_8c_ae418235fd35dc2a3c572d90622884835}\index{tower.c@{tower.c}!calculate\_distance@{calculate\_distance}}
+\index{calculate\_distance@{calculate\_distance}!tower.c@{tower.c}}
+\doxysubsubsection{\texorpdfstring{calculate\_distance()}{calculate\_distance()}}
+{\footnotesize\ttfamily \label{tower_8c_ae418235fd35dc2a3c572d90622884835} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} calculate\+\_\+distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}}]{tower}{, }\item[{\mbox{\hyperlink{struct_enemy}{Enemy}} \texorpdfstring{$\ast$}{*}}]{enemy}{}\end{DoxyParamCaption})}
+
+
+
+Calculate the distance between a tower and an enemy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tower} & Pointer to the tower. \\
+\hline
+{\em enemy} & Pointer to the enemy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The distance between the tower and the enemy. 
+\end{DoxyReturn}
+\Hypertarget{tower_8c_a52360176db2f54e75c0874e6260f2196}\index{tower.c@{tower.c}!set\_target@{set\_target}}
+\index{set\_target@{set\_target}!tower.c@{tower.c}}
+\doxysubsubsection{\texorpdfstring{set\_target()}{set\_target()}}
+{\footnotesize\ttfamily \label{tower_8c_a52360176db2f54e75c0874e6260f2196} 
+void set\+\_\+target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}}]{tower}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{enemy\+\_\+target\+\_\+id}{}\end{DoxyParamCaption})}
+
+
+
+Set the target of a tower to a specific enemy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tower} & Pointer to the tower. \\
+\hline
+{\em enemy\+\_\+target\+\_\+id} & The ID of the enemy to target. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tower_8c_aab6ee046b13adbf7ad1292e69bb93f7c}\index{tower.c@{tower.c}!tower\_get\_cost@{tower\_get\_cost}}
+\index{tower\_get\_cost@{tower\_get\_cost}!tower.c@{tower.c}}
+\doxysubsubsection{\texorpdfstring{tower\_get\_cost()}{tower\_get\_cost()}}
+{\footnotesize\ttfamily \label{tower_8c_aab6ee046b13adbf7ad1292e69bb93f7c} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} tower\+\_\+get\+\_\+cost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}}]{tower}{}\end{DoxyParamCaption})}
+
+
+
+Get the cost of a tower. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tower} & Pointer to the tower. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cost of the tower. 
+\end{DoxyReturn}
+\Hypertarget{tower_8c_a7d935b61f24fd78105fb04cd96bca567}\index{tower.c@{tower.c}!tower\_get\_level@{tower\_get\_level}}
+\index{tower\_get\_level@{tower\_get\_level}!tower.c@{tower.c}}
+\doxysubsubsection{\texorpdfstring{tower\_get\_level()}{tower\_get\_level()}}
+{\footnotesize\ttfamily \label{tower_8c_a7d935b61f24fd78105fb04cd96bca567} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} tower\+\_\+get\+\_\+level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}}]{tower}{}\end{DoxyParamCaption})}
+
+
+
+Get the level of a tower. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tower} & Pointer to the tower. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The level of the tower. 
+\end{DoxyReturn}
+\Hypertarget{tower_8c_a5ada7605e607c12e127868c4bb4c161e}\index{tower.c@{tower.c}!tower\_get\_life@{tower\_get\_life}}
+\index{tower\_get\_life@{tower\_get\_life}!tower.c@{tower.c}}
+\doxysubsubsection{\texorpdfstring{tower\_get\_life()}{tower\_get\_life()}}
+{\footnotesize\ttfamily \label{tower_8c_a5ada7605e607c12e127868c4bb4c161e} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} tower\+\_\+get\+\_\+life (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}}]{tower}{}\end{DoxyParamCaption})}
+
+
+
+Get the life of a tower. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tower} & Pointer to the tower. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The life of the tower. 
+\end{DoxyReturn}
+\Hypertarget{tower_8c_a784f6f0f30dfa028e3ee18f08f46d765}\index{tower.c@{tower.c}!tower\_get\_position@{tower\_get\_position}}
+\index{tower\_get\_position@{tower\_get\_position}!tower.c@{tower.c}}
+\doxysubsubsection{\texorpdfstring{tower\_get\_position()}{tower\_get\_position()}}
+{\footnotesize\ttfamily \label{tower_8c_a784f6f0f30dfa028e3ee18f08f46d765} 
+\mbox{\hyperlink{struct_position}{Position}} \texorpdfstring{$\ast$}{*} tower\+\_\+get\+\_\+position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}}]{tower}{}\end{DoxyParamCaption})}
+
+
+
+Get the position of a tower. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tower} & Pointer to the tower. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the position of the tower. 
+\end{DoxyReturn}
+\Hypertarget{tower_8c_ac9d994682225cbe1107e7d7b531d6d20}\index{tower.c@{tower.c}!tower\_get\_range@{tower\_get\_range}}
+\index{tower\_get\_range@{tower\_get\_range}!tower.c@{tower.c}}
+\doxysubsubsection{\texorpdfstring{tower\_get\_range()}{tower\_get\_range()}}
+{\footnotesize\ttfamily \label{tower_8c_ac9d994682225cbe1107e7d7b531d6d20} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} tower\+\_\+get\+\_\+range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}}]{tower}{}\end{DoxyParamCaption})}
+
+
+
+Get the range of a tower. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tower} & Pointer to the tower. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The range of the tower. 
+\end{DoxyReturn}
+\Hypertarget{tower_8c_a43c2b1efb4252986a2a6dfc99d8930a5}\index{tower.c@{tower.c}!tower\_get\_symbol@{tower\_get\_symbol}}
+\index{tower\_get\_symbol@{tower\_get\_symbol}!tower.c@{tower.c}}
+\doxysubsubsection{\texorpdfstring{tower\_get\_symbol()}{tower\_get\_symbol()}}
+{\footnotesize\ttfamily \label{tower_8c_a43c2b1efb4252986a2a6dfc99d8930a5} 
+char tower\+\_\+get\+\_\+symbol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}}]{tower}{}\end{DoxyParamCaption})}
+
+
+
+Get the symbol representing a tower. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tower} & Pointer to the tower. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The symbol representing the tower. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tower_8c_a43c2b1efb4252986a2a6dfc99d8930a5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{tower_8c_aaa88dd6938c92318f4755d07aa9b53ed}\index{tower.c@{tower.c}!tower\_init@{tower\_init}}
+\index{tower\_init@{tower\_init}!tower.c@{tower.c}}
+\doxysubsubsection{\texorpdfstring{tower\_init()}{tower\_init()}}
+{\footnotesize\ttfamily \label{tower_8c_aaa88dd6938c92318f4755d07aa9b53ed} 
+void tower\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}}]{tower}{, }\item[{const \mbox{\hyperlink{struct_tower_type}{Tower\+Type}} \texorpdfstring{$\ast$}{*}}]{type}{, }\item[{float}]{x}{, }\item[{float}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Initialize a tower. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tower} & Pointer to the tower to be initialized. \\
+\hline
+{\em type} & Pointer to the type of the tower. \\
+\hline
+{\em x} & The x-\/coordinate of the tower\textquotesingle{}s position. \\
+\hline
+{\em y} & The y-\/coordinate of the tower\textquotesingle{}s position. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tower_8c_aaa88dd6938c92318f4755d07aa9b53ed_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{tower_8c_a90711b1f9c3b5ef664621b9bf735397d}\index{tower.c@{tower.c}!tower\_is\_targeted@{tower\_is\_targeted}}
+\index{tower\_is\_targeted@{tower\_is\_targeted}!tower.c@{tower.c}}
+\doxysubsubsection{\texorpdfstring{tower\_is\_targeted()}{tower\_is\_targeted()}}
+{\footnotesize\ttfamily \label{tower_8c_a90711b1f9c3b5ef664621b9bf735397d} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} tower\+\_\+is\+\_\+targeted (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}}]{tower}{}\end{DoxyParamCaption})}
+
+
+
+Check if a tower is targeted. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tower} & Pointer to the tower. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the tower is targeted, 0 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{tower_8c_a57c8bdbefdda95985585ce80a50cb1c5}\index{tower.c@{tower.c}!tower\_set\_targeted@{tower\_set\_targeted}}
+\index{tower\_set\_targeted@{tower\_set\_targeted}!tower.c@{tower.c}}
+\doxysubsubsection{\texorpdfstring{tower\_set\_targeted()}{tower\_set\_targeted()}}
+{\footnotesize\ttfamily \label{tower_8c_a57c8bdbefdda95985585ce80a50cb1c5} 
+void tower\+\_\+set\+\_\+targeted (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}}]{tower}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{targeted}{}\end{DoxyParamCaption})}
+
+
+
+Set the targeted status of a tower. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tower} & Pointer to the tower. \\
+\hline
+{\em targeted} & The targeted status to set (1 for targeted, 0 for not targeted). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tower_8c_aaf0dfd552f5c53259955641aa527e6ea}\index{tower.c@{tower.c}!upgrade\_tower@{upgrade\_tower}}
+\index{upgrade\_tower@{upgrade\_tower}!tower.c@{tower.c}}
+\doxysubsubsection{\texorpdfstring{upgrade\_tower()}{upgrade\_tower()}}
+{\footnotesize\ttfamily \label{tower_8c_aaf0dfd552f5c53259955641aa527e6ea} 
+void upgrade\+\_\+tower (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}}]{tower}{}\end{DoxyParamCaption})}
+
+
+
+Upgrade a tower. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tower} & Pointer to the tower to be upgraded. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tower_8c_aaf0dfd552f5c53259955641aa527e6ea_icgraph}
+\end{center}
+\end{figure}

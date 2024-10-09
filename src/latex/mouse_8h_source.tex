@@ -1,0 +1,33 @@
+\doxysection{mouse.\+h}
+\hypertarget{mouse_8h_source}{}\label{mouse_8h_source}\index{devices/mouse/mouse.h@{devices/mouse/mouse.h}}
+\mbox{\hyperlink{mouse_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_LCOM\_MOUSE\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_LCOM\_MOUSE\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <minix/sysutil.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{i8042_8h}{macros/i8042.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}\ (\mbox{\hyperlink{mouse_8h_a16b9f614dc16358d4648e2edbf848893}{subscription\_of\_mouse\_interrupts}})(uint8\_t\ *bit\_no);}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ void\ (\mbox{\hyperlink{mouse_8h_a9903fc62f16cd157944884a3ac912eec}{interrupt\_handler\_of\_mouse}})();}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}\ (\mbox{\hyperlink{mouse_8h_ae0e5291bfb5860a52e8f5cd2b183a58e}{unsubscription\_of\_mouse\_interrupts}})();}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}\ (\mbox{\hyperlink{mouse_8h_a108813d01ba189cc8bb0dca728c932a8}{mouse\_enable\_data\_report}})();}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}\ (\mbox{\hyperlink{mouse_8h_ac13ad81d843b4d50815de4b20a28db53}{mouse\_disable\_data\_report}})();}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ void\ (\mbox{\hyperlink{mouse_8h_af5c4c3be5e37045338f6aa8f02f0ab7e}{transform\_mouse\_bytes\_to\_packets}})();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}\ (\mbox{\hyperlink{mouse_8c_ad5c18d4ecc8e549c63c843cc2dd47f14}{mouse\_write\_command}}(uint8\_t\ comando));}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ void\ (\mbox{\hyperlink{mouse_8h_a8538c6fb1b0c7e990e74629968bf31f9}{synchronization\_of\_mouse\_bytes}})();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ void\ (\mbox{\hyperlink{mouse_8h_aab436eb644466b091ff91437614de025}{update\_mouse\_location}})();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00027\ }
+
+\end{DoxyCode}

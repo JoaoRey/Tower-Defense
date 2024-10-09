@@ -1,0 +1,10 @@
+<map id="enemy_die" name="enemy_die">
+<area shape="rect" id="Node000001" title="Make an enemy die." alt="" coords="459,31,544,56"/>
+<area shape="rect" id="Node000002" href="$enemy_8c.html#a6b4cf00db9aee30b67036e1bfa4ab68d" title="Damage an enemy by a specified amount." alt="" coords="296,5,411,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="445,36,410,30,411,25,446,31"/>
+<area shape="rect" id="Node000003" href="$main_8c.html#a04e415c2c57bcb7efab2055169302eed" title=" " alt="" coords="163,31,248,56"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="445,46,248,46,248,41,445,41"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="283,33,249,39,248,33,282,27"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,31,115,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="149,46,115,46,115,41,149,41"/>
+</map>

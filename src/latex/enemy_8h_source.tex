@@ -1,0 +1,59 @@
+\doxysection{enemy.\+h}
+\hypertarget{enemy_8h_source}{}\label{enemy_8h_source}\index{gamelogic/elements/enemies/enemy.h@{gamelogic/elements/enemies/enemy.h}}
+\mbox{\hyperlink{enemy_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ ENEMY\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ ENEMY\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{position_8h}{gamelogic/utils/position.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{typedef}\ char\ (*\mbox{\hyperlink{enemy_8h_a002a84c9ebd0b6bbc183c30e846ac8bc}{EnemySymbolFunction}})(void);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00020\ \ \ \mbox{\hyperlink{enemy_8h_a002a84c9ebd0b6bbc183c30e846ac8bc}{EnemySymbolFunction}}\ \mbox{\hyperlink{struct_enemy_type_a6620429cd01934692d8774d91bb15542}{get\_symbol}};\ }
+\DoxyCodeLine{00021\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_enemy_type_a51036e21f8a41824b5d8575229209c2f}{speed}};\ }
+\DoxyCodeLine{00022\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_enemy_type_af34988ea74b7ed15f9ed53af6973ce24}{totHP}};\ }
+\DoxyCodeLine{00023\ \}\ \mbox{\hyperlink{struct_enemy_type}{EnemyType}};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00029\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_enemy_a70490642cc6e18ad3d0284dfa1930af3}{id}};\ }
+\DoxyCodeLine{00030\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_enemy_a1574a4ad3153fc9281901590a34b0d78}{isDead}};\ }
+\DoxyCodeLine{00031\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_enemy_a859b730c4f0402522d853ccb660a5fe8}{actHP}};\ }
+\DoxyCodeLine{00032\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_enemy_ac0b923a1b213dd0fe5717a61cef7abdb}{hiddenHP}};\ }
+\DoxyCodeLine{00033\ \ \ \mbox{\hyperlink{struct_position}{Position}}\ \mbox{\hyperlink{struct_enemy_af208804217fd225c2ff8824e81cc2e64}{position}};\ }
+\DoxyCodeLine{00034\ \ \ \mbox{\hyperlink{struct_position}{Position}}\ \mbox{\hyperlink{struct_enemy_aad2f3e4fb0247b6627d8e73c4403d3f3}{deathPosition}};\ }
+\DoxyCodeLine{00035\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_enemy_type}{EnemyType}}\ *\mbox{\hyperlink{struct_enemy_a9225dcb5da2d1d2050576aac3e35f85b}{type}};\ }
+\DoxyCodeLine{00036\ \}\ \mbox{\hyperlink{struct_enemy}{Enemy}};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00045\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{enemy_8h_a9b2cf11f480b2762c8b9f4b01245b574}{enemy\_set\_position}}(\mbox{\hyperlink{struct_enemy}{Enemy}}\ *enemy,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}});}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00056\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{enemy_8h_a27c65ec5f88eeb50d70b67b8e2969fd2}{enemy\_init}}(\mbox{\hyperlink{struct_enemy}{Enemy}}\ *enemy,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_enemy_type}{EnemyType}}\ *type,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}},\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00064\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{enemy_8h_a78d53a15083baa67f7bd278bd3ce732d}{enemy\_get\_id}}(\mbox{\hyperlink{struct_enemy}{Enemy}}\ *enemy);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00072\ \mbox{\hyperlink{struct_position}{Position}}\ *\mbox{\hyperlink{enemy_8h_ab918da3ca6bf0712195e2f10840126f7}{enemy\_get\_position}}(\mbox{\hyperlink{struct_enemy}{Enemy}}\ *enemy);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00080\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{enemy_8h_a4f22dd5b2f45077ec08a5bb43aa8de31}{enemy\_get\_symbol}}(\mbox{\hyperlink{struct_enemy}{Enemy}}\ *enemy);}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00088\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{enemy_8h_a43bada2a626f5297f7d8f287079aae2b}{enemy\_get\_actHP}}(\mbox{\hyperlink{struct_enemy}{Enemy}}\ *enemy);}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00096\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{enemy_8h_a8ecfa379f8cf136777558971386deb54}{enemy\_get\_hiddenHealth}}(\mbox{\hyperlink{struct_enemy}{Enemy}}\ *enemy);}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00103\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{enemy_8h_ae65ddfb4a419097094efb1595c947afe}{enemy\_die}}(\mbox{\hyperlink{struct_enemy}{Enemy}}\ *enemy);}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00111\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{enemy_8h_a6b4cf00db9aee30b67036e1bfa4ab68d}{enemy\_damage}}(\mbox{\hyperlink{struct_enemy}{Enemy}}\ *enemy,\ \textcolor{keywordtype}{int}\ amount);}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00119\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{enemy_8h_aa1b4ced1bc63823d15b1ab2bed2aec2f}{enemy\_isDead}}(\mbox{\hyperlink{struct_enemy}{Enemy}}\ *enemy);}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00126\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{enemy_8h_aa22dbb3d7d22a9aa6c3581df253a8e61}{enemy\_move\_x}}(\mbox{\hyperlink{struct_enemy}{Enemy}}\ *enemy);}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00133\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{enemy_8h_a9b16c036de700dbbcb6799ae1c2dbac7}{enemy\_move\_y}}(\mbox{\hyperlink{struct_enemy}{Enemy}}\ *enemy);}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00140\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{enemy_8h_ad4a3a58058cedc9a3a6b5c04b53f66de}{enemy\_move\_neg\_x}}(\mbox{\hyperlink{struct_enemy}{Enemy}}\ *enemy);}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00147\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{enemy_8h_a6f9825d742efc8bf6b71550519803ffa}{enemy\_move\_neg\_y}}(\mbox{\hyperlink{struct_enemy}{Enemy}}\ *enemy);}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

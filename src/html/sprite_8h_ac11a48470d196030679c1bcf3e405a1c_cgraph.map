@@ -1,0 +1,5 @@
+<map id="process_scancode" name="process_scancode">
+<area shape="rect" id="Node000001" title="Processes a keyboard scancode, adding the corresponding character to the player&#39;s name if valid." alt="" coords="5,5,136,31"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#a0ec6e08881002306c6813ce6efc915f9" title="Converts a keyboard scancode to a character." alt="" coords="184,5,312,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,15,170,15,170,21,136,21"/>
+</map>

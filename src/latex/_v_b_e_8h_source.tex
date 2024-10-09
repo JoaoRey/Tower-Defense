@@ -1,0 +1,39 @@
+\doxysection{VBE.\+h}
+\hypertarget{_v_b_e_8h_source}{}\label{_v_b_e_8h_source}\index{macros/VBE.h@{macros/VBE.h}}
+\mbox{\hyperlink{_v_b_e_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_VBE\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_VBE\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <lcom/video\_gr.h>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{comment}{//Bios\ calls}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ BIOS\_SET\_VIDEOMODE\ 0x00}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ VBE\_CALL\ 0x10}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ BIOS\_SET\_VIDEO\_MODE\_AH\ 0x4F}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ BIOS\_RETURN\_STATUS\_AL\ 0x00}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ BIOS\_RETURN\_MODE\_INFO\_AL\ 0x01}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ BIOS\_SET\_VIDEO\_MODE\_AL\ 0x02}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ BIOS\_RETURN\_CONTROLLER\_INFO\_AL\ 0x03}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{comment}{//Diferent\ modes}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ MODE\_1280\_1024\ 0x11C\ \ \ \ }\textcolor{comment}{//\ DIRECTED\ 16\ BITS}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ MODE\_1024\_768\ 0x105\ \ \ \ \ }\textcolor{comment}{//\ INDEXED\ 8\ BITS\ \ \ }}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ MODE\_640\_480\ 0x101\ \ \ \ \ \ }\textcolor{comment}{//\ DIRECTED\ 15\ BITS}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ MODE\_800\_600\ 0x103\ \ \ \ \ \ }\textcolor{comment}{//\ DIRECTED\ 24\ BITS}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ MODE\_1150\_864\ 0X14C\ \ \ \ \ }\textcolor{comment}{//\ DIRECTED\ 32\ BITS}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{comment}{//VBE\ functions}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ SET\_VBE\_MODE\ 0x02}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ SET\_VBE\_MODE\_LINEAR\ 0x4000}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{comment}{//Directed\ or\ Indexed\ Mode}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ DIRECTED\ 0x06}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ INDEXED\ 0x110}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ TRANSPARENCY\_COLOR\ 0xFFFF01}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

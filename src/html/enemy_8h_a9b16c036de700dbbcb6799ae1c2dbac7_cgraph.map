@@ -1,0 +1,7 @@
+<map id="enemy_move_y" name="enemy_move_y">
+<area shape="rect" id="Node000001" title="Move an enemy in the positive y direction." alt="" coords="5,31,117,56"/>
+<area shape="rect" id="Node000002" href="$position_8c.html#a5e25b5eedc73fc395e1d2235e5ab9846" title="Gets the y&#45;coordinate of the given Position." alt="" coords="165,5,267,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,32,151,26,152,31,118,37"/>
+<area shape="rect" id="Node000003" href="$position_8c.html#aa7e1c7bb7e07099a8b044096a6553a65" title="Sets the y&#45;coordinate of the given Position." alt="" coords="165,55,267,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="118,49,152,55,151,60,117,55"/>
+</map>

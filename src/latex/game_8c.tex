@@ -1,0 +1,305 @@
+\doxysection{gamelogic/states/game.c File Reference}
+\hypertarget{game_8c}{}\label{game_8c}\index{gamelogic/states/game.c@{gamelogic/states/game.c}}
+{\ttfamily \#include "{}game.\+h"{}}\newline
+{\ttfamily \#include "{}macros/game\+\_\+modes.\+h"{}}\newline
+{\ttfamily \#include "{}sprites/sprite.\+h"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+Include dependency graph for game.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{game_8c_a3cef68220fcc611902108d6f0159e50f}{draw\+\_\+game}} ()
+\begin{DoxyCompactList}\small\item\em Draws the game screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_ab26d7e122c3013b259f1dd9e907d0cf3}{display\+\_\+mouse}} ()
+\begin{DoxyCompactList}\small\item\em Displays the mouse cursor on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_aa5aae0788e4b7fc236fbe5af6b3e7d05}{select\+\_\+towers}} (uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_adab4da51ba40d5a492becdceccccbfcd}{selected}})
+\begin{DoxyCompactList}\small\item\em Selects towers based on mouse coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_aaaa67bb19a59082ba670aa0354f6978c}{draw\+\_\+selected}} (\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_adab4da51ba40d5a492becdceccccbfcd}{selected}})
+\begin{DoxyCompactList}\small\item\em Draws the selected tower(s) on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{game_8c_a5714a65316515178ddc78e8ab8eb0dc5}{chest}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{game_8c_aecd2dc2b728996737ce43fd7cfd7eb97}{archer\+\_\+tower}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{game_8c_a369f0c6650f0aa5499265c00c56f690f}{canon\+\_\+tower}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{game_8c_a2f82d5ccbc97752addaba1d50df058f2}{mage\+\_\+tower}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{game_8c_a2bb0875421f0569d9c8494b6ef6abbe1}{arena}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{game_8c_a34b1b2613be17a566b72dbf887a8fd47}{coin}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{game_8c_aaae105d22b6b529317c8df625c7d10b0}{heart}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{game_8c_afbfdb814131d06b62f7e9b7207b2b51e}{medal}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{game_8c_a168cf82c9ac92b2dedd66cf896aac567}{select\+\_\+position\+\_\+square}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{game_8c_a6af49d615e0c1fcb57c298d0f31b34ed}{position\+\_\+square}}
+\item 
+struct packet \mbox{\hyperlink{game_8c_a3b2e64ffb96c650d6525c99be01c7331}{mouse\+\_\+packet}}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{game_8c_a4c1162d74d87c7ffa389fafd78006cc0}{mode\+\_\+of\+\_\+game}}
+\item 
+bool \mbox{\hyperlink{game_8c_a217b738e11033b8ebfb179f8c7e72e1f}{game\+\_\+over}}
+\item 
+uint32\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{game_8c_a350861a2ca74a64343f991c2f80024e1}{image\+\_\+loader}}
+\item 
+unsigned \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{game_8c_a365922abd5c7041acf715c84a45a5073}{bytes\+\_\+being\+\_\+user\+\_\+per\+\_\+pixel}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{game_8c_a8c698380dc32cd8b5a19a84da1ab2ad9}{x\+\_\+res}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{game_8c_a1188c1e5fe37db7b55bdad91f71e26c0}{y\+\_\+res}}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{game_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{game_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{game_8c_ab26d7e122c3013b259f1dd9e907d0cf3}\index{game.c@{game.c}!display\_mouse@{display\_mouse}}
+\index{display\_mouse@{display\_mouse}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{display\_mouse()}{display\_mouse()}}
+{\footnotesize\ttfamily \label{game_8c_ab26d7e122c3013b259f1dd9e907d0cf3} 
+void display\+\_\+mouse (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays the mouse cursor on the screen. 
+
+This function draws the mouse cursor at its current position on the screen. It is typically called after handling mouse movement events. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_ab26d7e122c3013b259f1dd9e907d0cf3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_ab26d7e122c3013b259f1dd9e907d0cf3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{game_8c_a3cef68220fcc611902108d6f0159e50f}\index{game.c@{game.c}!draw\_game@{draw\_game}}
+\index{draw\_game@{draw\_game}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{draw\_game()}{draw\_game()}}
+{\footnotesize\ttfamily \label{game_8c_a3cef68220fcc611902108d6f0159e50f} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} draw\+\_\+game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Draws the game screen. 
+
+This function is responsible for rendering the main game screen, including the arena, towers, coins, hearts, medals, and other game elements.
+
+\begin{DoxyReturn}{Returns}
+int 0 on success, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{game_8c_a3cef68220fcc611902108d6f0159e50f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a3cef68220fcc611902108d6f0159e50f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{game_8c_aaaa67bb19a59082ba670aa0354f6978c}\index{game.c@{game.c}!draw\_selected@{draw\_selected}}
+\index{draw\_selected@{draw\_selected}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{draw\_selected()}{draw\_selected()}}
+{\footnotesize\ttfamily \label{game_8c_aaaa67bb19a59082ba670aa0354f6978c} 
+void draw\+\_\+selected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \texorpdfstring{$\ast$}{*}}]{selected}{}\end{DoxyParamCaption})}
+
+
+
+Draws the selected tower(s) on the screen. 
+
+This function draws visual indicators for the selected tower(s) on the game screen.
+
+
+\begin{DoxyParams}{Parameters}
+{\em selected} & Array indicating the selected tower(s) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_aaaa67bb19a59082ba670aa0354f6978c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_aaaa67bb19a59082ba670aa0354f6978c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{game_8c_aa5aae0788e4b7fc236fbe5af6b3e7d05}\index{game.c@{game.c}!select\_towers@{select\_towers}}
+\index{select\_towers@{select\_towers}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{select\_towers()}{select\_towers()}}
+{\footnotesize\ttfamily \label{game_8c_aa5aae0788e4b7fc236fbe5af6b3e7d05} 
+void select\+\_\+towers (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \texorpdfstring{$\ast$}{*}}]{selected}{}\end{DoxyParamCaption})}
+
+
+
+Selects towers based on mouse coordinates. 
+
+This function determines which tower is selected based on the mouse coordinates provided. It updates the selected tower(s) accordingly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the mouse cursor \\
+\hline
+{\em y} & The y-\/coordinate of the mouse cursor \\
+\hline
+{\em selected} & Pointer to an array indicating the selected tower(s) \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_aa5aae0788e4b7fc236fbe5af6b3e7d05_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{game_8c_aecd2dc2b728996737ce43fd7cfd7eb97}\index{game.c@{game.c}!archer\_tower@{archer\_tower}}
+\index{archer\_tower@{archer\_tower}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{archer\_tower}{archer\_tower}}
+{\footnotesize\ttfamily \label{game_8c_aecd2dc2b728996737ce43fd7cfd7eb97} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} archer\+\_\+tower\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a2bb0875421f0569d9c8494b6ef6abbe1}\index{game.c@{game.c}!arena@{arena}}
+\index{arena@{arena}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{arena}{arena}}
+{\footnotesize\ttfamily \label{game_8c_a2bb0875421f0569d9c8494b6ef6abbe1} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} arena\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a365922abd5c7041acf715c84a45a5073}\index{game.c@{game.c}!bytes\_being\_user\_per\_pixel@{bytes\_being\_user\_per\_pixel}}
+\index{bytes\_being\_user\_per\_pixel@{bytes\_being\_user\_per\_pixel}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{bytes\_being\_user\_per\_pixel}{bytes\_being\_user\_per\_pixel}}
+{\footnotesize\ttfamily \label{game_8c_a365922abd5c7041acf715c84a45a5073} 
+unsigned \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} bytes\+\_\+being\+\_\+user\+\_\+per\+\_\+pixel\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a369f0c6650f0aa5499265c00c56f690f}\index{game.c@{game.c}!canon\_tower@{canon\_tower}}
+\index{canon\_tower@{canon\_tower}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{canon\_tower}{canon\_tower}}
+{\footnotesize\ttfamily \label{game_8c_a369f0c6650f0aa5499265c00c56f690f} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} canon\+\_\+tower\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a5714a65316515178ddc78e8ab8eb0dc5}\index{game.c@{game.c}!chest@{chest}}
+\index{chest@{chest}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{chest}{chest}}
+{\footnotesize\ttfamily \label{game_8c_a5714a65316515178ddc78e8ab8eb0dc5} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} chest\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a34b1b2613be17a566b72dbf887a8fd47}\index{game.c@{game.c}!coin@{coin}}
+\index{coin@{coin}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{coin}{coin}}
+{\footnotesize\ttfamily \label{game_8c_a34b1b2613be17a566b72dbf887a8fd47} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} coin\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a217b738e11033b8ebfb179f8c7e72e1f}\index{game.c@{game.c}!game\_over@{game\_over}}
+\index{game\_over@{game\_over}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{game\_over}{game\_over}}
+{\footnotesize\ttfamily \label{game_8c_a217b738e11033b8ebfb179f8c7e72e1f} 
+bool game\+\_\+over\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_aaae105d22b6b529317c8df625c7d10b0}\index{game.c@{game.c}!heart@{heart}}
+\index{heart@{heart}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{heart}{heart}}
+{\footnotesize\ttfamily \label{game_8c_aaae105d22b6b529317c8df625c7d10b0} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} heart\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a350861a2ca74a64343f991c2f80024e1}\index{game.c@{game.c}!image\_loader@{image\_loader}}
+\index{image\_loader@{image\_loader}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{image\_loader}{image\_loader}}
+{\footnotesize\ttfamily \label{game_8c_a350861a2ca74a64343f991c2f80024e1} 
+uint32\+\_\+t\texorpdfstring{$\ast$}{*} image\+\_\+loader\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a2f82d5ccbc97752addaba1d50df058f2}\index{game.c@{game.c}!mage\_tower@{mage\_tower}}
+\index{mage\_tower@{mage\_tower}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{mage\_tower}{mage\_tower}}
+{\footnotesize\ttfamily \label{game_8c_a2f82d5ccbc97752addaba1d50df058f2} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} mage\+\_\+tower\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_afbfdb814131d06b62f7e9b7207b2b51e}\index{game.c@{game.c}!medal@{medal}}
+\index{medal@{medal}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{medal}{medal}}
+{\footnotesize\ttfamily \label{game_8c_afbfdb814131d06b62f7e9b7207b2b51e} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} medal\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a4c1162d74d87c7ffa389fafd78006cc0}\index{game.c@{game.c}!mode\_of\_game@{mode\_of\_game}}
+\index{mode\_of\_game@{mode\_of\_game}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{mode\_of\_game}{mode\_of\_game}}
+{\footnotesize\ttfamily \label{game_8c_a4c1162d74d87c7ffa389fafd78006cc0} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} mode\+\_\+of\+\_\+game\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a3b2e64ffb96c650d6525c99be01c7331}\index{game.c@{game.c}!mouse\_packet@{mouse\_packet}}
+\index{mouse\_packet@{mouse\_packet}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_packet}{mouse\_packet}}
+{\footnotesize\ttfamily \label{game_8c_a3b2e64ffb96c650d6525c99be01c7331} 
+struct packet mouse\+\_\+packet\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a6af49d615e0c1fcb57c298d0f31b34ed}\index{game.c@{game.c}!position\_square@{position\_square}}
+\index{position\_square@{position\_square}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{position\_square}{position\_square}}
+{\footnotesize\ttfamily \label{game_8c_a6af49d615e0c1fcb57c298d0f31b34ed} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} position\+\_\+square\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a168cf82c9ac92b2dedd66cf896aac567}\index{game.c@{game.c}!select\_position\_square@{select\_position\_square}}
+\index{select\_position\_square@{select\_position\_square}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{select\_position\_square}{select\_position\_square}}
+{\footnotesize\ttfamily \label{game_8c_a168cf82c9ac92b2dedd66cf896aac567} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} select\+\_\+position\+\_\+square\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a6150e0515f7202e2fb518f7206ed97dc}\index{game.c@{game.c}!x@{x}}
+\index{x@{x}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \label{game_8c_a6150e0515f7202e2fb518f7206ed97dc} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} x\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a8c698380dc32cd8b5a19a84da1ab2ad9}\index{game.c@{game.c}!x\_res@{x\_res}}
+\index{x\_res@{x\_res}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{x\_res}{x\_res}}
+{\footnotesize\ttfamily \label{game_8c_a8c698380dc32cd8b5a19a84da1ab2ad9} 
+uint16\+\_\+t x\+\_\+res\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a0a2f84ed7838f07779ae24c5a9086d33}\index{game.c@{game.c}!y@{y}}
+\index{y@{y}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \label{game_8c_a0a2f84ed7838f07779ae24c5a9086d33} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} y\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a1188c1e5fe37db7b55bdad91f71e26c0}\index{game.c@{game.c}!y\_res@{y\_res}}
+\index{y\_res@{y\_res}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{y\_res}{y\_res}}
+{\footnotesize\ttfamily \label{game_8c_a1188c1e5fe37db7b55bdad91f71e26c0} 
+uint16\+\_\+t y\+\_\+res\hspace{0.3cm}{\ttfamily [extern]}}
+

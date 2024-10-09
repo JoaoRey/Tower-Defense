@@ -1,0 +1,147 @@
+\doxysection{devices/graphic/graphics.h File Reference}
+\hypertarget{graphics_8h}{}\label{graphics_8h}\index{devices/graphic/graphics.h@{devices/graphic/graphics.h}}
+{\ttfamily \#include "{}macros/\+VBE.\+h"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/video\+\_\+gr.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for graphics.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{graphics_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphics_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{graphics_8h_afb53a91c571476ef4762428af67bea07}{set\+\_\+vbe\+\_\+mode}} (uint16\+\_\+t submode)
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{graphics_8h_aa86357e516b83208fb5e6c5786d93880}{set\+\_\+text\+\_\+mode}} ()
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{graphics_8h_a11ec129a8a1e455736a3b40f80f618f7}{set\+\_\+video\+\_\+mem}} (uint16\+\_\+t mode)
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{graphics_8h_abcd14d829edc3257916bdcc1a9aca216}{draw\+\_\+pixel}} (uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}, uint32\+\_\+t color)
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{graphics_8h_ac0d22490f5b1e2c044c1b7719384bc9c}{normalize\+\_\+color}} (uint32\+\_\+t color, uint32\+\_\+t \texorpdfstring{$\ast$}{*}normalized\+\_\+color)
+\item 
+void \mbox{\hyperlink{graphics_8h_affb7139701721a973e755214f8b994ae}{allocate\+\_\+image\+\_\+loader}} ()
+\item 
+void \mbox{\hyperlink{graphics_8h_ab54ecaafd69058136fbc1e6d0d56725a}{copy\+\_\+buffer\+\_\+to\+\_\+screen}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \mbox{\hyperlink{graphics_8h_a5325378e863a0f56fc684d330ad46b73}{graphic\+\_\+mode\+\_\+info}}
+\item 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{graphics_8h_a7a330b780d74c67db4d2d47b7b5ecad2}{adress\+\_\+base\+\_\+v}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{graphics_8h_affb7139701721a973e755214f8b994ae}\index{graphics.h@{graphics.h}!allocate\_image\_loader@{allocate\_image\_loader}}
+\index{allocate\_image\_loader@{allocate\_image\_loader}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{allocate\_image\_loader()}{allocate\_image\_loader()}}
+{\footnotesize\ttfamily \label{graphics_8h_affb7139701721a973e755214f8b994ae} 
+void allocate\+\_\+image\+\_\+loader (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{graphics_8h_affb7139701721a973e755214f8b994ae_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{graphics_8h_ab54ecaafd69058136fbc1e6d0d56725a}\index{graphics.h@{graphics.h}!copy\_buffer\_to\_screen@{copy\_buffer\_to\_screen}}
+\index{copy\_buffer\_to\_screen@{copy\_buffer\_to\_screen}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{copy\_buffer\_to\_screen()}{copy\_buffer\_to\_screen()}}
+{\footnotesize\ttfamily \label{graphics_8h_ab54ecaafd69058136fbc1e6d0d56725a} 
+void copy\+\_\+buffer\+\_\+to\+\_\+screen (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphics_8h_ab54ecaafd69058136fbc1e6d0d56725a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{graphics_8h_abcd14d829edc3257916bdcc1a9aca216}\index{graphics.h@{graphics.h}!draw\_pixel@{draw\_pixel}}
+\index{draw\_pixel@{draw\_pixel}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{draw\_pixel()}{draw\_pixel()}}
+{\footnotesize\ttfamily \label{graphics_8h_abcd14d829edc3257916bdcc1a9aca216} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{, }\item[{uint32\+\_\+t}]{color}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphics_8h_abcd14d829edc3257916bdcc1a9aca216_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{graphics_8h_ac0d22490f5b1e2c044c1b7719384bc9c}\index{graphics.h@{graphics.h}!normalize\_color@{normalize\_color}}
+\index{normalize\_color@{normalize\_color}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{normalize\_color()}{normalize\_color()}}
+{\footnotesize\ttfamily \label{graphics_8h_ac0d22490f5b1e2c044c1b7719384bc9c} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} normalize\+\_\+color (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{color}{, }\item[{uint32\+\_\+t \texorpdfstring{$\ast$}{*}}]{normalized\+\_\+color}{}\end{DoxyParamCaption})}
+
+\Hypertarget{graphics_8h_aa86357e516b83208fb5e6c5786d93880}\index{graphics.h@{graphics.h}!set\_text\_mode@{set\_text\_mode}}
+\index{set\_text\_mode@{set\_text\_mode}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{set\_text\_mode()}{set\_text\_mode()}}
+{\footnotesize\ttfamily \label{graphics_8h_aa86357e516b83208fb5e6c5786d93880} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} set\+\_\+text\+\_\+mode (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{graphics_8h_afb53a91c571476ef4762428af67bea07}\index{graphics.h@{graphics.h}!set\_vbe\_mode@{set\_vbe\_mode}}
+\index{set\_vbe\_mode@{set\_vbe\_mode}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{set\_vbe\_mode()}{set\_vbe\_mode()}}
+{\footnotesize\ttfamily \label{graphics_8h_afb53a91c571476ef4762428af67bea07} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} set\+\_\+vbe\+\_\+mode (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{submode}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{graphics_8h_afb53a91c571476ef4762428af67bea07_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{graphics_8h_a11ec129a8a1e455736a3b40f80f618f7}\index{graphics.h@{graphics.h}!set\_video\_mem@{set\_video\_mem}}
+\index{set\_video\_mem@{set\_video\_mem}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{set\_video\_mem()}{set\_video\_mem()}}
+{\footnotesize\ttfamily \label{graphics_8h_a11ec129a8a1e455736a3b40f80f618f7} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} set\+\_\+video\+\_\+mem (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{graphics_8h_a11ec129a8a1e455736a3b40f80f618f7_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{graphics_8h_a7a330b780d74c67db4d2d47b7b5ecad2}\index{graphics.h@{graphics.h}!adress\_base\_v@{adress\_base\_v}}
+\index{adress\_base\_v@{adress\_base\_v}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{adress\_base\_v}{adress\_base\_v}}
+{\footnotesize\ttfamily \label{graphics_8h_a7a330b780d74c67db4d2d47b7b5ecad2} 
+uint8\+\_\+t\texorpdfstring{$\ast$}{*} adress\+\_\+base\+\_\+v}
+
+\Hypertarget{graphics_8h_a5325378e863a0f56fc684d330ad46b73}\index{graphics.h@{graphics.h}!graphic\_mode\_info@{graphic\_mode\_info}}
+\index{graphic\_mode\_info@{graphic\_mode\_info}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{graphic\_mode\_info}{graphic\_mode\_info}}
+{\footnotesize\ttfamily \label{graphics_8h_a5325378e863a0f56fc684d330ad46b73} 
+vbe\+\_\+mode\+\_\+info\+\_\+t graphic\+\_\+mode\+\_\+info}
+

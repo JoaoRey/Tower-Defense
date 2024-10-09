@@ -1,0 +1,11 @@
+<map id="draw_letter" name="draw_letter">
+<area shape="rect" id="Node000001" title="Draws a letter on the screen." alt="" coords="5,55,91,80"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#a607cfeb4f019a84c346eb3bce9da0420" title="Destroys a sprite, freeing its resources." alt="" coords="139,5,243,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,52,139,33,141,38,86,57"/>
+<area shape="rect" id="Node000003" href="$sprite_8c.html#a858c1454a817fd7dca9e21bafa491242" title="Draws a sprite on the screen." alt="" coords="147,55,235,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="91,65,133,65,133,70,91,70"/>
+<area shape="rect" id="Node000005" href="$sprite_8c.html#a0987ce5dadd745a52f29e654f38d7e33" title="Initializes a sprite with given properties." alt="" coords="151,104,230,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="86,78,141,97,139,102,85,83"/>
+<area shape="rect" id="Node000004" href="$graphics_8c.html#abcd14d829edc3257916bdcc1a9aca216" title=" " alt="" coords="291,55,373,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="235,65,277,65,277,70,235,70"/>
+</map>

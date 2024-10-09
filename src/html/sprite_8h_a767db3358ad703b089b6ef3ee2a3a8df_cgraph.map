@@ -1,0 +1,11 @@
+<map id="draw_digit" name="draw_digit">
+<area shape="rect" id="Node000001" title="Draws a digit on the screen." alt="" coords="5,55,85,80"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#a607cfeb4f019a84c346eb3bce9da0420" title="Destroys a sprite, freeing its resources." alt="" coords="133,5,237,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,52,134,33,136,38,83,57"/>
+<area shape="rect" id="Node000003" href="$sprite_8c.html#a858c1454a817fd7dca9e21bafa491242" title="Draws a sprite on the screen." alt="" coords="141,55,229,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="86,65,127,65,127,70,86,70"/>
+<area shape="rect" id="Node000005" href="$sprite_8c.html#a0987ce5dadd745a52f29e654f38d7e33" title="Initializes a sprite with given properties." alt="" coords="146,104,225,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="83,78,136,97,134,102,81,83"/>
+<area shape="rect" id="Node000004" href="$graphics_8c.html#abcd14d829edc3257916bdcc1a9aca216" title=" " alt="" coords="285,55,368,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="229,65,271,65,271,70,229,70"/>
+</map>

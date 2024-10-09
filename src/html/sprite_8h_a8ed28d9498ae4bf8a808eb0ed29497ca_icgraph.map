@@ -1,0 +1,9 @@
+<map id="draw_player_name" name="draw_player_name">
+<area shape="rect" id="Node000001" title="Draws the player&#39;s name on the screen." alt="" coords="333,31,464,56"/>
+<area shape="rect" id="Node000002" href="$leaderboard_8c.html#a004ce432283fa47148b512f2c8d7e599" title="Draws the leaderboard on the screen." alt="" coords="163,5,285,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="319,35,285,29,286,24,320,29"/>
+<area shape="rect" id="Node000003" href="$main_8c.html#a04e415c2c57bcb7efab2055169302eed" title=" " alt="" coords="181,55,267,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="320,57,267,64,267,59,319,52"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,55,115,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="167,70,115,70,115,65,167,65"/>
+</map>

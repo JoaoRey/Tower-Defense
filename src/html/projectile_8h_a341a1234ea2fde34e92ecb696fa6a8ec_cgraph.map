@@ -1,0 +1,5 @@
+<map id="create_projectile" name="create_projectile">
+<area shape="rect" id="Node000001" title="Create a projectile." alt="" coords="5,5,123,31"/>
+<area shape="rect" id="Node000002" href="$projectile_8c.html#a3452dfcc5561b71ba0f66f9046b14d0b" title="Initialize a projectile." alt="" coords="171,5,269,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,15,157,15,157,21,123,21"/>
+</map>

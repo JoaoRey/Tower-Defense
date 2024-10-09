@@ -1,0 +1,7 @@
+<map id="draw_options" name="draw_options">
+<area shape="rect" id="Node000001" title="Draws the options screen." alt="" coords="5,5,104,31"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#a858c1454a817fd7dca9e21bafa491242" title="Draws a sprite on the screen." alt="" coords="152,5,240,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,15,138,15,138,21,104,21"/>
+<area shape="rect" id="Node000003" href="$graphics_8c.html#abcd14d829edc3257916bdcc1a9aca216" title=" " alt="" coords="288,5,371,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="240,15,274,15,274,21,240,21"/>
+</map>

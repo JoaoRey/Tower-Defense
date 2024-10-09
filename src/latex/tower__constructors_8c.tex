@@ -1,0 +1,218 @@
+\doxysection{gamelogic/elements/towers/tower\+\_\+constructors.c File Reference}
+\hypertarget{tower__constructors_8c}{}\label{tower__constructors_8c}\index{gamelogic/elements/towers/tower\_constructors.c@{gamelogic/elements/towers/tower\_constructors.c}}
+{\ttfamily \#include "{}gamelogic/elements/towers/tower\+\_\+constructors.\+h"{}}\newline
+Include dependency graph for tower\+\_\+constructors.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{tower__constructors_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{tower__constructors_8c_a51343dd66df4462a3403c97016422cbf}{archer\+\_\+symbol}} ()
+\item 
+char \mbox{\hyperlink{tower__constructors_8c_a5974682025871d9358897df69e5c4442}{canon\+\_\+symbol}} ()
+\item 
+char \mbox{\hyperlink{tower__constructors_8c_a6def62d8f627eb97ca1decf03a8938cf}{mage\+\_\+symbol}} ()
+\item 
+void \mbox{\hyperlink{tower__constructors_8c_a08e88ac9ac8483a23232c97e7fffec97}{create\+\_\+archer\+\_\+tower}} (\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}tower, float \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, float \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Create an archer tower. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tower__constructors_8c_aa9b16fc705ec40296f5e62130f0488bf}{create\+\_\+canon\+\_\+tower}} (\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}tower, float \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, float \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Create a cannon tower. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tower__constructors_8c_a96bce4f7824132fd872a8997a93c2c15}{create\+\_\+mage\+\_\+tower}} (\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}tower, float \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, float \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Create a mage tower. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_tower_type}{Tower\+Type}} \mbox{\hyperlink{tower__constructors_8c_a1964c090c4694e810fcc3e61fa8a44fd}{CANON\+\_\+\+TOWER}}
+\item 
+const \mbox{\hyperlink{struct_tower_type}{Tower\+Type}} \mbox{\hyperlink{tower__constructors_8c_a17594907a7d28ad722afc8086b03906b}{ARCHER\+\_\+\+TOWER}}
+\item 
+const \mbox{\hyperlink{struct_tower_type}{Tower\+Type}} \mbox{\hyperlink{tower__constructors_8c_a7d66a832801e77962706faa283584a6d}{MAGE\+\_\+\+TOWER}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{tower__constructors_8c_a51343dd66df4462a3403c97016422cbf}\index{tower\_constructors.c@{tower\_constructors.c}!archer\_symbol@{archer\_symbol}}
+\index{archer\_symbol@{archer\_symbol}!tower\_constructors.c@{tower\_constructors.c}}
+\doxysubsubsection{\texorpdfstring{archer\_symbol()}{archer\_symbol()}}
+{\footnotesize\ttfamily \label{tower__constructors_8c_a51343dd66df4462a3403c97016422cbf} 
+char archer\+\_\+symbol (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{tower__constructors_8c_a5974682025871d9358897df69e5c4442}\index{tower\_constructors.c@{tower\_constructors.c}!canon\_symbol@{canon\_symbol}}
+\index{canon\_symbol@{canon\_symbol}!tower\_constructors.c@{tower\_constructors.c}}
+\doxysubsubsection{\texorpdfstring{canon\_symbol()}{canon\_symbol()}}
+{\footnotesize\ttfamily \label{tower__constructors_8c_a5974682025871d9358897df69e5c4442} 
+char canon\+\_\+symbol (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{tower__constructors_8c_a08e88ac9ac8483a23232c97e7fffec97}\index{tower\_constructors.c@{tower\_constructors.c}!create\_archer\_tower@{create\_archer\_tower}}
+\index{create\_archer\_tower@{create\_archer\_tower}!tower\_constructors.c@{tower\_constructors.c}}
+\doxysubsubsection{\texorpdfstring{create\_archer\_tower()}{create\_archer\_tower()}}
+{\footnotesize\ttfamily \label{tower__constructors_8c_a08e88ac9ac8483a23232c97e7fffec97} 
+void create\+\_\+archer\+\_\+tower (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}}]{tower}{, }\item[{float}]{x}{, }\item[{float}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Create an archer tower. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tower} & Pointer to the tower to be created. \\
+\hline
+{\em x} & The x-\/coordinate of the tower\textquotesingle{}s position. \\
+\hline
+{\em y} & The y-\/coordinate of the tower\textquotesingle{}s position. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{tower__constructors_8c_a08e88ac9ac8483a23232c97e7fffec97_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tower__constructors_8c_a08e88ac9ac8483a23232c97e7fffec97_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{tower__constructors_8c_aa9b16fc705ec40296f5e62130f0488bf}\index{tower\_constructors.c@{tower\_constructors.c}!create\_canon\_tower@{create\_canon\_tower}}
+\index{create\_canon\_tower@{create\_canon\_tower}!tower\_constructors.c@{tower\_constructors.c}}
+\doxysubsubsection{\texorpdfstring{create\_canon\_tower()}{create\_canon\_tower()}}
+{\footnotesize\ttfamily \label{tower__constructors_8c_aa9b16fc705ec40296f5e62130f0488bf} 
+void create\+\_\+canon\+\_\+tower (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}}]{tower}{, }\item[{float}]{x}{, }\item[{float}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Create a cannon tower. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tower} & Pointer to the tower to be created. \\
+\hline
+{\em x} & The x-\/coordinate of the tower\textquotesingle{}s position. \\
+\hline
+{\em y} & The y-\/coordinate of the tower\textquotesingle{}s position. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{tower__constructors_8c_aa9b16fc705ec40296f5e62130f0488bf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tower__constructors_8c_aa9b16fc705ec40296f5e62130f0488bf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{tower__constructors_8c_a96bce4f7824132fd872a8997a93c2c15}\index{tower\_constructors.c@{tower\_constructors.c}!create\_mage\_tower@{create\_mage\_tower}}
+\index{create\_mage\_tower@{create\_mage\_tower}!tower\_constructors.c@{tower\_constructors.c}}
+\doxysubsubsection{\texorpdfstring{create\_mage\_tower()}{create\_mage\_tower()}}
+{\footnotesize\ttfamily \label{tower__constructors_8c_a96bce4f7824132fd872a8997a93c2c15} 
+void create\+\_\+mage\+\_\+tower (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}}]{tower}{, }\item[{float}]{x}{, }\item[{float}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Create a mage tower. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tower} & Pointer to the tower to be created. \\
+\hline
+{\em x} & The x-\/coordinate of the tower\textquotesingle{}s position. \\
+\hline
+{\em y} & The y-\/coordinate of the tower\textquotesingle{}s position. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{tower__constructors_8c_a96bce4f7824132fd872a8997a93c2c15_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tower__constructors_8c_a96bce4f7824132fd872a8997a93c2c15_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{tower__constructors_8c_a6def62d8f627eb97ca1decf03a8938cf}\index{tower\_constructors.c@{tower\_constructors.c}!mage\_symbol@{mage\_symbol}}
+\index{mage\_symbol@{mage\_symbol}!tower\_constructors.c@{tower\_constructors.c}}
+\doxysubsubsection{\texorpdfstring{mage\_symbol()}{mage\_symbol()}}
+{\footnotesize\ttfamily \label{tower__constructors_8c_a6def62d8f627eb97ca1decf03a8938cf} 
+char mage\+\_\+symbol (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{tower__constructors_8c_a17594907a7d28ad722afc8086b03906b}\index{tower\_constructors.c@{tower\_constructors.c}!ARCHER\_TOWER@{ARCHER\_TOWER}}
+\index{ARCHER\_TOWER@{ARCHER\_TOWER}!tower\_constructors.c@{tower\_constructors.c}}
+\doxysubsubsection{\texorpdfstring{ARCHER\_TOWER}{ARCHER\_TOWER}}
+{\footnotesize\ttfamily \label{tower__constructors_8c_a17594907a7d28ad722afc8086b03906b} 
+const \mbox{\hyperlink{struct_tower_type}{Tower\+Type}} ARCHER\+\_\+\+TOWER}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ .towerSymbol\ =\ \textcolor{charliteral}{'A'},}
+\DoxyCodeLine{\ \ .life\ =\ 100,}
+\DoxyCodeLine{\ \ .level\ =\ 1,}
+\DoxyCodeLine{\ \ .range\ =\ 300,}
+\DoxyCodeLine{\ \ .cost\ =\ 50,}
+\DoxyCodeLine{\ \ .firingRate\ =\ 5,}
+\DoxyCodeLine{\ \ .damage\ =\ 75\}}
+
+\end{DoxyCode}
+\Hypertarget{tower__constructors_8c_a1964c090c4694e810fcc3e61fa8a44fd}\index{tower\_constructors.c@{tower\_constructors.c}!CANON\_TOWER@{CANON\_TOWER}}
+\index{CANON\_TOWER@{CANON\_TOWER}!tower\_constructors.c@{tower\_constructors.c}}
+\doxysubsubsection{\texorpdfstring{CANON\_TOWER}{CANON\_TOWER}}
+{\footnotesize\ttfamily \label{tower__constructors_8c_a1964c090c4694e810fcc3e61fa8a44fd} 
+const \mbox{\hyperlink{struct_tower_type}{Tower\+Type}} CANON\+\_\+\+TOWER}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ .towerSymbol\ =\ \textcolor{charliteral}{'C'},}
+\DoxyCodeLine{\ \ .life\ =\ 100,}
+\DoxyCodeLine{\ \ .level\ =\ 1,}
+\DoxyCodeLine{\ \ .range\ =\ 300,}
+\DoxyCodeLine{\ \ .cost\ =\ 50,}
+\DoxyCodeLine{\ \ .firingRate\ =\ 10,}
+\DoxyCodeLine{\ \ .damage\ =\ 100\}}
+
+\end{DoxyCode}
+\Hypertarget{tower__constructors_8c_a7d66a832801e77962706faa283584a6d}\index{tower\_constructors.c@{tower\_constructors.c}!MAGE\_TOWER@{MAGE\_TOWER}}
+\index{MAGE\_TOWER@{MAGE\_TOWER}!tower\_constructors.c@{tower\_constructors.c}}
+\doxysubsubsection{\texorpdfstring{MAGE\_TOWER}{MAGE\_TOWER}}
+{\footnotesize\ttfamily \label{tower__constructors_8c_a7d66a832801e77962706faa283584a6d} 
+const \mbox{\hyperlink{struct_tower_type}{Tower\+Type}} MAGE\+\_\+\+TOWER}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ .towerSymbol\ =\ \textcolor{charliteral}{'M'},}
+\DoxyCodeLine{\ \ .life\ =\ 100,}
+\DoxyCodeLine{\ \ .level\ =\ 1,}
+\DoxyCodeLine{\ \ .range\ =\ 300,}
+\DoxyCodeLine{\ \ .cost\ =\ 50,}
+\DoxyCodeLine{\ \ .firingRate\ =\ 20,}
+\DoxyCodeLine{\ \ .damage\ =\ 200\}}
+
+\end{DoxyCode}

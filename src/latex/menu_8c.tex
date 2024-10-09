@@ -1,0 +1,386 @@
+\doxysection{gamelogic/states/menu.c File Reference}
+\hypertarget{menu_8c}{}\label{menu_8c}\index{gamelogic/states/menu.c@{gamelogic/states/menu.c}}
+{\ttfamily \#include "{}menu.\+h"{}}\newline
+{\ttfamily \#include "{}devices/graphic/graphics.\+h"{}}\newline
+{\ttfamily \#include "{}devices/keyboard/kbd.\+h"{}}\newline
+{\ttfamily \#include "{}devices/mouse/mouse.\+h"{}}\newline
+{\ttfamily \#include "{}gamelogic/utils/position.\+h"{}}\newline
+{\ttfamily \#include "{}macros/game\+\_\+modes.\+h"{}}\newline
+{\ttfamily \#include "{}sprites/sprite.\+h"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/xpm.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for menu.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{menu_8c_a103cd634724d5b73027bd2ab62632608}{draw\+\_\+menu}} (uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Draws the menu on the screen at the specified coordinates. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{menu_8c_a6d858f35d10a145ffe5c87bf1abcd7ce}{click\+Play}} (uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Handles a click event on the "{}\+Play"{} button. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{menu_8c_a8b59d927c291450b42df50e7a1923afa}{click\+Leaderboard}} (uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Handles a click event on the "{}\+Leaderboard"{} button. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{menu_8c_aa4d8f2c4e2d14a77f775edcd35adbc90}{click\+Quit}} (uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}, bool \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{menu_8c_ad9b3c6c4c5ea5d002bb6c6787f5c39b6}{quit}})
+\begin{DoxyCompactList}\small\item\em Handles a click event on the "{}\+Quit"{} button. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{menu_8c_af2685c459071113298ce77fb46747de9}{click\+Options}} (uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Handles a click event on the "{}\+Settings"{} button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menu_8c_a2bb0875421f0569d9c8494b6ef6abbe1}{arena}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menu_8c_af03a383fdcfdf7501006a5c8d68be42b}{mouse}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menu_8c_a7ed19362995df3f6b3e6f2705848df86}{title}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menu_8c_a1c9bbf0318573b5999b5febf5069b294}{play}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menu_8c_a77dcdf41bfd20779bcb44c774cf7e376}{leaderboard}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menu_8c_ad9b3c6c4c5ea5d002bb6c6787f5c39b6}{quit}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menu_8c_aec1aa119e5ab4de09a6e09f9bed84f3a}{settings}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menu_8c_a5ad2c291c59fb59add0b5e88fa535fdb}{play\+\_\+selected}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menu_8c_a69bb32cdfd9ef568f264a675cd0eb60e}{leaderboard\+\_\+selected}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menu_8c_a2a80fa0a28d7c0ba19fede601a5c5031}{settings\+\_\+selected}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menu_8c_a115f9db6f3de78dceffeccec99121f25}{quit\+\_\+selected}}
+\item 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menu_8c_a7af659991fa6f4a853c0b1b6229a6088}{drawer\+\_\+buffer}}
+\item 
+uint32\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menu_8c_a350861a2ca74a64343f991c2f80024e1}{image\+\_\+loader}}
+\item 
+unsigned \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{menu_8c_a365922abd5c7041acf715c84a45a5073}{bytes\+\_\+being\+\_\+user\+\_\+per\+\_\+pixel}}
+\item 
+struct packet \mbox{\hyperlink{menu_8c_aa7bc3429b7d1ebde9d06dc3eae4f503f}{mouse\+\_\+packet\+\_\+structure}}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{menu_8c_a4c1162d74d87c7ffa389fafd78006cc0}{mode\+\_\+of\+\_\+game}}
+\item 
+bool \mbox{\hyperlink{menu_8c_a217b738e11033b8ebfb179f8c7e72e1f}{game\+\_\+over}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{menu_8c_a8c698380dc32cd8b5a19a84da1ab2ad9}{x\+\_\+res}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{menu_8c_a1188c1e5fe37db7b55bdad91f71e26c0}{y\+\_\+res}}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{menu_8c_a414c23ae65fb913bddc7a268f76dc2e4}{xscreen}} = 0
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{menu_8c_a9842f5fbea73c02b5b1c30e7ab5faf76}{yscreen}} = 0
+\item 
+bool \mbox{\hyperlink{menu_8c_ab4ebd9ea643ebb9f2a96db5673e45f8e}{is\+Play}} = false
+\item 
+bool \mbox{\hyperlink{menu_8c_a931649ba89c00ee3f7c24ff772c63a16}{is\+Quit}} = false
+\item 
+bool \mbox{\hyperlink{menu_8c_a6a087788e60c2721bf109fcc9d755131}{is\+Options}} = false
+\item 
+bool \mbox{\hyperlink{menu_8c_aafbf7d78b39f80b3ebb9833a82d1402e}{is\+Leaderboard}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{menu_8c_a8b59d927c291450b42df50e7a1923afa}\index{menu.c@{menu.c}!clickLeaderboard@{clickLeaderboard}}
+\index{clickLeaderboard@{clickLeaderboard}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{clickLeaderboard()}{clickLeaderboard()}}
+{\footnotesize\ttfamily \label{menu_8c_a8b59d927c291450b42df50e7a1923afa} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} click\+Leaderboard (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Handles a click event on the "{}\+Leaderboard"{} button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the click. \\
+\hline
+{\em y} & The y-\/coordinate of the click. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 if the click is within the "{}\+Leaderboard"{} button, and non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_8c_a8b59d927c291450b42df50e7a1923afa_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{menu_8c_af2685c459071113298ce77fb46747de9}\index{menu.c@{menu.c}!clickOptions@{clickOptions}}
+\index{clickOptions@{clickOptions}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{clickOptions()}{clickOptions()}}
+{\footnotesize\ttfamily \label{menu_8c_af2685c459071113298ce77fb46747de9} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} click\+Options (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Handles a click event on the "{}\+Settings"{} button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the click. \\
+\hline
+{\em y} & The y-\/coordinate of the click. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 if the click is within the "{}\+Settings"{} button, and non-\/zero otherwise. 
+\end{DoxyReturn}
+\Hypertarget{menu_8c_a6d858f35d10a145ffe5c87bf1abcd7ce}\index{menu.c@{menu.c}!clickPlay@{clickPlay}}
+\index{clickPlay@{clickPlay}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{clickPlay()}{clickPlay()}}
+{\footnotesize\ttfamily \label{menu_8c_a6d858f35d10a145ffe5c87bf1abcd7ce} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} click\+Play (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Handles a click event on the "{}\+Play"{} button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the click. \\
+\hline
+{\em y} & The y-\/coordinate of the click. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 if the click is within the "{}\+Play"{} button, and non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_8c_a6d858f35d10a145ffe5c87bf1abcd7ce_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{menu_8c_aa4d8f2c4e2d14a77f775edcd35adbc90}\index{menu.c@{menu.c}!clickQuit@{clickQuit}}
+\index{clickQuit@{clickQuit}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{clickQuit()}{clickQuit()}}
+{\footnotesize\ttfamily \label{menu_8c_aa4d8f2c4e2d14a77f775edcd35adbc90} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} click\+Quit (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{, }\item[{bool \texorpdfstring{$\ast$}{*}}]{quit}{}\end{DoxyParamCaption})}
+
+
+
+Handles a click event on the "{}\+Quit"{} button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the click. \\
+\hline
+{\em y} & The y-\/coordinate of the click. \\
+\hline
+{\em quit} & Pointer to a boolean variable indicating if the game should quit. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 if the click is within the "{}\+Quit"{} button, and non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_8c_aa4d8f2c4e2d14a77f775edcd35adbc90_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{menu_8c_a103cd634724d5b73027bd2ab62632608}\index{menu.c@{menu.c}!draw\_menu@{draw\_menu}}
+\index{draw\_menu@{draw\_menu}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{draw\_menu()}{draw\_menu()}}
+{\footnotesize\ttfamily \label{menu_8c_a103cd634724d5b73027bd2ab62632608} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} draw\+\_\+menu (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Draws the menu on the screen at the specified coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the menu. \\
+\hline
+{\em y} & The y-\/coordinate of the menu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{menu_8c_a103cd634724d5b73027bd2ab62632608_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_8c_a103cd634724d5b73027bd2ab62632608_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{menu_8c_a2bb0875421f0569d9c8494b6ef6abbe1}\index{menu.c@{menu.c}!arena@{arena}}
+\index{arena@{arena}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{arena}{arena}}
+{\footnotesize\ttfamily \label{menu_8c_a2bb0875421f0569d9c8494b6ef6abbe1} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} arena\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menu_8c_a365922abd5c7041acf715c84a45a5073}\index{menu.c@{menu.c}!bytes\_being\_user\_per\_pixel@{bytes\_being\_user\_per\_pixel}}
+\index{bytes\_being\_user\_per\_pixel@{bytes\_being\_user\_per\_pixel}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{bytes\_being\_user\_per\_pixel}{bytes\_being\_user\_per\_pixel}}
+{\footnotesize\ttfamily \label{menu_8c_a365922abd5c7041acf715c84a45a5073} 
+unsigned \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} bytes\+\_\+being\+\_\+user\+\_\+per\+\_\+pixel\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menu_8c_a7af659991fa6f4a853c0b1b6229a6088}\index{menu.c@{menu.c}!drawer\_buffer@{drawer\_buffer}}
+\index{drawer\_buffer@{drawer\_buffer}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{drawer\_buffer}{drawer\_buffer}}
+{\footnotesize\ttfamily \label{menu_8c_a7af659991fa6f4a853c0b1b6229a6088} 
+uint8\+\_\+t\texorpdfstring{$\ast$}{*} drawer\+\_\+buffer\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menu_8c_a217b738e11033b8ebfb179f8c7e72e1f}\index{menu.c@{menu.c}!game\_over@{game\_over}}
+\index{game\_over@{game\_over}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{game\_over}{game\_over}}
+{\footnotesize\ttfamily \label{menu_8c_a217b738e11033b8ebfb179f8c7e72e1f} 
+bool game\+\_\+over\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menu_8c_a350861a2ca74a64343f991c2f80024e1}\index{menu.c@{menu.c}!image\_loader@{image\_loader}}
+\index{image\_loader@{image\_loader}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{image\_loader}{image\_loader}}
+{\footnotesize\ttfamily \label{menu_8c_a350861a2ca74a64343f991c2f80024e1} 
+uint32\+\_\+t\texorpdfstring{$\ast$}{*} image\+\_\+loader\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menu_8c_aafbf7d78b39f80b3ebb9833a82d1402e}\index{menu.c@{menu.c}!isLeaderboard@{isLeaderboard}}
+\index{isLeaderboard@{isLeaderboard}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{isLeaderboard}{isLeaderboard}}
+{\footnotesize\ttfamily \label{menu_8c_aafbf7d78b39f80b3ebb9833a82d1402e} 
+bool is\+Leaderboard = false}
+
+\Hypertarget{menu_8c_a6a087788e60c2721bf109fcc9d755131}\index{menu.c@{menu.c}!isOptions@{isOptions}}
+\index{isOptions@{isOptions}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{isOptions}{isOptions}}
+{\footnotesize\ttfamily \label{menu_8c_a6a087788e60c2721bf109fcc9d755131} 
+bool is\+Options = false}
+
+\Hypertarget{menu_8c_ab4ebd9ea643ebb9f2a96db5673e45f8e}\index{menu.c@{menu.c}!isPlay@{isPlay}}
+\index{isPlay@{isPlay}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{isPlay}{isPlay}}
+{\footnotesize\ttfamily \label{menu_8c_ab4ebd9ea643ebb9f2a96db5673e45f8e} 
+bool is\+Play = false}
+
+\Hypertarget{menu_8c_a931649ba89c00ee3f7c24ff772c63a16}\index{menu.c@{menu.c}!isQuit@{isQuit}}
+\index{isQuit@{isQuit}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{isQuit}{isQuit}}
+{\footnotesize\ttfamily \label{menu_8c_a931649ba89c00ee3f7c24ff772c63a16} 
+bool is\+Quit = false}
+
+\Hypertarget{menu_8c_a77dcdf41bfd20779bcb44c774cf7e376}\index{menu.c@{menu.c}!leaderboard@{leaderboard}}
+\index{leaderboard@{leaderboard}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{leaderboard}{leaderboard}}
+{\footnotesize\ttfamily \label{menu_8c_a77dcdf41bfd20779bcb44c774cf7e376} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} leaderboard\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menu_8c_a69bb32cdfd9ef568f264a675cd0eb60e}\index{menu.c@{menu.c}!leaderboard\_selected@{leaderboard\_selected}}
+\index{leaderboard\_selected@{leaderboard\_selected}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{leaderboard\_selected}{leaderboard\_selected}}
+{\footnotesize\ttfamily \label{menu_8c_a69bb32cdfd9ef568f264a675cd0eb60e} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} leaderboard\+\_\+selected\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menu_8c_a4c1162d74d87c7ffa389fafd78006cc0}\index{menu.c@{menu.c}!mode\_of\_game@{mode\_of\_game}}
+\index{mode\_of\_game@{mode\_of\_game}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{mode\_of\_game}{mode\_of\_game}}
+{\footnotesize\ttfamily \label{menu_8c_a4c1162d74d87c7ffa389fafd78006cc0} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} mode\+\_\+of\+\_\+game\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menu_8c_af03a383fdcfdf7501006a5c8d68be42b}\index{menu.c@{menu.c}!mouse@{mouse}}
+\index{mouse@{mouse}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{mouse}{mouse}}
+{\footnotesize\ttfamily \label{menu_8c_af03a383fdcfdf7501006a5c8d68be42b} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} mouse\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menu_8c_aa7bc3429b7d1ebde9d06dc3eae4f503f}\index{menu.c@{menu.c}!mouse\_packet\_structure@{mouse\_packet\_structure}}
+\index{mouse\_packet\_structure@{mouse\_packet\_structure}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_packet\_structure}{mouse\_packet\_structure}}
+{\footnotesize\ttfamily \label{menu_8c_aa7bc3429b7d1ebde9d06dc3eae4f503f} 
+struct packet mouse\+\_\+packet\+\_\+structure\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menu_8c_a1c9bbf0318573b5999b5febf5069b294}\index{menu.c@{menu.c}!play@{play}}
+\index{play@{play}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{play}{play}}
+{\footnotesize\ttfamily \label{menu_8c_a1c9bbf0318573b5999b5febf5069b294} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} play\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menu_8c_a5ad2c291c59fb59add0b5e88fa535fdb}\index{menu.c@{menu.c}!play\_selected@{play\_selected}}
+\index{play\_selected@{play\_selected}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{play\_selected}{play\_selected}}
+{\footnotesize\ttfamily \label{menu_8c_a5ad2c291c59fb59add0b5e88fa535fdb} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} play\+\_\+selected\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menu_8c_ad9b3c6c4c5ea5d002bb6c6787f5c39b6}\index{menu.c@{menu.c}!quit@{quit}}
+\index{quit@{quit}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{quit}{quit}}
+{\footnotesize\ttfamily \label{menu_8c_ad9b3c6c4c5ea5d002bb6c6787f5c39b6} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} quit\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menu_8c_a115f9db6f3de78dceffeccec99121f25}\index{menu.c@{menu.c}!quit\_selected@{quit\_selected}}
+\index{quit\_selected@{quit\_selected}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{quit\_selected}{quit\_selected}}
+{\footnotesize\ttfamily \label{menu_8c_a115f9db6f3de78dceffeccec99121f25} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} quit\+\_\+selected\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menu_8c_aec1aa119e5ab4de09a6e09f9bed84f3a}\index{menu.c@{menu.c}!settings@{settings}}
+\index{settings@{settings}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{settings}{settings}}
+{\footnotesize\ttfamily \label{menu_8c_aec1aa119e5ab4de09a6e09f9bed84f3a} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} settings\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menu_8c_a2a80fa0a28d7c0ba19fede601a5c5031}\index{menu.c@{menu.c}!settings\_selected@{settings\_selected}}
+\index{settings\_selected@{settings\_selected}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{settings\_selected}{settings\_selected}}
+{\footnotesize\ttfamily \label{menu_8c_a2a80fa0a28d7c0ba19fede601a5c5031} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} settings\+\_\+selected\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menu_8c_a7ed19362995df3f6b3e6f2705848df86}\index{menu.c@{menu.c}!title@{title}}
+\index{title@{title}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily \label{menu_8c_a7ed19362995df3f6b3e6f2705848df86} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} title\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menu_8c_a8c698380dc32cd8b5a19a84da1ab2ad9}\index{menu.c@{menu.c}!x\_res@{x\_res}}
+\index{x\_res@{x\_res}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{x\_res}{x\_res}}
+{\footnotesize\ttfamily \label{menu_8c_a8c698380dc32cd8b5a19a84da1ab2ad9} 
+uint16\+\_\+t x\+\_\+res\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menu_8c_a414c23ae65fb913bddc7a268f76dc2e4}\index{menu.c@{menu.c}!xscreen@{xscreen}}
+\index{xscreen@{xscreen}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{xscreen}{xscreen}}
+{\footnotesize\ttfamily \label{menu_8c_a414c23ae65fb913bddc7a268f76dc2e4} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} xscreen = 0}
+
+\Hypertarget{menu_8c_a1188c1e5fe37db7b55bdad91f71e26c0}\index{menu.c@{menu.c}!y\_res@{y\_res}}
+\index{y\_res@{y\_res}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{y\_res}{y\_res}}
+{\footnotesize\ttfamily \label{menu_8c_a1188c1e5fe37db7b55bdad91f71e26c0} 
+uint16\+\_\+t y\+\_\+res\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menu_8c_a9842f5fbea73c02b5b1c30e7ab5faf76}\index{menu.c@{menu.c}!yscreen@{yscreen}}
+\index{yscreen@{yscreen}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{yscreen}{yscreen}}
+{\footnotesize\ttfamily \label{menu_8c_a9842f5fbea73c02b5b1c30e7ab5faf76} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} yscreen = 0}
+

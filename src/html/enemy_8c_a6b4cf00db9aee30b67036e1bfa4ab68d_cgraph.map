@@ -1,0 +1,5 @@
+<map id="enemy_damage" name="enemy_damage">
+<area shape="rect" id="Node000001" title="Damage an enemy by a specified amount." alt="" coords="5,5,120,31"/>
+<area shape="rect" id="Node000002" href="$enemy_8c.html#ae65ddfb4a419097094efb1595c947afe" title="Make an enemy die." alt="" coords="168,5,253,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,15,154,15,154,21,120,21"/>
+</map>

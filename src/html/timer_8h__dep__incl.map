@@ -1,0 +1,7 @@
+<map id="devices/timer/timer.h" name="devices/timer/timer.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="68,5,211,31"/>
+<area shape="rect" id="Node000002" href="$timer_8c.html" title=" " alt="" coords="5,79,148,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,43,89,80,85,77,118,39"/>
+<area shape="rect" id="Node000003" href="$main_8c.html" title=" " alt="" coords="173,79,234,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,39,195,77,191,80,157,43"/>
+</map>

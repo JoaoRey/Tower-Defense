@@ -1,0 +1,7 @@
+<map id="Tower" name="Tower">
+<area shape="rect" id="Node000001" title="Structure representing a tower." alt="" coords="63,93,119,119"/>
+<area shape="rect" id="Node000002" href="$struct_position.html" title="Structure representing a position with x and y coordinates." alt="" coords="5,5,75,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,42,65,68,82,91,78,94,60,71,47,45"/>
+<area shape="rect" id="Node000003" href="$struct_tower_type.html" title="Structure representing the type of a tower." alt="" coords="99,5,183,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,44,114,71,100,94,96,92,110,68,125,41"/>
+</map>

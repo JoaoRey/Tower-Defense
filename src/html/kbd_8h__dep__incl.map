@@ -1,0 +1,21 @@
+<map id="devices/keyboard/kbd.h" name="devices/keyboard/kbd.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="501,5,660,31"/>
+<area shape="rect" id="Node000002" href="$kbd_8c.html" title=" " alt="" coords="5,79,164,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="488,35,165,81,164,76,487,30"/>
+<area shape="rect" id="Node000003" href="$mouse_8c.html" title=" " alt="" coords="189,79,351,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="518,36,321,81,320,76,517,31"/>
+<area shape="rect" id="Node000004" href="$leaderboard_8h.html" title=" " alt="" coords="375,79,578,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="554,41,495,81,492,76,551,36"/>
+<area shape="rect" id="Node000007" href="$menu_8c.html" title=" " alt="" coords="714,152,882,177"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="675,23,733,41,760,56,784,77,795,95,801,116,802,152,797,152,795,117,790,97,780,80,757,61,731,46,673,28"/>
+<area shape="rect" id="Node000008" href="$menu_8h.html" title="Header file for menu&#45;related functions." alt="" coords="602,79,770,104"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="611,36,670,76,667,81,608,41"/>
+<area shape="rect" id="Node000009" href="$sprite_8c.html" title=" " alt="" coords="845,79,953,104"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="645,31,848,76,847,81,644,36"/>
+<area shape="rect" id="Node000005" href="$leaderboard_8c.html" title=" " alt="" coords="375,152,578,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="479,118,479,152,474,152,474,118"/>
+<area shape="rect" id="Node000006" href="$main_8c.html" title=" " alt="" coords="619,152,681,177"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="518,107,623,149,621,154,516,112"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="676,117,658,153,653,151,672,115"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="717,109,781,150,778,154,714,114"/>
+</map>

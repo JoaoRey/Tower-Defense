@@ -1,0 +1,14 @@
+<map id="rtc_update_month" name="rtc_update_month">
+<area shape="rect" id="Node000001" title=" " alt="" coords="696,5,823,31"/>
+<area shape="rect" id="Node000002" href="$rtc_8c.html#ae22bdeb51eb630e1d579dfc1cd1b2f11" title=" " alt="" coords="533,5,648,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="682,21,648,21,648,15,682,15"/>
+<area shape="rect" id="Node000003" href="$main_8c.html#a04e415c2c57bcb7efab2055169302eed" title=" " alt="" coords="163,5,248,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="520,21,248,21,248,15,520,15"/>
+<area shape="rect" id="Node000005" href="$rtc_8c.html#abc313237e00236eec84b5263f56e08ab" title=" " alt="" coords="415,31,485,56"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="520,33,486,40,485,34,519,28"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,5,115,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="149,21,115,21,115,15,149,15"/>
+<area shape="rect" id="Node000006" href="$sprite_8c.html#a0944e45dab2b95345c29e01b548eb1ab" title="Draws the current time from the RTC on the screen." alt="" coords="296,31,367,56"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="401,46,367,46,367,41,401,41"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="282,36,248,29,249,24,283,31"/>
+</map>

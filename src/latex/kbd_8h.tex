@@ -1,0 +1,154 @@
+\doxysection{devices/keyboard/kbd.h File Reference}
+\hypertarget{kbd_8h}{}\label{kbd_8h}\index{devices/keyboard/kbd.h@{devices/keyboard/kbd.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}macros/i8042.\+h"{}}\newline
+Include dependency graph for kbd.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{kbd_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbd_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{kbd_8h_aac83e0310dfa8593ffc6f4bfbffc10fd}{subscription\+\_\+of\+\_\+keyboard\+\_\+interrupts}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}bit\+\_\+no)
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{kbd_8h_afd257592d2eef5c66d6a7d42e42d8ca8}{unsubscription\+\_\+of\+\_\+keyboard\+\_\+interrupts}} ()
+\item 
+void \mbox{\hyperlink{kbd_8h_ad383895f42571ff2bb4d226c5f4fb83e}{keyboard\+\_\+interrupt\+\_\+handler}} ()
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{kbd_8h_a3b89c4a3032fc7d8ce74ab0aa03b4750}{read\+\_\+status\+\_\+code}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}status)
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{kbd_8h_a1c21008d59e58629f0d0c5e4a83be6a9}{read\+\_\+pressed\+\_\+key}} (\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} chosen\+\_\+port, uint8\+\_\+t \texorpdfstring{$\ast$}{*}output\+\_\+code, uint8\+\_\+t mouse\+\_\+code)
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{kbd_8h_a2beb2448a9eb65be9f94dd384c90ff2a}{write\+\_\+command\+\_\+byte}} (\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} chosen\+\_\+port, uint8\+\_\+t command\+\_\+code)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{kbd_8h_ad383895f42571ff2bb4d226c5f4fb83e}\index{kbd.h@{kbd.h}!keyboard\_interrupt\_handler@{keyboard\_interrupt\_handler}}
+\index{keyboard\_interrupt\_handler@{keyboard\_interrupt\_handler}!kbd.h@{kbd.h}}
+\doxysubsubsection{\texorpdfstring{keyboard\_interrupt\_handler()}{keyboard\_interrupt\_handler()}}
+{\footnotesize\ttfamily \label{kbd_8h_ad383895f42571ff2bb4d226c5f4fb83e} 
+void keyboard\+\_\+interrupt\+\_\+handler (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbd_8h_ad383895f42571ff2bb4d226c5f4fb83e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbd_8h_ad383895f42571ff2bb4d226c5f4fb83e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{kbd_8h_a1c21008d59e58629f0d0c5e4a83be6a9}\index{kbd.h@{kbd.h}!read\_pressed\_key@{read\_pressed\_key}}
+\index{read\_pressed\_key@{read\_pressed\_key}!kbd.h@{kbd.h}}
+\doxysubsubsection{\texorpdfstring{read\_pressed\_key()}{read\_pressed\_key()}}
+{\footnotesize\ttfamily \label{kbd_8h_a1c21008d59e58629f0d0c5e4a83be6a9} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} read\+\_\+pressed\+\_\+key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{chosen\+\_\+port}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{output\+\_\+code}{, }\item[{uint8\+\_\+t}]{mouse\+\_\+code}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbd_8h_a1c21008d59e58629f0d0c5e4a83be6a9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbd_8h_a1c21008d59e58629f0d0c5e4a83be6a9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{kbd_8h_a3b89c4a3032fc7d8ce74ab0aa03b4750}\index{kbd.h@{kbd.h}!read\_status\_code@{read\_status\_code}}
+\index{read\_status\_code@{read\_status\_code}!kbd.h@{kbd.h}}
+\doxysubsubsection{\texorpdfstring{read\_status\_code()}{read\_status\_code()}}
+{\footnotesize\ttfamily \label{kbd_8h_a3b89c4a3032fc7d8ce74ab0aa03b4750} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} read\+\_\+status\+\_\+code (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{status}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{kbd_8h_a3b89c4a3032fc7d8ce74ab0aa03b4750_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbd_8h_a3b89c4a3032fc7d8ce74ab0aa03b4750_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{kbd_8h_aac83e0310dfa8593ffc6f4bfbffc10fd}\index{kbd.h@{kbd.h}!subscription\_of\_keyboard\_interrupts@{subscription\_of\_keyboard\_interrupts}}
+\index{subscription\_of\_keyboard\_interrupts@{subscription\_of\_keyboard\_interrupts}!kbd.h@{kbd.h}}
+\doxysubsubsection{\texorpdfstring{subscription\_of\_keyboard\_interrupts()}{subscription\_of\_keyboard\_interrupts()}}
+{\footnotesize\ttfamily \label{kbd_8h_aac83e0310dfa8593ffc6f4bfbffc10fd} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} subscription\+\_\+of\+\_\+keyboard\+\_\+interrupts (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{bit\+\_\+no}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbd_8h_aac83e0310dfa8593ffc6f4bfbffc10fd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{kbd_8h_afd257592d2eef5c66d6a7d42e42d8ca8}\index{kbd.h@{kbd.h}!unsubscription\_of\_keyboard\_interrupts@{unsubscription\_of\_keyboard\_interrupts}}
+\index{unsubscription\_of\_keyboard\_interrupts@{unsubscription\_of\_keyboard\_interrupts}!kbd.h@{kbd.h}}
+\doxysubsubsection{\texorpdfstring{unsubscription\_of\_keyboard\_interrupts()}{unsubscription\_of\_keyboard\_interrupts()}}
+{\footnotesize\ttfamily \label{kbd_8h_afd257592d2eef5c66d6a7d42e42d8ca8} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} unsubscription\+\_\+of\+\_\+keyboard\+\_\+interrupts (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbd_8h_afd257592d2eef5c66d6a7d42e42d8ca8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{kbd_8h_a2beb2448a9eb65be9f94dd384c90ff2a}\index{kbd.h@{kbd.h}!write\_command\_byte@{write\_command\_byte}}
+\index{write\_command\_byte@{write\_command\_byte}!kbd.h@{kbd.h}}
+\doxysubsubsection{\texorpdfstring{write\_command\_byte()}{write\_command\_byte()}}
+{\footnotesize\ttfamily \label{kbd_8h_a2beb2448a9eb65be9f94dd384c90ff2a} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} write\+\_\+command\+\_\+byte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{chosen\+\_\+port}{, }\item[{uint8\+\_\+t}]{command\+\_\+code}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbd_8h_a2beb2448a9eb65be9f94dd384c90ff2a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{kbd_8h_a2beb2448a9eb65be9f94dd384c90ff2a_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,11 @@
+<map id="check_rtc_mode" name="check_rtc_mode">
+<area shape="rect" id="Node000001" title=" " alt="" coords="533,5,652,31"/>
+<area shape="rect" id="Node000002" href="$rtc_8c.html#abc313237e00236eec84b5263f56e08ab" title=" " alt="" coords="415,5,485,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="520,21,485,21,485,15,520,15"/>
+<area shape="rect" id="Node000003" href="$sprite_8c.html#a0944e45dab2b95345c29e01b548eb1ab" title="Draws the current time from the RTC on the screen." alt="" coords="296,5,367,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="401,21,367,21,367,15,401,15"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a04e415c2c57bcb7efab2055169302eed" title=" " alt="" coords="163,5,248,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="282,21,248,21,248,15,282,15"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,5,115,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="149,21,115,21,115,15,149,15"/>
+</map>

@@ -1,0 +1,52 @@
+\doxysection{list.\+h}
+\hypertarget{list_8h_source}{}\label{list_8h_source}\index{gamelogic/utils/list.h@{gamelogic/utils/list.h}}
+\mbox{\hyperlink{list_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LIST\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LIST\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sprite_8h}{sprites/sprite.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{enemy_8h}{gamelogic/elements/enemies/enemy.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{tower_8h}{gamelogic/elements/towers/tower.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_sprite_tower}{SpriteTower}}\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{struct_sprite}{Sprite}}*\ \mbox{\hyperlink{struct_sprite_tower_a1d48ba59b856f6bf7154d2c4fb9841e9}{sprite}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{struct_tower}{Tower}}*\ \mbox{\hyperlink{struct_sprite_tower_aa50c6b279ee8db9f0957cd9aef00a0ca}{tower}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_sprite_tower}{SpriteTower}}*\ \mbox{\hyperlink{struct_sprite_tower_adc293dd7798ad5447194804b3d6a05db}{next}};\ \ \ \ }
+\DoxyCodeLine{00015\ \}\ \mbox{\hyperlink{list_8h_adf8ee97bec1a982cfabd76b742686ffd}{SpriteTower}};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{struct_sprite_tower}{SpriteTower}}*\ \mbox{\hyperlink{struct_tower_list_a9c9fcb6a12d9977e7d978b11d1fd240e}{head}};\ \ \ \ }
+\DoxyCodeLine{00022\ \}\ \mbox{\hyperlink{struct_tower_list}{TowerList}};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_sprite_enemy}{SpriteEnemy}}\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{struct_sprite}{Sprite}}*\ \mbox{\hyperlink{struct_sprite_enemy_ae8d657dccdb6e04eb8031f47631a1380}{sprite}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{struct_enemy}{Enemy}}*\ \mbox{\hyperlink{struct_sprite_enemy_afe8b897c4c3ecc2e6a06a01734f086ec}{enemy}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_sprite_enemy}{SpriteEnemy}}*\ \mbox{\hyperlink{struct_sprite_enemy_a3b38b4621d9c22ce3fe833304b02b38f}{next}};\ \ \ \ }
+\DoxyCodeLine{00031\ \}\ \mbox{\hyperlink{list_8h_abc5029e55a61db6632459902ee47657b}{SpriteEnemy}};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{struct_sprite_enemy}{SpriteEnemy}}*\ \mbox{\hyperlink{struct_enemy_list_a709fa87c210294922e8e76ea38a23cd9}{head}};\ \ \ \ }
+\DoxyCodeLine{00038\ \}\ \mbox{\hyperlink{struct_enemy_list}{EnemyList}};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00045\ \mbox{\hyperlink{struct_enemy_list}{EnemyList}}*\ \mbox{\hyperlink{list_8h_ae351edd07a861bb4c8e131a615dbdb49}{list\_create}}();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00052\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{list_8h_a145adb7a572e6f8209e8c933cab73d29}{list\_destroy}}(\mbox{\hyperlink{struct_enemy_list}{EnemyList}}*\ list);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00061\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{list_8h_a0955af65516b355b85b4915337d5f812}{list\_append}}(\mbox{\hyperlink{struct_enemy_list}{EnemyList}}*\ list,\ \mbox{\hyperlink{struct_sprite}{Sprite}}*\ sprite,\ \mbox{\hyperlink{struct_enemy}{Enemy}}*\ enemy);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00068\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{list_8h_a70a6826a876d2db40f7cde649a0961ea}{list\_print}}(\mbox{\hyperlink{struct_enemy_list}{EnemyList}}*\ list);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00076\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{list_8h_a5af8bf8b5843133a7ebc98406ea4b677}{list\_remove}}(\mbox{\hyperlink{struct_enemy_list}{EnemyList}}*\ list,\ \mbox{\hyperlink{struct_enemy}{Enemy}}*\ enemy);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00083\ \mbox{\hyperlink{struct_tower_list}{TowerList}}*\ \mbox{\hyperlink{list_8h_ab981c340057a9002a0a00828cbce38d4}{list\_createe}}();}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00090\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{list_8h_a36fd1ce5f0fc7ed9f9c47bba75258ac6}{list\_destroyy}}(\mbox{\hyperlink{struct_tower_list}{TowerList}}*\ list);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00099\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{list_8h_a9048bb8b793bb0223a1dd5e5bf94b3a8}{list\_appendd}}(\mbox{\hyperlink{struct_tower_list}{TowerList}}*\ list,\ \mbox{\hyperlink{struct_sprite}{Sprite}}*\ sprite,\ \mbox{\hyperlink{struct_tower}{Tower}}*\ tower);}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00106\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{list_8h_a4a14b69030fe1f8308653738453fcf9e}{list\_printt}}(\mbox{\hyperlink{struct_tower_list}{TowerList}}*\ list);}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

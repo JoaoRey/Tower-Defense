@@ -1,0 +1,182 @@
+\doxysection{gamelogic/utils/p\+\_\+list.h File Reference}
+\hypertarget{p__list_8h}{}\label{p__list_8h}\index{gamelogic/utils/p\_list.h@{gamelogic/utils/p\_list.h}}
+{\ttfamily \#include "{}sprites/sprite.\+h"{}}\newline
+{\ttfamily \#include "{}gamelogic/elements/enemies/enemy.\+h"{}}\newline
+Include dependency graph for p\+\_\+list.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{p__list_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{p__list_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_projectile}{Projectile}}
+\begin{DoxyCompactList}\small\item\em Structure representing a projectile. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_list_node}{List\+Node}}
+\begin{DoxyCompactList}\small\item\em Structure representing a node in the list. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_list}{List}}
+\begin{DoxyCompactList}\small\item\em Structure representing a list of projectiles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct List\+Node \mbox{\hyperlink{p__list_8h_a3786f70ab7091247a621d0d253967e13}{List\+Node}}
+\begin{DoxyCompactList}\small\item\em Structure representing a node in the list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_list}{List}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{p__list_8h_a10a0f9461d90fbbf8d4f571d780cb149}{list\+\_\+createee}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new list of projectiles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{p__list_8h_a9a0b4676d2f6907ae47091db4fd1a20b}{list\+\_\+destroyyy}} (\mbox{\hyperlink{struct_list}{List}} \texorpdfstring{$\ast$}{*}list)
+\begin{DoxyCompactList}\small\item\em Destroys a list of projectiles, freeing all associated memory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{p__list_8h_a193fb7b6f764cd13ebdada6ba826db68}{list\+\_\+appenddd}} (\mbox{\hyperlink{struct_list}{List}} \texorpdfstring{$\ast$}{*}list, \mbox{\hyperlink{struct_projectile}{Projectile}} \texorpdfstring{$\ast$}{*}projectile, \mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite)
+\begin{DoxyCompactList}\small\item\em Appends a new projectile to the given list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{p__list_8h_a17e66c75308d5c841fb36da0c8e347cd}{list\+\_\+printtt}} (\mbox{\hyperlink{struct_list}{List}} \texorpdfstring{$\ast$}{*}list)
+\begin{DoxyCompactList}\small\item\em Prints the contents of the given list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{p__list_8h_a4b50247db27a81b4821afb458526f6e5}{list\+\_\+removeee}} (\mbox{\hyperlink{struct_list}{List}} \texorpdfstring{$\ast$}{*}list, \mbox{\hyperlink{struct_projectile}{Projectile}} \texorpdfstring{$\ast$}{*}projectile)
+\begin{DoxyCompactList}\small\item\em Removes a projectile from the given list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{p__list_8h_a3786f70ab7091247a621d0d253967e13}\index{p\_list.h@{p\_list.h}!ListNode@{ListNode}}
+\index{ListNode@{ListNode}!p\_list.h@{p\_list.h}}
+\doxysubsubsection{\texorpdfstring{ListNode}{ListNode}}
+{\footnotesize\ttfamily \label{p__list_8h_a3786f70ab7091247a621d0d253967e13} 
+typedef struct List\+Node List\+Node}
+
+
+
+Structure representing a node in the list. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{p__list_8h_a193fb7b6f764cd13ebdada6ba826db68}\index{p\_list.h@{p\_list.h}!list\_appenddd@{list\_appenddd}}
+\index{list\_appenddd@{list\_appenddd}!p\_list.h@{p\_list.h}}
+\doxysubsubsection{\texorpdfstring{list\_appenddd()}{list\_appenddd()}}
+{\footnotesize\ttfamily \label{p__list_8h_a193fb7b6f764cd13ebdada6ba826db68} 
+void list\+\_\+appenddd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_list}{List}} \texorpdfstring{$\ast$}{*}}]{list}{, }\item[{\mbox{\hyperlink{struct_projectile}{Projectile}} \texorpdfstring{$\ast$}{*}}]{projectile}{, }\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite}{}\end{DoxyParamCaption})}
+
+
+
+Appends a new projectile to the given list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & Pointer to the list. \\
+\hline
+{\em projectile} & Pointer to the projectile. \\
+\hline
+{\em sprite} & Pointer to the sprite associated with the projectile. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{p__list_8h_a193fb7b6f764cd13ebdada6ba826db68_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{p__list_8h_a10a0f9461d90fbbf8d4f571d780cb149}\index{p\_list.h@{p\_list.h}!list\_createee@{list\_createee}}
+\index{list\_createee@{list\_createee}!p\_list.h@{p\_list.h}}
+\doxysubsubsection{\texorpdfstring{list\_createee()}{list\_createee()}}
+{\footnotesize\ttfamily \label{p__list_8h_a10a0f9461d90fbbf8d4f571d780cb149} 
+\mbox{\hyperlink{struct_list}{List}} \texorpdfstring{$\ast$}{*} list\+\_\+createee (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Creates a new list of projectiles. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the newly created list. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{p__list_8h_a10a0f9461d90fbbf8d4f571d780cb149_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{p__list_8h_a9a0b4676d2f6907ae47091db4fd1a20b}\index{p\_list.h@{p\_list.h}!list\_destroyyy@{list\_destroyyy}}
+\index{list\_destroyyy@{list\_destroyyy}!p\_list.h@{p\_list.h}}
+\doxysubsubsection{\texorpdfstring{list\_destroyyy()}{list\_destroyyy()}}
+{\footnotesize\ttfamily \label{p__list_8h_a9a0b4676d2f6907ae47091db4fd1a20b} 
+void list\+\_\+destroyyy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_list}{List}} \texorpdfstring{$\ast$}{*}}]{list}{}\end{DoxyParamCaption})}
+
+
+
+Destroys a list of projectiles, freeing all associated memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & Pointer to the list to destroy. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{p__list_8h_a9a0b4676d2f6907ae47091db4fd1a20b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{p__list_8h_a9a0b4676d2f6907ae47091db4fd1a20b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{p__list_8h_a17e66c75308d5c841fb36da0c8e347cd}\index{p\_list.h@{p\_list.h}!list\_printtt@{list\_printtt}}
+\index{list\_printtt@{list\_printtt}!p\_list.h@{p\_list.h}}
+\doxysubsubsection{\texorpdfstring{list\_printtt()}{list\_printtt()}}
+{\footnotesize\ttfamily \label{p__list_8h_a17e66c75308d5c841fb36da0c8e347cd} 
+void list\+\_\+printtt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_list}{List}} \texorpdfstring{$\ast$}{*}}]{list}{}\end{DoxyParamCaption})}
+
+
+
+Prints the contents of the given list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & Pointer to the list to print. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{p__list_8h_a4b50247db27a81b4821afb458526f6e5}\index{p\_list.h@{p\_list.h}!list\_removeee@{list\_removeee}}
+\index{list\_removeee@{list\_removeee}!p\_list.h@{p\_list.h}}
+\doxysubsubsection{\texorpdfstring{list\_removeee()}{list\_removeee()}}
+{\footnotesize\ttfamily \label{p__list_8h_a4b50247db27a81b4821afb458526f6e5} 
+void list\+\_\+removeee (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_list}{List}} \texorpdfstring{$\ast$}{*}}]{list}{, }\item[{\mbox{\hyperlink{struct_projectile}{Projectile}} \texorpdfstring{$\ast$}{*}}]{projectile}{}\end{DoxyParamCaption})}
+
+
+
+Removes a projectile from the given list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & Pointer to the list. \\
+\hline
+{\em projectile} & Pointer to the projectile to remove. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{p__list_8h_a4b50247db27a81b4821afb458526f6e5_cgraph}
+\end{center}
+\end{figure}

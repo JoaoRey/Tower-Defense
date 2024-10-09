@@ -1,0 +1,251 @@
+\doxysection{gamelogic/elements/towers/projectile.h File Reference}
+\hypertarget{projectile_8h}{}\label{projectile_8h}\index{gamelogic/elements/towers/projectile.h@{gamelogic/elements/towers/projectile.h}}
+
+
+Header file for projectile-\/related functions and structures.  
+
+
+{\ttfamily \#include "{}gamelogic/elements/enemies/enemy.\+h"{}}\newline
+{\ttfamily \#include "{}gamelogic/elements/towers/tower\+\_\+constructors.\+h"{}}\newline
+{\ttfamily \#include "{}gamelogic/utils/p\+\_\+list.\+h"{}}\newline
+Include dependency graph for projectile.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{projectile_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{projectile_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{projectile_8h_ae451e26322bb2e6ab6ec8dfe0b88cd4a}{projectile\+\_\+init}} (\mbox{\hyperlink{struct_projectile}{Projectile}} \texorpdfstring{$\ast$}{*}projectile, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} x1, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} x2, float \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, float \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} target\+\_\+id, float speed, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} damage)
+\begin{DoxyCompactList}\small\item\em Initialize a projectile. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{projectile_8h_a2ca869dc0119e3f59caff02d1a26ba3f}{projectile\+\_\+is\+\_\+alive}} (\mbox{\hyperlink{struct_projectile}{Projectile}} \texorpdfstring{$\ast$}{*}projectile)
+\begin{DoxyCompactList}\small\item\em Check if a projectile is alive. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{projectile_8h_ae77d273601be49de916d98ccf6894b17}{projectile\+\_\+check\+\_\+collision}} (\mbox{\hyperlink{struct_projectile}{Projectile}} \texorpdfstring{$\ast$}{*}projectile, float \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, float \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}, float x2, float y2)
+\begin{DoxyCompactList}\small\item\em Check if a projectile collides with a specified area. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{projectile_8h_a2d60d7dc8af09e739a5c9a766413290a}{projectile\+\_\+is\+\_\+active}} (\mbox{\hyperlink{struct_projectile}{Projectile}} \texorpdfstring{$\ast$}{*}projectile)
+\begin{DoxyCompactList}\small\item\em Check if a projectile is active. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{projectile_8h_a550cb33423144744acf36bf3d9ff748f}{projectile\+\_\+set\+\_\+active}} (\mbox{\hyperlink{struct_projectile}{Projectile}} \texorpdfstring{$\ast$}{*}projectile, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} active)
+\begin{DoxyCompactList}\small\item\em Set the activity status of a projectile. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{projectile_8h_af7249fec569f529303f09dcd9e7831c6}{projectile\+\_\+get\+\_\+damage}} (\mbox{\hyperlink{struct_projectile}{Projectile}} \texorpdfstring{$\ast$}{*}projectile)
+\begin{DoxyCompactList}\small\item\em Get the damage inflicted by a projectile. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_projectile}{Projectile}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{projectile_8h_a341a1234ea2fde34e92ecb696fa6a8ec}{create\+\_\+projectile}} (\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} x1, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} x2, float \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, float \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} target\+\_\+id, float speed, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} damage)
+\begin{DoxyCompactList}\small\item\em Create a projectile. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{projectile_8h_aa282b7967f9599ba599f134055a4da36}{get\+\_\+target}} (\mbox{\hyperlink{struct_projectile}{Projectile}} \texorpdfstring{$\ast$}{*}projectile)
+\begin{DoxyCompactList}\small\item\em Get the ID of the target enemy of a projectile. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for projectile-\/related functions and structures. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{projectile_8h_a341a1234ea2fde34e92ecb696fa6a8ec}\index{projectile.h@{projectile.h}!create\_projectile@{create\_projectile}}
+\index{create\_projectile@{create\_projectile}!projectile.h@{projectile.h}}
+\doxysubsubsection{\texorpdfstring{create\_projectile()}{create\_projectile()}}
+{\footnotesize\ttfamily \label{projectile_8h_a341a1234ea2fde34e92ecb696fa6a8ec} 
+\mbox{\hyperlink{struct_projectile}{Projectile}} \texorpdfstring{$\ast$}{*} create\+\_\+projectile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{x1}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{x2}{, }\item[{float}]{x}{, }\item[{float}]{y}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{target\+\_\+id}{, }\item[{float}]{speed}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{damage}{}\end{DoxyParamCaption})}
+
+
+
+Create a projectile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & The initial x-\/coordinate of the projectile\textquotesingle{}s starting position. \\
+\hline
+{\em x2} & The initial x-\/coordinate of the projectile\textquotesingle{}s target position. \\
+\hline
+{\em x} & The initial x-\/coordinate of the projectile\textquotesingle{}s position. \\
+\hline
+{\em y} & The initial y-\/coordinate of the projectile\textquotesingle{}s position. \\
+\hline
+{\em target\+\_\+id} & The ID of the target enemy. \\
+\hline
+{\em speed} & The speed of the projectile. \\
+\hline
+{\em damage} & The damage inflicted by the projectile. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created projectile. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{projectile_8h_a341a1234ea2fde34e92ecb696fa6a8ec_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{projectile_8h_a341a1234ea2fde34e92ecb696fa6a8ec_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{projectile_8h_aa282b7967f9599ba599f134055a4da36}\index{projectile.h@{projectile.h}!get\_target@{get\_target}}
+\index{get\_target@{get\_target}!projectile.h@{projectile.h}}
+\doxysubsubsection{\texorpdfstring{get\_target()}{get\_target()}}
+{\footnotesize\ttfamily \label{projectile_8h_aa282b7967f9599ba599f134055a4da36} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} get\+\_\+target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_projectile}{Projectile}} \texorpdfstring{$\ast$}{*}}]{projectile}{}\end{DoxyParamCaption})}
+
+
+
+Get the ID of the target enemy of a projectile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em projectile} & Pointer to the projectile. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of the target enemy. 
+\end{DoxyReturn}
+\Hypertarget{projectile_8h_ae77d273601be49de916d98ccf6894b17}\index{projectile.h@{projectile.h}!projectile\_check\_collision@{projectile\_check\_collision}}
+\index{projectile\_check\_collision@{projectile\_check\_collision}!projectile.h@{projectile.h}}
+\doxysubsubsection{\texorpdfstring{projectile\_check\_collision()}{projectile\_check\_collision()}}
+{\footnotesize\ttfamily \label{projectile_8h_ae77d273601be49de916d98ccf6894b17} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} projectile\+\_\+check\+\_\+collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_projectile}{Projectile}} \texorpdfstring{$\ast$}{*}}]{projectile}{, }\item[{float}]{x}{, }\item[{float}]{y}{, }\item[{float}]{x2}{, }\item[{float}]{y2}{}\end{DoxyParamCaption})}
+
+
+
+Check if a projectile collides with a specified area. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em projectile} & Pointer to the projectile. \\
+\hline
+{\em x} & The x-\/coordinate of the area to check. \\
+\hline
+{\em y} & The y-\/coordinate of the area to check. \\
+\hline
+{\em x2} & The x-\/coordinate of the opposite corner of the area to check. \\
+\hline
+{\em y2} & The y-\/coordinate of the opposite corner of the area to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the projectile collides with the area, 0 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{projectile_8h_af7249fec569f529303f09dcd9e7831c6}\index{projectile.h@{projectile.h}!projectile\_get\_damage@{projectile\_get\_damage}}
+\index{projectile\_get\_damage@{projectile\_get\_damage}!projectile.h@{projectile.h}}
+\doxysubsubsection{\texorpdfstring{projectile\_get\_damage()}{projectile\_get\_damage()}}
+{\footnotesize\ttfamily \label{projectile_8h_af7249fec569f529303f09dcd9e7831c6} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} projectile\+\_\+get\+\_\+damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_projectile}{Projectile}} \texorpdfstring{$\ast$}{*}}]{projectile}{}\end{DoxyParamCaption})}
+
+
+
+Get the damage inflicted by a projectile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em projectile} & Pointer to the projectile. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The damage inflicted by the projectile. 
+\end{DoxyReturn}
+\Hypertarget{projectile_8h_ae451e26322bb2e6ab6ec8dfe0b88cd4a}\index{projectile.h@{projectile.h}!projectile\_init@{projectile\_init}}
+\index{projectile\_init@{projectile\_init}!projectile.h@{projectile.h}}
+\doxysubsubsection{\texorpdfstring{projectile\_init()}{projectile\_init()}}
+{\footnotesize\ttfamily \label{projectile_8h_ae451e26322bb2e6ab6ec8dfe0b88cd4a} 
+void projectile\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_projectile}{Projectile}} \texorpdfstring{$\ast$}{*}}]{projectile}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{x1}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{x2}{, }\item[{float}]{x}{, }\item[{float}]{y}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{target\+\_\+id}{, }\item[{float}]{speed}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{damage}{}\end{DoxyParamCaption})}
+
+
+
+Initialize a projectile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em projectile} & Pointer to the projectile to be initialized. \\
+\hline
+{\em x1} & The initial x-\/coordinate of the projectile\textquotesingle{}s starting position. \\
+\hline
+{\em x2} & The initial x-\/coordinate of the projectile\textquotesingle{}s target position. \\
+\hline
+{\em x} & The initial x-\/coordinate of the projectile\textquotesingle{}s position. \\
+\hline
+{\em y} & The initial y-\/coordinate of the projectile\textquotesingle{}s position. \\
+\hline
+{\em target\+\_\+id} & The ID of the target enemy. \\
+\hline
+{\em speed} & The speed of the projectile. \\
+\hline
+{\em damage} & The damage inflicted by the projectile. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{projectile_8h_ae451e26322bb2e6ab6ec8dfe0b88cd4a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{projectile_8h_a2d60d7dc8af09e739a5c9a766413290a}\index{projectile.h@{projectile.h}!projectile\_is\_active@{projectile\_is\_active}}
+\index{projectile\_is\_active@{projectile\_is\_active}!projectile.h@{projectile.h}}
+\doxysubsubsection{\texorpdfstring{projectile\_is\_active()}{projectile\_is\_active()}}
+{\footnotesize\ttfamily \label{projectile_8h_a2d60d7dc8af09e739a5c9a766413290a} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} projectile\+\_\+is\+\_\+active (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_projectile}{Projectile}} \texorpdfstring{$\ast$}{*}}]{projectile}{}\end{DoxyParamCaption})}
+
+
+
+Check if a projectile is active. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em projectile} & Pointer to the projectile. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the projectile is active, 0 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{projectile_8h_a2ca869dc0119e3f59caff02d1a26ba3f}\index{projectile.h@{projectile.h}!projectile\_is\_alive@{projectile\_is\_alive}}
+\index{projectile\_is\_alive@{projectile\_is\_alive}!projectile.h@{projectile.h}}
+\doxysubsubsection{\texorpdfstring{projectile\_is\_alive()}{projectile\_is\_alive()}}
+{\footnotesize\ttfamily \label{projectile_8h_a2ca869dc0119e3f59caff02d1a26ba3f} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} projectile\+\_\+is\+\_\+alive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_projectile}{Projectile}} \texorpdfstring{$\ast$}{*}}]{projectile}{}\end{DoxyParamCaption})}
+
+
+
+Check if a projectile is alive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em projectile} & Pointer to the projectile. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the projectile is alive, 0 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{projectile_8h_a550cb33423144744acf36bf3d9ff748f}\index{projectile.h@{projectile.h}!projectile\_set\_active@{projectile\_set\_active}}
+\index{projectile\_set\_active@{projectile\_set\_active}!projectile.h@{projectile.h}}
+\doxysubsubsection{\texorpdfstring{projectile\_set\_active()}{projectile\_set\_active()}}
+{\footnotesize\ttfamily \label{projectile_8h_a550cb33423144744acf36bf3d9ff748f} 
+void projectile\+\_\+set\+\_\+active (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_projectile}{Projectile}} \texorpdfstring{$\ast$}{*}}]{projectile}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{active}{}\end{DoxyParamCaption})}
+
+
+
+Set the activity status of a projectile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em projectile} & Pointer to the projectile. \\
+\hline
+{\em active} & The activity status to set (1 for active, 0 for inactive). \\
+\hline
+\end{DoxyParams}

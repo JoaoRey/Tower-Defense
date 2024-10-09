@@ -1,0 +1,1108 @@
+\doxysection{sprites/sprite.h File Reference}
+\hypertarget{sprite_8h}{}\label{sprite_8h}\index{sprites/sprite.h@{sprites/sprite.h}}
+{\ttfamily \#include "{}devices/graphic/graphics.\+h"{}}\newline
+{\ttfamily \#include "{}images/arena/archer\+\_\+tower.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/arena/arena.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/arena/arrow.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/arena/canon\+\_\+ball.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/arena/canon\+\_\+tower.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/arena/chest.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/arena/coin.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/arena/fireball.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/arena/heart.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/controls/controls.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/arena/mage\+\_\+tower.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/arena/medal.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/arena/position\+\_\+square.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/arena/select\+\_\+position\+\_\+square.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/enemies/golem.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/enemies/orc.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/enemies/skeleton.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/leaderboard/highscore.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/leaderboard/leaderboard\+\_\+title.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/a.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/b.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/c.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/d.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/e.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/f.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/g.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/h.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/i.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/j.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/k.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/l.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/m.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/n.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/o.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/p.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/q.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/r.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/s.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/t.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/u.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/v.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/w.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/x.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/y.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/letters/z.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/main\+\_\+menu/leaderboard\+\_\+button.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/main\+\_\+menu/leaderboard\+\_\+selected.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/main\+\_\+menu/mouse\+\_\+cursor.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/main\+\_\+menu/options\+\_\+button.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/main\+\_\+menu/options\+\_\+selected.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/main\+\_\+menu/play\+\_\+button.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/main\+\_\+menu/play\+\_\+selected.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/main\+\_\+menu/quit\+\_\+button.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/main\+\_\+menu/quit\+\_\+selected.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/main\+\_\+menu/title.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/numbers/eight.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/numbers/five.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/numbers/four.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/numbers/nine.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/numbers/one.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/numbers/seven.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/numbers/six.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/numbers/three.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/numbers/two.\+xpm"{}}\newline
+{\ttfamily \#include "{}images/numbers/zero.\+xpm"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/xpm.\+h$>$}\newline
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_sprite}{Sprite}}
+\begin{DoxyCompactList}\small\item\em Structure representing a sprite. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_leaderboard_entry}{Leaderboard\+Entry}}
+\begin{DoxyCompactList}\small\item\em Structure representing a leaderboard entry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{sprite_8h_af71324c57f05ff9e24bd384925dd6b17}{NAME\+\_\+\+LENGTH}}~10
+\item 
+\#define \mbox{\hyperlink{sprite_8h_ae4a7e3f476a0320171588751c9d72a72}{MAX\+\_\+\+LEADERBOARD\+\_\+\+ENTRIES}}~10
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a0987ce5dadd745a52f29e654f38d7e33}{sprite\+\_\+init}} (xpm\+\_\+map\+\_\+t sprite, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} xspeed, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} yspeed)
+\begin{DoxyCompactList}\small\item\em Initializes a sprite with given properties. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{sprite_8h_a858c1454a817fd7dca9e21bafa491242}{draw\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite)
+\begin{DoxyCompactList}\small\item\em Draws a sprite on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sprite_8h_a607cfeb4f019a84c346eb3bce9da0420}{destroy\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite)
+\begin{DoxyCompactList}\small\item\em Destroys a sprite, freeing its resources. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sprite_8h_ae08f1e1999eb3c7285fdc7f1ab0728d1}{sprite\+\_\+set\+\_\+x}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}})
+\begin{DoxyCompactList}\small\item\em Sets the x-\/coordinate of a sprite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sprite_8h_a89d8b3084d242b592d79d1dc33626853}{sprite\+\_\+set\+\_\+y}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Sets the y-\/coordinate of a sprite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sprite_8h_aac7380c906f988df6f9dd80626a1c569}{add\+\_\+to\+\_\+leaderboard}} (const char \texorpdfstring{$\ast$}{*}name, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{main_8c_aef160b7437d94056f1dc59646cd5b87d}{score}})
+\begin{DoxyCompactList}\small\item\em Adds a player to the leaderboard. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sprite_8h_ac0deeb0eaab401424d9abc4b8a760e6c}{save\+\_\+player\+\_\+data}} ()
+\begin{DoxyCompactList}\small\item\em Saves the current player data to the leaderboard. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sprite_8h_a71176dfe0b8ad3e30f7824e0d5c40e39}{load\+\_\+leaderboard}} ()
+\begin{DoxyCompactList}\small\item\em Loads the leaderboard from a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sprite_8h_a42f58fbd029e732df842ce224e72d8ec}{display\+\_\+leaderboard}} ()
+\begin{DoxyCompactList}\small\item\em Displays the leaderboard on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sprite_8h_abcda38f5250526f86969acc555797801}{draw\+\_\+letter}} (char letter, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Draws a letter on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sprite_8h_a8ed28d9498ae4bf8a808eb0ed29497ca}{draw\+\_\+player\+\_\+name}} ()
+\begin{DoxyCompactList}\small\item\em Draws the player\textquotesingle{}s name on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sprite_8h_a767db3358ad703b089b6ef3ee2a3a8df}{draw\+\_\+digit}} (\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} digit, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Draws a digit on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sprite_8h_a0944e45dab2b95345c29e01b548eb1ab}{draw\+\_\+rtc}} ()
+\begin{DoxyCompactList}\small\item\em Draws the current time from the RTC on the screen. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{sprite_8h_a0ec6e08881002306c6813ce6efc915f9}{scancode\+\_\+to\+\_\+char}} (uint8\+\_\+t \mbox{\hyperlink{kbd_8c_a71e799b2e160ddd397a621ecde00cbf8}{keyboard\+\_\+scancode}})
+\begin{DoxyCompactList}\small\item\em Converts a keyboard scancode to a character. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sprite_8h_ac11a48470d196030679c1bcf3e405a1c}{process\+\_\+scancode}} (uint8\+\_\+t \mbox{\hyperlink{kbd_8c_a71e799b2e160ddd397a621ecde00cbf8}{keyboard\+\_\+scancode}})
+\begin{DoxyCompactList}\small\item\em Processes a keyboard scancode, adding the corresponding character to the player\textquotesingle{}s name if valid. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{sprite_8h_a80b1c96eefd4d9cf729cee030658154d}{move\+\_\+sprite\+\_\+x}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite)
+\begin{DoxyCompactList}\small\item\em Moves the sprite along the positive x-\/axis by its speed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{sprite_8h_a7b2948e680325b8b400ac83cb1e3f828}{move\+\_\+sprite\+\_\+neg\+\_\+x}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite)
+\begin{DoxyCompactList}\small\item\em Moves the sprite along the negative x-\/axis by its speed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{sprite_8h_aff2a6adb7fa0845394cfea013d519250}{move\+\_\+sprite\+\_\+y}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite)
+\begin{DoxyCompactList}\small\item\em Moves the sprite along the positive y-\/axis by its speed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{sprite_8h_af43371c7de19888c5c7b1547726dfb64}{move\+\_\+sprite\+\_\+neg\+\_\+y}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite)
+\begin{DoxyCompactList}\small\item\em Moves the sprite along the negative y-\/axis by its speed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{sprite_8h_a1296d36caa367a796e90fecd04bbbe80}{move\+\_\+sprite\+\_\+x\+\_\+p}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite)
+\begin{DoxyCompactList}\small\item\em Moves the sprite along the positive x-\/axis by 15 pixels. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{sprite_8h_ab4424640edf76582f4e10df583832ba8}{move\+\_\+sprite\+\_\+neg\+\_\+x\+\_\+p}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite)
+\begin{DoxyCompactList}\small\item\em Moves the sprite along the negative x-\/axis by 15 pixels. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{sprite_8h_a85c7152f2adea3e04c8ebf84622c6ab3}{move\+\_\+sprite\+\_\+y\+\_\+p}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite)
+\begin{DoxyCompactList}\small\item\em Moves the sprite along the positive y-\/axis by 15 pixels. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{sprite_8h_aa18debad411639cec6357c3023d75ddd}{move\+\_\+sprite\+\_\+neg\+\_\+y\+\_\+p}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite)
+\begin{DoxyCompactList}\small\item\em Moves the sprite along the negative y-\/axis by 15 pixels. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sprite_8h_aca75f58c1bd12861aa92db2d7516ce3e}{load\+\_\+sprites\+\_\+to\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Loads sprites for the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sprite_8h_ad4b767668b6816f2ca63fba102c77356}{unload\+\_\+sprites\+\_\+of\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Unloads sprites for the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sprite_8h_a4cd0dd6c59b3434833f04556b3402bd0}{sort\+\_\+leaderboard}} ()
+\begin{DoxyCompactList}\small\item\em Sorts sprites for the Leaderboard screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sprite_8h_aca30ea2b11ee577022217b9c33bed35f}{draw\+\_\+options}} ()
+\begin{DoxyCompactList}\small\item\em Draws the options screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_acebe12e8296d44a0bfb64f375d1305bf}{leaderboard\+\_\+title}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a7e7089ce017357eab86b0f4473c406f0}{highscore}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_aa0a2f24815fc8db2afef45aa5bb8ba51}{controls}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a65b603a99a5452a033c9709eb1cc5c67}{highscore2}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a4dde4e99bca099e6b3a2938b4e6e9db7}{canon\+\_\+ball}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_ac2d1263d3ddcedc67a0b9e8d02e7ac60}{fire\+\_\+ball}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_aba66a1ceb852911beed9297766c13b22}{arrow}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_aecd2dc2b728996737ce43fd7cfd7eb97}{archer\+\_\+tower}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a2f82d5ccbc97752addaba1d50df058f2}{mage\+\_\+tower}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a369f0c6650f0aa5499265c00c56f690f}{canon\+\_\+tower}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a5ad2c291c59fb59add0b5e88fa535fdb}{play\+\_\+selected}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a69bb32cdfd9ef568f264a675cd0eb60e}{leaderboard\+\_\+selected}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a2a80fa0a28d7c0ba19fede601a5c5031}{settings\+\_\+selected}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a115f9db6f3de78dceffeccec99121f25}{quit\+\_\+selected}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_af03a383fdcfdf7501006a5c8d68be42b}{mouse}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a7ed19362995df3f6b3e6f2705848df86}{title}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a2bb0875421f0569d9c8494b6ef6abbe1}{arena}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a1c9bbf0318573b5999b5febf5069b294}{play}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a77dcdf41bfd20779bcb44c774cf7e376}{leaderboard}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_ad9b3c6c4c5ea5d002bb6c6787f5c39b6}{quit}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_aec1aa119e5ab4de09a6e09f9bed84f3a}{settings}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a5714a65316515178ddc78e8ab8eb0dc5}{chest}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a34b1b2613be17a566b72dbf887a8fd47}{coin}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_aaae105d22b6b529317c8df625c7d10b0}{heart}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_afbfdb814131d06b62f7e9b7207b2b51e}{medal}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a168cf82c9ac92b2dedd66cf896aac567}{select\+\_\+position\+\_\+square}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_aeb62fc0886eb7a7b25aa15bee777cf7b}{position\+\_\+square1}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a561f8941d99aa3adb49475fcfb4bc332}{position\+\_\+square3}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a7c6078ccee2eea9056a5f91f0f933df3}{position\+\_\+square5}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a7a6ffc905689c8cd05d7a39af72fa499}{position\+\_\+square7}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a859ecbcc06710bf0753dc39c6ac288da}{position\+\_\+square9}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_a654182443bf3264fc475738846c06ed6}{position\+\_\+square11}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{sprite_8h_ae4a7e3f476a0320171588751c9d72a72}\index{sprite.h@{sprite.h}!MAX\_LEADERBOARD\_ENTRIES@{MAX\_LEADERBOARD\_ENTRIES}}
+\index{MAX\_LEADERBOARD\_ENTRIES@{MAX\_LEADERBOARD\_ENTRIES}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_LEADERBOARD\_ENTRIES}{MAX\_LEADERBOARD\_ENTRIES}}
+{\footnotesize\ttfamily \label{sprite_8h_ae4a7e3f476a0320171588751c9d72a72} 
+\#define MAX\+\_\+\+LEADERBOARD\+\_\+\+ENTRIES~10}
+
+\Hypertarget{sprite_8h_af71324c57f05ff9e24bd384925dd6b17}\index{sprite.h@{sprite.h}!NAME\_LENGTH@{NAME\_LENGTH}}
+\index{NAME\_LENGTH@{NAME\_LENGTH}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{NAME\_LENGTH}{NAME\_LENGTH}}
+{\footnotesize\ttfamily \label{sprite_8h_af71324c57f05ff9e24bd384925dd6b17} 
+\#define NAME\+\_\+\+LENGTH~10}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{sprite_8h_aac7380c906f988df6f9dd80626a1c569}\index{sprite.h@{sprite.h}!add\_to\_leaderboard@{add\_to\_leaderboard}}
+\index{add\_to\_leaderboard@{add\_to\_leaderboard}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{add\_to\_leaderboard()}{add\_to\_leaderboard()}}
+{\footnotesize\ttfamily \label{sprite_8h_aac7380c906f988df6f9dd80626a1c569} 
+void add\+\_\+to\+\_\+leaderboard (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{score}{}\end{DoxyParamCaption})}
+
+
+
+Adds a player to the leaderboard. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the player \\
+\hline
+{\em score} & Score of the player \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_aac7380c906f988df6f9dd80626a1c569_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_a607cfeb4f019a84c346eb3bce9da0420}\index{sprite.h@{sprite.h}!destroy\_sprite@{destroy\_sprite}}
+\index{destroy\_sprite@{destroy\_sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{destroy\_sprite()}{destroy\_sprite()}}
+{\footnotesize\ttfamily \label{sprite_8h_a607cfeb4f019a84c346eb3bce9da0420} 
+void destroy\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite}{}\end{DoxyParamCaption})}
+
+
+
+Destroys a sprite, freeing its resources. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & Pointer to the sprite to be destroyed \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a607cfeb4f019a84c346eb3bce9da0420_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_a42f58fbd029e732df842ce224e72d8ec}\index{sprite.h@{sprite.h}!display\_leaderboard@{display\_leaderboard}}
+\index{display\_leaderboard@{display\_leaderboard}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{display\_leaderboard()}{display\_leaderboard()}}
+{\footnotesize\ttfamily \label{sprite_8h_a42f58fbd029e732df842ce224e72d8ec} 
+void display\+\_\+leaderboard (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays the leaderboard on the screen. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a42f58fbd029e732df842ce224e72d8ec_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a42f58fbd029e732df842ce224e72d8ec_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_a767db3358ad703b089b6ef3ee2a3a8df}\index{sprite.h@{sprite.h}!draw\_digit@{draw\_digit}}
+\index{draw\_digit@{draw\_digit}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{draw\_digit()}{draw\_digit()}}
+{\footnotesize\ttfamily \label{sprite_8h_a767db3358ad703b089b6ef3ee2a3a8df} 
+void draw\+\_\+digit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{digit}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{x}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Draws a digit on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em digit} & The digit to draw \\
+\hline
+{\em x} & The x-\/coordinate where the digit will be drawn \\
+\hline
+{\em y} & The y-\/coordinate where the digit will be drawn \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a767db3358ad703b089b6ef3ee2a3a8df_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a767db3358ad703b089b6ef3ee2a3a8df_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_abcda38f5250526f86969acc555797801}\index{sprite.h@{sprite.h}!draw\_letter@{draw\_letter}}
+\index{draw\_letter@{draw\_letter}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{draw\_letter()}{draw\_letter()}}
+{\footnotesize\ttfamily \label{sprite_8h_abcda38f5250526f86969acc555797801} 
+void draw\+\_\+letter (\begin{DoxyParamCaption}\item[{char}]{letter}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{x}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Draws a letter on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em letter} & The letter to draw \\
+\hline
+{\em x} & The x-\/coordinate where the letter will be drawn \\
+\hline
+{\em y} & The y-\/coordinate where the letter will be drawn \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_abcda38f5250526f86969acc555797801_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_abcda38f5250526f86969acc555797801_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_aca30ea2b11ee577022217b9c33bed35f}\index{sprite.h@{sprite.h}!draw\_options@{draw\_options}}
+\index{draw\_options@{draw\_options}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{draw\_options()}{draw\_options()}}
+{\footnotesize\ttfamily \label{sprite_8h_aca30ea2b11ee577022217b9c33bed35f} 
+void draw\+\_\+options (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Draws the options screen. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_aca30ea2b11ee577022217b9c33bed35f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_aca30ea2b11ee577022217b9c33bed35f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_a8ed28d9498ae4bf8a808eb0ed29497ca}\index{sprite.h@{sprite.h}!draw\_player\_name@{draw\_player\_name}}
+\index{draw\_player\_name@{draw\_player\_name}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{draw\_player\_name()}{draw\_player\_name()}}
+{\footnotesize\ttfamily \label{sprite_8h_a8ed28d9498ae4bf8a808eb0ed29497ca} 
+void draw\+\_\+player\+\_\+name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Draws the player\textquotesingle{}s name on the screen. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a8ed28d9498ae4bf8a808eb0ed29497ca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a8ed28d9498ae4bf8a808eb0ed29497ca_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_a0944e45dab2b95345c29e01b548eb1ab}\index{sprite.h@{sprite.h}!draw\_rtc@{draw\_rtc}}
+\index{draw\_rtc@{draw\_rtc}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{draw\_rtc()}{draw\_rtc()}}
+{\footnotesize\ttfamily \label{sprite_8h_a0944e45dab2b95345c29e01b548eb1ab} 
+void draw\+\_\+rtc (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Draws the current time from the RTC on the screen. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a0944e45dab2b95345c29e01b548eb1ab_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a0944e45dab2b95345c29e01b548eb1ab_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_a858c1454a817fd7dca9e21bafa491242}\index{sprite.h@{sprite.h}!draw\_sprite@{draw\_sprite}}
+\index{draw\_sprite@{draw\_sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{draw\_sprite()}{draw\_sprite()}}
+{\footnotesize\ttfamily \label{sprite_8h_a858c1454a817fd7dca9e21bafa491242} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} draw\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite}{}\end{DoxyParamCaption})}
+
+
+
+Draws a sprite on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & Pointer to the sprite to be drawn \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{sprite_8h_a858c1454a817fd7dca9e21bafa491242_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a858c1454a817fd7dca9e21bafa491242_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_a71176dfe0b8ad3e30f7824e0d5c40e39}\index{sprite.h@{sprite.h}!load\_leaderboard@{load\_leaderboard}}
+\index{load\_leaderboard@{load\_leaderboard}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{load\_leaderboard()}{load\_leaderboard()}}
+{\footnotesize\ttfamily \label{sprite_8h_a71176dfe0b8ad3e30f7824e0d5c40e39} 
+void load\+\_\+leaderboard (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Loads the leaderboard from a file. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{sprite_8h_a71176dfe0b8ad3e30f7824e0d5c40e39_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a71176dfe0b8ad3e30f7824e0d5c40e39_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_aca75f58c1bd12861aa92db2d7516ce3e}\index{sprite.h@{sprite.h}!load\_sprites\_to\_menu@{load\_sprites\_to\_menu}}
+\index{load\_sprites\_to\_menu@{load\_sprites\_to\_menu}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{load\_sprites\_to\_menu()}{load\_sprites\_to\_menu()}}
+{\footnotesize\ttfamily \label{sprite_8h_aca75f58c1bd12861aa92db2d7516ce3e} 
+void load\+\_\+sprites\+\_\+to\+\_\+menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Loads sprites for the screen. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{sprite_8h_aca75f58c1bd12861aa92db2d7516ce3e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{sprite_8h_aca75f58c1bd12861aa92db2d7516ce3e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_a7b2948e680325b8b400ac83cb1e3f828}\index{sprite.h@{sprite.h}!move\_sprite\_neg\_x@{move\_sprite\_neg\_x}}
+\index{move\_sprite\_neg\_x@{move\_sprite\_neg\_x}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{move\_sprite\_neg\_x()}{move\_sprite\_neg\_x()}}
+{\footnotesize\ttfamily \label{sprite_8h_a7b2948e680325b8b400ac83cb1e3f828} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} move\+\_\+sprite\+\_\+neg\+\_\+x (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite}{}\end{DoxyParamCaption})}
+
+
+
+Moves the sprite along the negative x-\/axis by its speed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & Pointer to the sprite \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise 
+\end{DoxyReturn}
+\Hypertarget{sprite_8h_ab4424640edf76582f4e10df583832ba8}\index{sprite.h@{sprite.h}!move\_sprite\_neg\_x\_p@{move\_sprite\_neg\_x\_p}}
+\index{move\_sprite\_neg\_x\_p@{move\_sprite\_neg\_x\_p}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{move\_sprite\_neg\_x\_p()}{move\_sprite\_neg\_x\_p()}}
+{\footnotesize\ttfamily \label{sprite_8h_ab4424640edf76582f4e10df583832ba8} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} move\+\_\+sprite\+\_\+neg\+\_\+x\+\_\+p (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite}{}\end{DoxyParamCaption})}
+
+
+
+Moves the sprite along the negative x-\/axis by 15 pixels. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & Pointer to the sprite \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise 
+\end{DoxyReturn}
+\Hypertarget{sprite_8h_af43371c7de19888c5c7b1547726dfb64}\index{sprite.h@{sprite.h}!move\_sprite\_neg\_y@{move\_sprite\_neg\_y}}
+\index{move\_sprite\_neg\_y@{move\_sprite\_neg\_y}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{move\_sprite\_neg\_y()}{move\_sprite\_neg\_y()}}
+{\footnotesize\ttfamily \label{sprite_8h_af43371c7de19888c5c7b1547726dfb64} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} move\+\_\+sprite\+\_\+neg\+\_\+y (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite}{}\end{DoxyParamCaption})}
+
+
+
+Moves the sprite along the negative y-\/axis by its speed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & Pointer to the sprite \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise 
+\end{DoxyReturn}
+\Hypertarget{sprite_8h_aa18debad411639cec6357c3023d75ddd}\index{sprite.h@{sprite.h}!move\_sprite\_neg\_y\_p@{move\_sprite\_neg\_y\_p}}
+\index{move\_sprite\_neg\_y\_p@{move\_sprite\_neg\_y\_p}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{move\_sprite\_neg\_y\_p()}{move\_sprite\_neg\_y\_p()}}
+{\footnotesize\ttfamily \label{sprite_8h_aa18debad411639cec6357c3023d75ddd} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} move\+\_\+sprite\+\_\+neg\+\_\+y\+\_\+p (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite}{}\end{DoxyParamCaption})}
+
+
+
+Moves the sprite along the negative y-\/axis by 15 pixels. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & Pointer to the sprite \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise 
+\end{DoxyReturn}
+\Hypertarget{sprite_8h_a80b1c96eefd4d9cf729cee030658154d}\index{sprite.h@{sprite.h}!move\_sprite\_x@{move\_sprite\_x}}
+\index{move\_sprite\_x@{move\_sprite\_x}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{move\_sprite\_x()}{move\_sprite\_x()}}
+{\footnotesize\ttfamily \label{sprite_8h_a80b1c96eefd4d9cf729cee030658154d} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} move\+\_\+sprite\+\_\+x (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite}{}\end{DoxyParamCaption})}
+
+
+
+Moves the sprite along the positive x-\/axis by its speed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & Pointer to the sprite \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a80b1c96eefd4d9cf729cee030658154d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_a1296d36caa367a796e90fecd04bbbe80}\index{sprite.h@{sprite.h}!move\_sprite\_x\_p@{move\_sprite\_x\_p}}
+\index{move\_sprite\_x\_p@{move\_sprite\_x\_p}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{move\_sprite\_x\_p()}{move\_sprite\_x\_p()}}
+{\footnotesize\ttfamily \label{sprite_8h_a1296d36caa367a796e90fecd04bbbe80} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} move\+\_\+sprite\+\_\+x\+\_\+p (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite}{}\end{DoxyParamCaption})}
+
+
+
+Moves the sprite along the positive x-\/axis by 15 pixels. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & Pointer to the sprite \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise 
+\end{DoxyReturn}
+\Hypertarget{sprite_8h_aff2a6adb7fa0845394cfea013d519250}\index{sprite.h@{sprite.h}!move\_sprite\_y@{move\_sprite\_y}}
+\index{move\_sprite\_y@{move\_sprite\_y}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{move\_sprite\_y()}{move\_sprite\_y()}}
+{\footnotesize\ttfamily \label{sprite_8h_aff2a6adb7fa0845394cfea013d519250} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} move\+\_\+sprite\+\_\+y (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite}{}\end{DoxyParamCaption})}
+
+
+
+Moves the sprite along the positive y-\/axis by its speed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & Pointer to the sprite \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_aff2a6adb7fa0845394cfea013d519250_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_a85c7152f2adea3e04c8ebf84622c6ab3}\index{sprite.h@{sprite.h}!move\_sprite\_y\_p@{move\_sprite\_y\_p}}
+\index{move\_sprite\_y\_p@{move\_sprite\_y\_p}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{move\_sprite\_y\_p()}{move\_sprite\_y\_p()}}
+{\footnotesize\ttfamily \label{sprite_8h_a85c7152f2adea3e04c8ebf84622c6ab3} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} move\+\_\+sprite\+\_\+y\+\_\+p (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite}{}\end{DoxyParamCaption})}
+
+
+
+Moves the sprite along the positive y-\/axis by 15 pixels. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & Pointer to the sprite \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise 
+\end{DoxyReturn}
+\Hypertarget{sprite_8h_ac11a48470d196030679c1bcf3e405a1c}\index{sprite.h@{sprite.h}!process\_scancode@{process\_scancode}}
+\index{process\_scancode@{process\_scancode}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{process\_scancode()}{process\_scancode()}}
+{\footnotesize\ttfamily \label{sprite_8h_ac11a48470d196030679c1bcf3e405a1c} 
+void process\+\_\+scancode (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{keyboard\+\_\+scancode}{}\end{DoxyParamCaption})}
+
+
+
+Processes a keyboard scancode, adding the corresponding character to the player\textquotesingle{}s name if valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em keyboard\+\_\+scancode} & The scancode to process \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{sprite_8h_ac11a48470d196030679c1bcf3e405a1c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_ac11a48470d196030679c1bcf3e405a1c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_ac0deeb0eaab401424d9abc4b8a760e6c}\index{sprite.h@{sprite.h}!save\_player\_data@{save\_player\_data}}
+\index{save\_player\_data@{save\_player\_data}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{save\_player\_data()}{save\_player\_data()}}
+{\footnotesize\ttfamily \label{sprite_8h_ac0deeb0eaab401424d9abc4b8a760e6c} 
+void save\+\_\+player\+\_\+data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Saves the current player data to the leaderboard. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{sprite_8h_ac0deeb0eaab401424d9abc4b8a760e6c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_ac0deeb0eaab401424d9abc4b8a760e6c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_a0ec6e08881002306c6813ce6efc915f9}\index{sprite.h@{sprite.h}!scancode\_to\_char@{scancode\_to\_char}}
+\index{scancode\_to\_char@{scancode\_to\_char}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{scancode\_to\_char()}{scancode\_to\_char()}}
+{\footnotesize\ttfamily \label{sprite_8h_a0ec6e08881002306c6813ce6efc915f9} 
+char scancode\+\_\+to\+\_\+char (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{keyboard\+\_\+scancode}{}\end{DoxyParamCaption})}
+
+
+
+Converts a keyboard scancode to a character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em keyboard\+\_\+scancode} & The scancode to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding character, or \textquotesingle{}\textbackslash{}0\textquotesingle{} if the scancode is not recognized 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a0ec6e08881002306c6813ce6efc915f9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_a4cd0dd6c59b3434833f04556b3402bd0}\index{sprite.h@{sprite.h}!sort\_leaderboard@{sort\_leaderboard}}
+\index{sort\_leaderboard@{sort\_leaderboard}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{sort\_leaderboard()}{sort\_leaderboard()}}
+{\footnotesize\ttfamily \label{sprite_8h_a4cd0dd6c59b3434833f04556b3402bd0} 
+void sort\+\_\+leaderboard (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Sorts sprites for the Leaderboard screen. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a4cd0dd6c59b3434833f04556b3402bd0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_a0987ce5dadd745a52f29e654f38d7e33}\index{sprite.h@{sprite.h}!sprite\_init@{sprite\_init}}
+\index{sprite\_init@{sprite\_init}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{sprite\_init()}{sprite\_init()}}
+{\footnotesize\ttfamily \label{sprite_8h_a0987ce5dadd745a52f29e654f38d7e33} 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} sprite\+\_\+init (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{sprite}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{x}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{y}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{xspeed}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{yspeed}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a sprite with given properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & The XPM map representing the sprite \\
+\hline
+{\em x} & Initial x-\/coordinate of the sprite \\
+\hline
+{\em y} & Initial y-\/coordinate of the sprite \\
+\hline
+{\em xspeed} & Speed of the sprite along the x-\/axis \\
+\hline
+{\em yspeed} & Speed of the sprite along the y-\/axis \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the created sprite 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a0987ce5dadd745a52f29e654f38d7e33_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_ae08f1e1999eb3c7285fdc7f1ab0728d1}\index{sprite.h@{sprite.h}!sprite\_set\_x@{sprite\_set\_x}}
+\index{sprite\_set\_x@{sprite\_set\_x}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{sprite\_set\_x()}{sprite\_set\_x()}}
+{\footnotesize\ttfamily \label{sprite_8h_ae08f1e1999eb3c7285fdc7f1ab0728d1} 
+void sprite\+\_\+set\+\_\+x (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Sets the x-\/coordinate of a sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & Pointer to the sprite \\
+\hline
+{\em x} & New x-\/coordinate \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_ae08f1e1999eb3c7285fdc7f1ab0728d1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_a89d8b3084d242b592d79d1dc33626853}\index{sprite.h@{sprite.h}!sprite\_set\_y@{sprite\_set\_y}}
+\index{sprite\_set\_y@{sprite\_set\_y}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{sprite\_set\_y()}{sprite\_set\_y()}}
+{\footnotesize\ttfamily \label{sprite_8h_a89d8b3084d242b592d79d1dc33626853} 
+void sprite\+\_\+set\+\_\+y (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Sets the y-\/coordinate of a sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & Pointer to the sprite \\
+\hline
+{\em y} & New y-\/coordinate \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a89d8b3084d242b592d79d1dc33626853_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_ad4b767668b6816f2ca63fba102c77356}\index{sprite.h@{sprite.h}!unload\_sprites\_of\_menu@{unload\_sprites\_of\_menu}}
+\index{unload\_sprites\_of\_menu@{unload\_sprites\_of\_menu}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{unload\_sprites\_of\_menu()}{unload\_sprites\_of\_menu()}}
+{\footnotesize\ttfamily \label{sprite_8h_ad4b767668b6816f2ca63fba102c77356} 
+void unload\+\_\+sprites\+\_\+of\+\_\+menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Unloads sprites for the screen. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{sprite_8h_ad4b767668b6816f2ca63fba102c77356_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{sprite_8h_ad4b767668b6816f2ca63fba102c77356_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{sprite_8h_aecd2dc2b728996737ce43fd7cfd7eb97}\index{sprite.h@{sprite.h}!archer\_tower@{archer\_tower}}
+\index{archer\_tower@{archer\_tower}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{archer\_tower}{archer\_tower}}
+{\footnotesize\ttfamily \label{sprite_8h_aecd2dc2b728996737ce43fd7cfd7eb97} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} archer\+\_\+tower}
+
+\Hypertarget{sprite_8h_a2bb0875421f0569d9c8494b6ef6abbe1}\index{sprite.h@{sprite.h}!arena@{arena}}
+\index{arena@{arena}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{arena}{arena}}
+{\footnotesize\ttfamily \label{sprite_8h_a2bb0875421f0569d9c8494b6ef6abbe1} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} arena}
+
+\Hypertarget{sprite_8h_aba66a1ceb852911beed9297766c13b22}\index{sprite.h@{sprite.h}!arrow@{arrow}}
+\index{arrow@{arrow}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{arrow}{arrow}}
+{\footnotesize\ttfamily \label{sprite_8h_aba66a1ceb852911beed9297766c13b22} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} arrow}
+
+\Hypertarget{sprite_8h_a4dde4e99bca099e6b3a2938b4e6e9db7}\index{sprite.h@{sprite.h}!canon\_ball@{canon\_ball}}
+\index{canon\_ball@{canon\_ball}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{canon\_ball}{canon\_ball}}
+{\footnotesize\ttfamily \label{sprite_8h_a4dde4e99bca099e6b3a2938b4e6e9db7} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} canon\+\_\+ball}
+
+\Hypertarget{sprite_8h_a369f0c6650f0aa5499265c00c56f690f}\index{sprite.h@{sprite.h}!canon\_tower@{canon\_tower}}
+\index{canon\_tower@{canon\_tower}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{canon\_tower}{canon\_tower}}
+{\footnotesize\ttfamily \label{sprite_8h_a369f0c6650f0aa5499265c00c56f690f} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} canon\+\_\+tower}
+
+\Hypertarget{sprite_8h_a5714a65316515178ddc78e8ab8eb0dc5}\index{sprite.h@{sprite.h}!chest@{chest}}
+\index{chest@{chest}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{chest}{chest}}
+{\footnotesize\ttfamily \label{sprite_8h_a5714a65316515178ddc78e8ab8eb0dc5} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} chest}
+
+\Hypertarget{sprite_8h_a34b1b2613be17a566b72dbf887a8fd47}\index{sprite.h@{sprite.h}!coin@{coin}}
+\index{coin@{coin}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{coin}{coin}}
+{\footnotesize\ttfamily \label{sprite_8h_a34b1b2613be17a566b72dbf887a8fd47} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} coin}
+
+\Hypertarget{sprite_8h_aa0a2f24815fc8db2afef45aa5bb8ba51}\index{sprite.h@{sprite.h}!controls@{controls}}
+\index{controls@{controls}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{controls}{controls}}
+{\footnotesize\ttfamily \label{sprite_8h_aa0a2f24815fc8db2afef45aa5bb8ba51} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} controls}
+
+\Hypertarget{sprite_8h_ac2d1263d3ddcedc67a0b9e8d02e7ac60}\index{sprite.h@{sprite.h}!fire\_ball@{fire\_ball}}
+\index{fire\_ball@{fire\_ball}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{fire\_ball}{fire\_ball}}
+{\footnotesize\ttfamily \label{sprite_8h_ac2d1263d3ddcedc67a0b9e8d02e7ac60} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} fire\+\_\+ball}
+
+\Hypertarget{sprite_8h_aaae105d22b6b529317c8df625c7d10b0}\index{sprite.h@{sprite.h}!heart@{heart}}
+\index{heart@{heart}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{heart}{heart}}
+{\footnotesize\ttfamily \label{sprite_8h_aaae105d22b6b529317c8df625c7d10b0} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} heart}
+
+\Hypertarget{sprite_8h_a7e7089ce017357eab86b0f4473c406f0}\index{sprite.h@{sprite.h}!highscore@{highscore}}
+\index{highscore@{highscore}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{highscore}{highscore}}
+{\footnotesize\ttfamily \label{sprite_8h_a7e7089ce017357eab86b0f4473c406f0} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} highscore}
+
+\Hypertarget{sprite_8h_a65b603a99a5452a033c9709eb1cc5c67}\index{sprite.h@{sprite.h}!highscore2@{highscore2}}
+\index{highscore2@{highscore2}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{highscore2}{highscore2}}
+{\footnotesize\ttfamily \label{sprite_8h_a65b603a99a5452a033c9709eb1cc5c67} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} highscore2}
+
+\Hypertarget{sprite_8h_a77dcdf41bfd20779bcb44c774cf7e376}\index{sprite.h@{sprite.h}!leaderboard@{leaderboard}}
+\index{leaderboard@{leaderboard}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{leaderboard}{leaderboard}}
+{\footnotesize\ttfamily \label{sprite_8h_a77dcdf41bfd20779bcb44c774cf7e376} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} leaderboard}
+
+\Hypertarget{sprite_8h_a69bb32cdfd9ef568f264a675cd0eb60e}\index{sprite.h@{sprite.h}!leaderboard\_selected@{leaderboard\_selected}}
+\index{leaderboard\_selected@{leaderboard\_selected}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{leaderboard\_selected}{leaderboard\_selected}}
+{\footnotesize\ttfamily \label{sprite_8h_a69bb32cdfd9ef568f264a675cd0eb60e} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} leaderboard\+\_\+selected}
+
+\Hypertarget{sprite_8h_acebe12e8296d44a0bfb64f375d1305bf}\index{sprite.h@{sprite.h}!leaderboard\_title@{leaderboard\_title}}
+\index{leaderboard\_title@{leaderboard\_title}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{leaderboard\_title}{leaderboard\_title}}
+{\footnotesize\ttfamily \label{sprite_8h_acebe12e8296d44a0bfb64f375d1305bf} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} leaderboard\+\_\+title}
+
+\Hypertarget{sprite_8h_a2f82d5ccbc97752addaba1d50df058f2}\index{sprite.h@{sprite.h}!mage\_tower@{mage\_tower}}
+\index{mage\_tower@{mage\_tower}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{mage\_tower}{mage\_tower}}
+{\footnotesize\ttfamily \label{sprite_8h_a2f82d5ccbc97752addaba1d50df058f2} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} mage\+\_\+tower}
+
+\Hypertarget{sprite_8h_afbfdb814131d06b62f7e9b7207b2b51e}\index{sprite.h@{sprite.h}!medal@{medal}}
+\index{medal@{medal}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{medal}{medal}}
+{\footnotesize\ttfamily \label{sprite_8h_afbfdb814131d06b62f7e9b7207b2b51e} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} medal}
+
+\Hypertarget{sprite_8h_af03a383fdcfdf7501006a5c8d68be42b}\index{sprite.h@{sprite.h}!mouse@{mouse}}
+\index{mouse@{mouse}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{mouse}{mouse}}
+{\footnotesize\ttfamily \label{sprite_8h_af03a383fdcfdf7501006a5c8d68be42b} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} mouse}
+
+\Hypertarget{sprite_8h_a1c9bbf0318573b5999b5febf5069b294}\index{sprite.h@{sprite.h}!play@{play}}
+\index{play@{play}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{play}{play}}
+{\footnotesize\ttfamily \label{sprite_8h_a1c9bbf0318573b5999b5febf5069b294} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} play}
+
+\Hypertarget{sprite_8h_a5ad2c291c59fb59add0b5e88fa535fdb}\index{sprite.h@{sprite.h}!play\_selected@{play\_selected}}
+\index{play\_selected@{play\_selected}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{play\_selected}{play\_selected}}
+{\footnotesize\ttfamily \label{sprite_8h_a5ad2c291c59fb59add0b5e88fa535fdb} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} play\+\_\+selected}
+
+\Hypertarget{sprite_8h_aeb62fc0886eb7a7b25aa15bee777cf7b}\index{sprite.h@{sprite.h}!position\_square1@{position\_square1}}
+\index{position\_square1@{position\_square1}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{position\_square1}{position\_square1}}
+{\footnotesize\ttfamily \label{sprite_8h_aeb62fc0886eb7a7b25aa15bee777cf7b} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} position\+\_\+square1}
+
+\Hypertarget{sprite_8h_a654182443bf3264fc475738846c06ed6}\index{sprite.h@{sprite.h}!position\_square11@{position\_square11}}
+\index{position\_square11@{position\_square11}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{position\_square11}{position\_square11}}
+{\footnotesize\ttfamily \label{sprite_8h_a654182443bf3264fc475738846c06ed6} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} position\+\_\+square11}
+
+\Hypertarget{sprite_8h_a561f8941d99aa3adb49475fcfb4bc332}\index{sprite.h@{sprite.h}!position\_square3@{position\_square3}}
+\index{position\_square3@{position\_square3}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{position\_square3}{position\_square3}}
+{\footnotesize\ttfamily \label{sprite_8h_a561f8941d99aa3adb49475fcfb4bc332} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} position\+\_\+square3}
+
+\Hypertarget{sprite_8h_a7c6078ccee2eea9056a5f91f0f933df3}\index{sprite.h@{sprite.h}!position\_square5@{position\_square5}}
+\index{position\_square5@{position\_square5}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{position\_square5}{position\_square5}}
+{\footnotesize\ttfamily \label{sprite_8h_a7c6078ccee2eea9056a5f91f0f933df3} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} position\+\_\+square5}
+
+\Hypertarget{sprite_8h_a7a6ffc905689c8cd05d7a39af72fa499}\index{sprite.h@{sprite.h}!position\_square7@{position\_square7}}
+\index{position\_square7@{position\_square7}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{position\_square7}{position\_square7}}
+{\footnotesize\ttfamily \label{sprite_8h_a7a6ffc905689c8cd05d7a39af72fa499} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} position\+\_\+square7}
+
+\Hypertarget{sprite_8h_a859ecbcc06710bf0753dc39c6ac288da}\index{sprite.h@{sprite.h}!position\_square9@{position\_square9}}
+\index{position\_square9@{position\_square9}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{position\_square9}{position\_square9}}
+{\footnotesize\ttfamily \label{sprite_8h_a859ecbcc06710bf0753dc39c6ac288da} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} position\+\_\+square9}
+
+\Hypertarget{sprite_8h_ad9b3c6c4c5ea5d002bb6c6787f5c39b6}\index{sprite.h@{sprite.h}!quit@{quit}}
+\index{quit@{quit}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{quit}{quit}}
+{\footnotesize\ttfamily \label{sprite_8h_ad9b3c6c4c5ea5d002bb6c6787f5c39b6} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} quit}
+
+\Hypertarget{sprite_8h_a115f9db6f3de78dceffeccec99121f25}\index{sprite.h@{sprite.h}!quit\_selected@{quit\_selected}}
+\index{quit\_selected@{quit\_selected}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{quit\_selected}{quit\_selected}}
+{\footnotesize\ttfamily \label{sprite_8h_a115f9db6f3de78dceffeccec99121f25} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} quit\+\_\+selected}
+
+\Hypertarget{sprite_8h_a168cf82c9ac92b2dedd66cf896aac567}\index{sprite.h@{sprite.h}!select\_position\_square@{select\_position\_square}}
+\index{select\_position\_square@{select\_position\_square}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{select\_position\_square}{select\_position\_square}}
+{\footnotesize\ttfamily \label{sprite_8h_a168cf82c9ac92b2dedd66cf896aac567} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} select\+\_\+position\+\_\+square}
+
+\Hypertarget{sprite_8h_aec1aa119e5ab4de09a6e09f9bed84f3a}\index{sprite.h@{sprite.h}!settings@{settings}}
+\index{settings@{settings}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{settings}{settings}}
+{\footnotesize\ttfamily \label{sprite_8h_aec1aa119e5ab4de09a6e09f9bed84f3a} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} settings}
+
+\Hypertarget{sprite_8h_a2a80fa0a28d7c0ba19fede601a5c5031}\index{sprite.h@{sprite.h}!settings\_selected@{settings\_selected}}
+\index{settings\_selected@{settings\_selected}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{settings\_selected}{settings\_selected}}
+{\footnotesize\ttfamily \label{sprite_8h_a2a80fa0a28d7c0ba19fede601a5c5031} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} settings\+\_\+selected}
+
+\Hypertarget{sprite_8h_a7ed19362995df3f6b3e6f2705848df86}\index{sprite.h@{sprite.h}!title@{title}}
+\index{title@{title}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily \label{sprite_8h_a7ed19362995df3f6b3e6f2705848df86} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} title}
+

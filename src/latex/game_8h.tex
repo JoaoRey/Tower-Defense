@@ -1,0 +1,155 @@
+\doxysection{gamelogic/states/game.h File Reference}
+\hypertarget{game_8h}{}\label{game_8h}\index{gamelogic/states/game.h@{gamelogic/states/game.h}}
+{\ttfamily \#include "{}devices/graphic/graphics.\+h"{}}\newline
+{\ttfamily \#include "{}devices/mouse/mouse.\+h"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/xpm.\+h$>$}\newline
+Include dependency graph for game.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{game_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{game_8h_a3cef68220fcc611902108d6f0159e50f}{draw\+\_\+game}} ()
+\begin{DoxyCompactList}\small\item\em Draws the game screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8h_ab26d7e122c3013b259f1dd9e907d0cf3}{display\+\_\+mouse}} ()
+\begin{DoxyCompactList}\small\item\em Displays the mouse cursor on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8h_aa5aae0788e4b7fc236fbe5af6b3e7d05}{select\+\_\+towers}} (uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, uint16\+\_\+t \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}, \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_adab4da51ba40d5a492becdceccccbfcd}{selected}})
+\begin{DoxyCompactList}\small\item\em Selects towers based on mouse coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8h_aaaa67bb19a59082ba670aa0354f6978c}{draw\+\_\+selected}} (\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_adab4da51ba40d5a492becdceccccbfcd}{selected}})
+\begin{DoxyCompactList}\small\item\em Draws the selected tower(s) on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{game_8h_ab26d7e122c3013b259f1dd9e907d0cf3}\index{game.h@{game.h}!display\_mouse@{display\_mouse}}
+\index{display\_mouse@{display\_mouse}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{display\_mouse()}{display\_mouse()}}
+{\footnotesize\ttfamily \label{game_8h_ab26d7e122c3013b259f1dd9e907d0cf3} 
+void display\+\_\+mouse (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays the mouse cursor on the screen. 
+
+This function draws the mouse cursor at its current position on the screen. It is typically called after handling mouse movement events. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_ab26d7e122c3013b259f1dd9e907d0cf3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_ab26d7e122c3013b259f1dd9e907d0cf3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{game_8h_a3cef68220fcc611902108d6f0159e50f}\index{game.h@{game.h}!draw\_game@{draw\_game}}
+\index{draw\_game@{draw\_game}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{draw\_game()}{draw\_game()}}
+{\footnotesize\ttfamily \label{game_8h_a3cef68220fcc611902108d6f0159e50f} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} draw\+\_\+game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Draws the game screen. 
+
+This function is responsible for rendering the main game screen, including the arena, towers, coins, hearts, medals, and other game elements.
+
+\begin{DoxyReturn}{Returns}
+int 0 on success, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{game_8h_a3cef68220fcc611902108d6f0159e50f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_a3cef68220fcc611902108d6f0159e50f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{game_8h_aaaa67bb19a59082ba670aa0354f6978c}\index{game.h@{game.h}!draw\_selected@{draw\_selected}}
+\index{draw\_selected@{draw\_selected}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{draw\_selected()}{draw\_selected()}}
+{\footnotesize\ttfamily \label{game_8h_aaaa67bb19a59082ba670aa0354f6978c} 
+void draw\+\_\+selected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \texorpdfstring{$\ast$}{*}}]{selected}{}\end{DoxyParamCaption})}
+
+
+
+Draws the selected tower(s) on the screen. 
+
+This function draws visual indicators for the selected tower(s) on the game screen.
+
+
+\begin{DoxyParams}{Parameters}
+{\em selected} & Array indicating the selected tower(s) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_aaaa67bb19a59082ba670aa0354f6978c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_aaaa67bb19a59082ba670aa0354f6978c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{game_8h_aa5aae0788e4b7fc236fbe5af6b3e7d05}\index{game.h@{game.h}!select\_towers@{select\_towers}}
+\index{select\_towers@{select\_towers}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{select\_towers()}{select\_towers()}}
+{\footnotesize\ttfamily \label{game_8h_aa5aae0788e4b7fc236fbe5af6b3e7d05} 
+void select\+\_\+towers (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{, }\item[{\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \texorpdfstring{$\ast$}{*}}]{selected}{}\end{DoxyParamCaption})}
+
+
+
+Selects towers based on mouse coordinates. 
+
+This function determines which tower is selected based on the mouse coordinates provided. It updates the selected tower(s) accordingly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the mouse cursor \\
+\hline
+{\em y} & The y-\/coordinate of the mouse cursor \\
+\hline
+{\em selected} & Pointer to an array indicating the selected tower(s) \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_aa5aae0788e4b7fc236fbe5af6b3e7d05_icgraph}
+\end{center}
+\end{figure}

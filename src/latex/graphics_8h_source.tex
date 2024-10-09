@@ -1,0 +1,33 @@
+\doxysection{graphics.\+h}
+\hypertarget{graphics_8h_source}{}\label{graphics_8h_source}\index{devices/graphic/graphics.h@{devices/graphic/graphics.h}}
+\mbox{\hyperlink{graphics_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_GRAPHICS\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_GRAPHICS\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_v_b_e_8h}{macros/VBE.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <lcom/video\_gr.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ vbe\_mode\_info\_t\ \mbox{\hyperlink{graphics_8h_a5325378e863a0f56fc684d330ad46b73}{graphic\_mode\_info}};}
+\DoxyCodeLine{00011\ uint8\_t*\ \mbox{\hyperlink{graphics_8h_a7a330b780d74c67db4d2d47b7b5ecad2}{adress\_base\_v}};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}\ (\mbox{\hyperlink{graphics_8h_afb53a91c571476ef4762428af67bea07}{set\_vbe\_mode}})(uint16\_t\ submode);}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}\ (\mbox{\hyperlink{graphics_8h_aa86357e516b83208fb5e6c5786d93880}{set\_text\_mode}})();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}\ (\mbox{\hyperlink{graphics_8h_a11ec129a8a1e455736a3b40f80f618f7}{set\_video\_mem}})(uint16\_t\ mode);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}\ (\mbox{\hyperlink{graphics_8h_abcd14d829edc3257916bdcc1a9aca216}{draw\_pixel}})(uint16\_t\ \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}},\ uint16\_t\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}},\ uint32\_t\ color);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}\ (\mbox{\hyperlink{graphics_8h_ac0d22490f5b1e2c044c1b7719384bc9c}{normalize\_color}})(uint32\_t\ color,\ uint32\_t\ *normalized\_color);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{graphics_8h_affb7139701721a973e755214f8b994ae}{allocate\_image\_loader}}();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{graphics_8h_ab54ecaafd69058136fbc1e6d0d56725a}{copy\_buffer\_to\_screen}}();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,7 @@
+<map id="enemy_move_neg_x" name="enemy_move_neg_x">
+<area shape="rect" id="Node000001" title="Move an enemy in the negative x direction." alt="" coords="5,31,145,56"/>
+<area shape="rect" id="Node000002" href="$position_8c.html#a9f6798cc31a178508e3fa0ce8ec0bc5c" title="Gets the x&#45;coordinate of the given Position." alt="" coords="193,5,292,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,30,180,25,180,30,146,35"/>
+<area shape="rect" id="Node000003" href="$position_8c.html#af7938dd125dedc240c8f3a6113bf3464" title="Sets the x&#45;coordinate of the given Position." alt="" coords="193,55,292,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,51,180,56,180,61,145,56"/>
+</map>

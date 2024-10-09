@@ -1,0 +1,23 @@
+<map id="devices/mouse/mouse.h" name="devices/mouse/mouse.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="385,5,548,31"/>
+<area shape="rect" id="Node000002" href="$mouse_8c.html" title=" " alt="" coords="5,79,168,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="393,36,149,81,148,76,392,31"/>
+<area shape="rect" id="Node000003" href="$game_8h.html" title=" " alt="" coords="192,79,360,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="424,38,308,81,306,76,422,33"/>
+<area shape="rect" id="Node000005" href="$main_8c.html" title=" " alt="" coords="375,152,436,177"/>
+<area shape="poly" id="edge12_Node000001_Node000005" title=" " alt="" coords="449,43,425,80,413,119,409,152,403,152,408,118,420,78,444,40"/>
+<area shape="rect" id="Node000006" href="$leaderboard_8h.html" title=" " alt="" coords="435,79,637,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="489,39,527,77,523,80,486,43"/>
+<area shape="rect" id="Node000008" href="$menu_8c.html" title=" " alt="" coords="739,152,907,177"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="562,18,642,23,726,33,798,50,825,62,843,77,851,96,850,117,833,153,828,150,844,115,846,97,839,80,822,67,796,55,725,38,642,28,562,23"/>
+<area shape="rect" id="Node000009" href="$menu_8h.html" title="Header file for menu&#45;related functions." alt="" coords="661,79,829,104"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="525,31,701,76,700,81,524,37"/>
+<area shape="rect" id="Node000004" href="$game_8c.html" title=" " alt="" coords="183,152,351,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="275,118,271,152,266,152,270,117"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="310,108,385,149,383,154,308,113"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="504,113,428,154,425,149,501,108"/>
+<area shape="rect" id="Node000007" href="$leaderboard_8c.html" title=" " alt="" coords="460,152,663,177"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="547,116,560,151,555,153,542,118"/>
+<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="670,109,449,155,437,158,435,152,447,149,669,104"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="770,111,812,150,808,154,766,115"/>
+</map>

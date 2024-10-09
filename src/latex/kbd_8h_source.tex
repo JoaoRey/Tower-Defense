@@ -1,0 +1,26 @@
+\doxysection{kbd.\+h}
+\hypertarget{kbd_8h_source}{}\label{kbd_8h_source}\index{devices/keyboard/kbd.h@{devices/keyboard/kbd.h}}
+\mbox{\hyperlink{kbd_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_KBD\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_KBD\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{i8042_8h}{macros/i8042.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}\ (\mbox{\hyperlink{kbd_8h_aac83e0310dfa8593ffc6f4bfbffc10fd}{subscription\_of\_keyboard\_interrupts}})(uint8\_t\ *bit\_no);}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}\ (\mbox{\hyperlink{kbd_8h_afd257592d2eef5c66d6a7d42e42d8ca8}{unsubscription\_of\_keyboard\_interrupts}})();}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ void\ (\mbox{\hyperlink{kbd_8h_ad383895f42571ff2bb4d226c5f4fb83e}{keyboard\_interrupt\_handler}})();}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}\ (\mbox{\hyperlink{kbd_8h_a3b89c4a3032fc7d8ce74ab0aa03b4750}{read\_status\_code}})(uint8\_t*\ status);}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}\ (\mbox{\hyperlink{kbd_8h_a1c21008d59e58629f0d0c5e4a83be6a9}{read\_pressed\_key}})(\textcolor{keywordtype}{int}\ chosen\_port,\ uint8\_t\ *output\_code,\ uint8\_t\ mouse\_code);}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}\ (\mbox{\hyperlink{kbd_8h_a2beb2448a9eb65be9f94dd384c90ff2a}{write\_command\_byte}})(\textcolor{keywordtype}{int}\ chosen\_port,\ uint8\_t\ command\_code);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00020\ }
+
+\end{DoxyCode}

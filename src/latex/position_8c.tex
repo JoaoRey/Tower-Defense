@@ -1,0 +1,198 @@
+\doxysection{gamelogic/utils/position.c File Reference}
+\hypertarget{position_8c}{}\label{position_8c}\index{gamelogic/utils/position.c@{gamelogic/utils/position.c}}
+{\ttfamily \#include "{}position.\+h"{}}\newline
+Include dependency graph for position.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{position_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{position_8c_abe1fd4acc21974c158bf333a61fb3618}{position\+\_\+init}} (\mbox{\hyperlink{struct_position}{Position}} \texorpdfstring{$\ast$}{*}position, float \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, float \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Initializes a \doxylink{struct_position}{Position} structure with the given x and y coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{position_8c_af7938dd125dedc240c8f3a6113bf3464}{position\+\_\+setX}} (\mbox{\hyperlink{struct_position}{Position}} \texorpdfstring{$\ast$}{*}position, float \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}})
+\begin{DoxyCompactList}\small\item\em Sets the x-\/coordinate of the given \doxylink{struct_position}{Position}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{position_8c_aa7e1c7bb7e07099a8b044096a6553a65}{position\+\_\+setY}} (\mbox{\hyperlink{struct_position}{Position}} \texorpdfstring{$\ast$}{*}position, float \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Sets the y-\/coordinate of the given \doxylink{struct_position}{Position}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{position_8c_a9f6798cc31a178508e3fa0ce8ec0bc5c}{position\+\_\+getX}} (\mbox{\hyperlink{struct_position}{Position}} \texorpdfstring{$\ast$}{*}position)
+\begin{DoxyCompactList}\small\item\em Gets the x-\/coordinate of the given \doxylink{struct_position}{Position}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{position_8c_a5e25b5eedc73fc395e1d2235e5ab9846}{position\+\_\+getY}} (\mbox{\hyperlink{struct_position}{Position}} \texorpdfstring{$\ast$}{*}position)
+\begin{DoxyCompactList}\small\item\em Gets the y-\/coordinate of the given \doxylink{struct_position}{Position}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{position_8c_a674e3e7fef1b82c5d6aeb7e34fdbd83f}{position\+\_\+equals}} (\mbox{\hyperlink{struct_position}{Position}} \texorpdfstring{$\ast$}{*}position1, \mbox{\hyperlink{struct_position}{Position}} \texorpdfstring{$\ast$}{*}position2)
+\begin{DoxyCompactList}\small\item\em Compares two \doxylink{struct_position}{Position} structures for equality. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} \mbox{\hyperlink{position_8c_ad8939e7129a0d71121deeacc73dd1a53}{position\+\_\+hash\+Code}} (\mbox{\hyperlink{struct_position}{Position}} \texorpdfstring{$\ast$}{*}position)
+\begin{DoxyCompactList}\small\item\em Computes a hash code for the given \doxylink{struct_position}{Position}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{position_8c_a674e3e7fef1b82c5d6aeb7e34fdbd83f}\index{position.c@{position.c}!position\_equals@{position\_equals}}
+\index{position\_equals@{position\_equals}!position.c@{position.c}}
+\doxysubsubsection{\texorpdfstring{position\_equals()}{position\_equals()}}
+{\footnotesize\ttfamily \label{position_8c_a674e3e7fef1b82c5d6aeb7e34fdbd83f} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} position\+\_\+equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_position}{Position}} \texorpdfstring{$\ast$}{*}}]{position1}{, }\item[{\mbox{\hyperlink{struct_position}{Position}} \texorpdfstring{$\ast$}{*}}]{position2}{}\end{DoxyParamCaption})}
+
+
+
+Compares two \doxylink{struct_position}{Position} structures for equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position1} & Pointer to the first \doxylink{struct_position}{Position} structure. \\
+\hline
+{\em position2} & Pointer to the second \doxylink{struct_position}{Position} structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the positions are equal, 0 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{position_8c_a9f6798cc31a178508e3fa0ce8ec0bc5c}\index{position.c@{position.c}!position\_getX@{position\_getX}}
+\index{position\_getX@{position\_getX}!position.c@{position.c}}
+\doxysubsubsection{\texorpdfstring{position\_getX()}{position\_getX()}}
+{\footnotesize\ttfamily \label{position_8c_a9f6798cc31a178508e3fa0ce8ec0bc5c} 
+float position\+\_\+getX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_position}{Position}} \texorpdfstring{$\ast$}{*}}]{position}{}\end{DoxyParamCaption})}
+
+
+
+Gets the x-\/coordinate of the given \doxylink{struct_position}{Position}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Pointer to the \doxylink{struct_position}{Position} structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The x-\/coordinate of the position. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{position_8c_a9f6798cc31a178508e3fa0ce8ec0bc5c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{position_8c_a5e25b5eedc73fc395e1d2235e5ab9846}\index{position.c@{position.c}!position\_getY@{position\_getY}}
+\index{position\_getY@{position\_getY}!position.c@{position.c}}
+\doxysubsubsection{\texorpdfstring{position\_getY()}{position\_getY()}}
+{\footnotesize\ttfamily \label{position_8c_a5e25b5eedc73fc395e1d2235e5ab9846} 
+float position\+\_\+getY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_position}{Position}} \texorpdfstring{$\ast$}{*}}]{position}{}\end{DoxyParamCaption})}
+
+
+
+Gets the y-\/coordinate of the given \doxylink{struct_position}{Position}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Pointer to the \doxylink{struct_position}{Position} structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The y-\/coordinate of the position. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{position_8c_a5e25b5eedc73fc395e1d2235e5ab9846_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{position_8c_ad8939e7129a0d71121deeacc73dd1a53}\index{position.c@{position.c}!position\_hashCode@{position\_hashCode}}
+\index{position\_hashCode@{position\_hashCode}!position.c@{position.c}}
+\doxysubsubsection{\texorpdfstring{position\_hashCode()}{position\_hashCode()}}
+{\footnotesize\ttfamily \label{position_8c_ad8939e7129a0d71121deeacc73dd1a53} 
+\mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}} position\+\_\+hash\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_position}{Position}} \texorpdfstring{$\ast$}{*}}]{position}{}\end{DoxyParamCaption})}
+
+
+
+Computes a hash code for the given \doxylink{struct_position}{Position}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Pointer to the \doxylink{struct_position}{Position} structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The hash code for the position. 
+\end{DoxyReturn}
+\Hypertarget{position_8c_abe1fd4acc21974c158bf333a61fb3618}\index{position.c@{position.c}!position\_init@{position\_init}}
+\index{position\_init@{position\_init}!position.c@{position.c}}
+\doxysubsubsection{\texorpdfstring{position\_init()}{position\_init()}}
+{\footnotesize\ttfamily \label{position_8c_abe1fd4acc21974c158bf333a61fb3618} 
+void position\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_position}{Position}} \texorpdfstring{$\ast$}{*}}]{position}{, }\item[{float}]{x}{, }\item[{float}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a \doxylink{struct_position}{Position} structure with the given x and y coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Pointer to the \doxylink{struct_position}{Position} structure to initialize. \\
+\hline
+{\em x} & X-\/coordinate to set. \\
+\hline
+{\em y} & Y-\/coordinate to set. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{position_8c_abe1fd4acc21974c158bf333a61fb3618_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{position_8c_af7938dd125dedc240c8f3a6113bf3464}\index{position.c@{position.c}!position\_setX@{position\_setX}}
+\index{position\_setX@{position\_setX}!position.c@{position.c}}
+\doxysubsubsection{\texorpdfstring{position\_setX()}{position\_setX()}}
+{\footnotesize\ttfamily \label{position_8c_af7938dd125dedc240c8f3a6113bf3464} 
+void position\+\_\+setX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_position}{Position}} \texorpdfstring{$\ast$}{*}}]{position}{, }\item[{float}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Sets the x-\/coordinate of the given \doxylink{struct_position}{Position}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Pointer to the \doxylink{struct_position}{Position} structure. \\
+\hline
+{\em x} & X-\/coordinate to set. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{position_8c_af7938dd125dedc240c8f3a6113bf3464_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{position_8c_aa7e1c7bb7e07099a8b044096a6553a65}\index{position.c@{position.c}!position\_setY@{position\_setY}}
+\index{position\_setY@{position\_setY}!position.c@{position.c}}
+\doxysubsubsection{\texorpdfstring{position\_setY()}{position\_setY()}}
+{\footnotesize\ttfamily \label{position_8c_aa7e1c7bb7e07099a8b044096a6553a65} 
+void position\+\_\+setY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_position}{Position}} \texorpdfstring{$\ast$}{*}}]{position}{, }\item[{float}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Sets the y-\/coordinate of the given \doxylink{struct_position}{Position}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Pointer to the \doxylink{struct_position}{Position} structure. \\
+\hline
+{\em y} & Y-\/coordinate to set. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{position_8c_aa7e1c7bb7e07099a8b044096a6553a65_icgraph}
+\end{center}
+\end{figure}

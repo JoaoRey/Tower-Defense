@@ -1,0 +1,24 @@
+\doxysection{timer.\+h}
+\hypertarget{timer_8h_source}{}\label{timer_8h_source}\index{devices/timer/timer.h@{devices/timer/timer.h}}
+\mbox{\hyperlink{timer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_TIMER\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_TIMER\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <lcom/timer.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{i8254_8h}{macros/i8254.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}\ (\mbox{\hyperlink{timer_8h_a1ab572f5864814b2cd96ceb0fb6939b6}{configure\_timer\_freq}})(uint8\_t\ timer,\ uint32\_t\ frequency);}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}\ (\mbox{\hyperlink{timer_8h_a8f2176d7f7d2194086a0b984e452798c}{subscription\_of\_timer\_interrupts}})(uint8\_t\ *bit\_number);}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \mbox{\hyperlink{mouse_8h_a15c2d835cf4b6bd4e92373fb7cbf0126}{int}}\ (\mbox{\hyperlink{timer_8h_ab8d77319a6072abc7c33cd7a1a09e4f0}{unsubscription\_of\_timer\_interrupts}})();}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ void\ (\mbox{\hyperlink{timer_8h_a74401f595637e2a33b8d3205c2858c1f}{handler\_of\_timer\_interrupts}})();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00018\ }
+
+\end{DoxyCode}

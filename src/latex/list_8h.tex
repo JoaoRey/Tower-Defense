@@ -1,0 +1,299 @@
+\doxysection{gamelogic/utils/list.h File Reference}
+\hypertarget{list_8h}{}\label{list_8h}\index{gamelogic/utils/list.h@{gamelogic/utils/list.h}}
+{\ttfamily \#include "{}sprites/sprite.\+h"{}}\newline
+{\ttfamily \#include "{}gamelogic/elements/enemies/enemy.\+h"{}}\newline
+{\ttfamily \#include "{}gamelogic/elements/towers/tower.\+h"{}}\newline
+Include dependency graph for list.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{list_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{list_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_sprite_tower}{Sprite\+Tower}}
+\begin{DoxyCompactList}\small\item\em Structure representing a tower with its associated sprite. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_tower_list}{Tower\+List}}
+\begin{DoxyCompactList}\small\item\em Structure representing a list of towers. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_sprite_enemy}{Sprite\+Enemy}}
+\begin{DoxyCompactList}\small\item\em Structure representing an enemy with its associated sprite. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_enemy_list}{Enemy\+List}}
+\begin{DoxyCompactList}\small\item\em Structure representing a list of enemies. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct Sprite\+Tower \mbox{\hyperlink{list_8h_adf8ee97bec1a982cfabd76b742686ffd}{Sprite\+Tower}}
+\begin{DoxyCompactList}\small\item\em Structure representing a tower with its associated sprite. \end{DoxyCompactList}\item 
+typedef struct Sprite\+Enemy \mbox{\hyperlink{list_8h_abc5029e55a61db6632459902ee47657b}{Sprite\+Enemy}}
+\begin{DoxyCompactList}\small\item\em Structure representing an enemy with its associated sprite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_enemy_list}{Enemy\+List}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{list_8h_ae351edd07a861bb4c8e131a615dbdb49}{list\+\_\+create}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{struct_enemy_list}{Enemy\+List}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{list_8h_a145adb7a572e6f8209e8c933cab73d29}{list\+\_\+destroy}} (\mbox{\hyperlink{struct_enemy_list}{Enemy\+List}} \texorpdfstring{$\ast$}{*}list)
+\begin{DoxyCompactList}\small\item\em Destroys an \doxylink{struct_enemy_list}{Enemy\+List}, freeing all associated memory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{list_8h_a0955af65516b355b85b4915337d5f812}{list\+\_\+append}} (\mbox{\hyperlink{struct_enemy_list}{Enemy\+List}} \texorpdfstring{$\ast$}{*}list, \mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite, \mbox{\hyperlink{struct_enemy}{Enemy}} \texorpdfstring{$\ast$}{*}enemy)
+\begin{DoxyCompactList}\small\item\em Appends a new \doxylink{struct_sprite_enemy}{Sprite\+Enemy} to the given \doxylink{struct_enemy_list}{Enemy\+List}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{list_8h_a70a6826a876d2db40f7cde649a0961ea}{list\+\_\+print}} (\mbox{\hyperlink{struct_enemy_list}{Enemy\+List}} \texorpdfstring{$\ast$}{*}list)
+\begin{DoxyCompactList}\small\item\em Prints the contents of the given \doxylink{struct_enemy_list}{Enemy\+List}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{list_8h_a5af8bf8b5843133a7ebc98406ea4b677}{list\+\_\+remove}} (\mbox{\hyperlink{struct_enemy_list}{Enemy\+List}} \texorpdfstring{$\ast$}{*}list, \mbox{\hyperlink{struct_enemy}{Enemy}} \texorpdfstring{$\ast$}{*}enemy)
+\begin{DoxyCompactList}\small\item\em Removes an enemy from the given \doxylink{struct_enemy_list}{Enemy\+List}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_tower_list}{Tower\+List}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{list_8h_ab981c340057a9002a0a00828cbce38d4}{list\+\_\+createe}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{struct_tower_list}{Tower\+List}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{list_8h_a36fd1ce5f0fc7ed9f9c47bba75258ac6}{list\+\_\+destroyy}} (\mbox{\hyperlink{struct_tower_list}{Tower\+List}} \texorpdfstring{$\ast$}{*}list)
+\begin{DoxyCompactList}\small\item\em Destroys a \doxylink{struct_tower_list}{Tower\+List}, freeing all associated memory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{list_8h_a9048bb8b793bb0223a1dd5e5bf94b3a8}{list\+\_\+appendd}} (\mbox{\hyperlink{struct_tower_list}{Tower\+List}} \texorpdfstring{$\ast$}{*}list, \mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite, \mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}tower)
+\begin{DoxyCompactList}\small\item\em Appends a new \doxylink{struct_sprite_tower}{Sprite\+Tower} to the given \doxylink{struct_tower_list}{Tower\+List}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{list_8h_a4a14b69030fe1f8308653738453fcf9e}{list\+\_\+printt}} (\mbox{\hyperlink{struct_tower_list}{Tower\+List}} \texorpdfstring{$\ast$}{*}list)
+\begin{DoxyCompactList}\small\item\em Prints the contents of the given \doxylink{struct_tower_list}{Tower\+List}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{list_8h_abc5029e55a61db6632459902ee47657b}\index{list.h@{list.h}!SpriteEnemy@{SpriteEnemy}}
+\index{SpriteEnemy@{SpriteEnemy}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{SpriteEnemy}{SpriteEnemy}}
+{\footnotesize\ttfamily \label{list_8h_abc5029e55a61db6632459902ee47657b} 
+typedef struct Sprite\+Enemy Sprite\+Enemy}
+
+
+
+Structure representing an enemy with its associated sprite. 
+
+\Hypertarget{list_8h_adf8ee97bec1a982cfabd76b742686ffd}\index{list.h@{list.h}!SpriteTower@{SpriteTower}}
+\index{SpriteTower@{SpriteTower}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{SpriteTower}{SpriteTower}}
+{\footnotesize\ttfamily \label{list_8h_adf8ee97bec1a982cfabd76b742686ffd} 
+typedef struct Sprite\+Tower Sprite\+Tower}
+
+
+
+Structure representing a tower with its associated sprite. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{list_8h_a0955af65516b355b85b4915337d5f812}\index{list.h@{list.h}!list\_append@{list\_append}}
+\index{list\_append@{list\_append}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_append()}{list\_append()}}
+{\footnotesize\ttfamily \label{list_8h_a0955af65516b355b85b4915337d5f812} 
+void list\+\_\+append (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_enemy_list}{Enemy\+List}} \texorpdfstring{$\ast$}{*}}]{list}{, }\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite}{, }\item[{\mbox{\hyperlink{struct_enemy}{Enemy}} \texorpdfstring{$\ast$}{*}}]{enemy}{}\end{DoxyParamCaption})}
+
+
+
+Appends a new \doxylink{struct_sprite_enemy}{Sprite\+Enemy} to the given \doxylink{struct_enemy_list}{Enemy\+List}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & Pointer to the \doxylink{struct_enemy_list}{Enemy\+List}. \\
+\hline
+{\em sprite} & Pointer to the sprite associated with the enemy. \\
+\hline
+{\em enemy} & Pointer to the enemy. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{list_8h_a0955af65516b355b85b4915337d5f812_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{list_8h_a9048bb8b793bb0223a1dd5e5bf94b3a8}\index{list.h@{list.h}!list\_appendd@{list\_appendd}}
+\index{list\_appendd@{list\_appendd}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_appendd()}{list\_appendd()}}
+{\footnotesize\ttfamily \label{list_8h_a9048bb8b793bb0223a1dd5e5bf94b3a8} 
+void list\+\_\+appendd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tower_list}{Tower\+List}} \texorpdfstring{$\ast$}{*}}]{list}{, }\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite}{, }\item[{\mbox{\hyperlink{struct_tower}{Tower}} \texorpdfstring{$\ast$}{*}}]{tower}{}\end{DoxyParamCaption})}
+
+
+
+Appends a new \doxylink{struct_sprite_tower}{Sprite\+Tower} to the given \doxylink{struct_tower_list}{Tower\+List}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & Pointer to the \doxylink{struct_tower_list}{Tower\+List}. \\
+\hline
+{\em sprite} & Pointer to the sprite associated with the tower. \\
+\hline
+{\em tower} & Pointer to the tower. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{list_8h_a9048bb8b793bb0223a1dd5e5bf94b3a8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{list_8h_ae351edd07a861bb4c8e131a615dbdb49}\index{list.h@{list.h}!list\_create@{list\_create}}
+\index{list\_create@{list\_create}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_create()}{list\_create()}}
+{\footnotesize\ttfamily \label{list_8h_ae351edd07a861bb4c8e131a615dbdb49} 
+\mbox{\hyperlink{struct_enemy_list}{Enemy\+List}} \texorpdfstring{$\ast$}{*} list\+\_\+create (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Creates a new \doxylink{struct_enemy_list}{Enemy\+List}. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the newly created \doxylink{struct_enemy_list}{Enemy\+List}. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{list_8h_ae351edd07a861bb4c8e131a615dbdb49_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{list_8h_ab981c340057a9002a0a00828cbce38d4}\index{list.h@{list.h}!list\_createe@{list\_createe}}
+\index{list\_createe@{list\_createe}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_createe()}{list\_createe()}}
+{\footnotesize\ttfamily \label{list_8h_ab981c340057a9002a0a00828cbce38d4} 
+\mbox{\hyperlink{struct_tower_list}{Tower\+List}} \texorpdfstring{$\ast$}{*} list\+\_\+createe (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Creates a new \doxylink{struct_tower_list}{Tower\+List}. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the newly created \doxylink{struct_tower_list}{Tower\+List}. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{list_8h_ab981c340057a9002a0a00828cbce38d4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{list_8h_a145adb7a572e6f8209e8c933cab73d29}\index{list.h@{list.h}!list\_destroy@{list\_destroy}}
+\index{list\_destroy@{list\_destroy}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_destroy()}{list\_destroy()}}
+{\footnotesize\ttfamily \label{list_8h_a145adb7a572e6f8209e8c933cab73d29} 
+void list\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_enemy_list}{Enemy\+List}} \texorpdfstring{$\ast$}{*}}]{list}{}\end{DoxyParamCaption})}
+
+
+
+Destroys an \doxylink{struct_enemy_list}{Enemy\+List}, freeing all associated memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & Pointer to the \doxylink{struct_enemy_list}{Enemy\+List} to destroy. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{list_8h_a145adb7a572e6f8209e8c933cab73d29_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{list_8h_a145adb7a572e6f8209e8c933cab73d29_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{list_8h_a36fd1ce5f0fc7ed9f9c47bba75258ac6}\index{list.h@{list.h}!list\_destroyy@{list\_destroyy}}
+\index{list\_destroyy@{list\_destroyy}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_destroyy()}{list\_destroyy()}}
+{\footnotesize\ttfamily \label{list_8h_a36fd1ce5f0fc7ed9f9c47bba75258ac6} 
+void list\+\_\+destroyy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tower_list}{Tower\+List}} \texorpdfstring{$\ast$}{*}}]{list}{}\end{DoxyParamCaption})}
+
+
+
+Destroys a \doxylink{struct_tower_list}{Tower\+List}, freeing all associated memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & Pointer to the \doxylink{struct_tower_list}{Tower\+List} to destroy. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{list_8h_a36fd1ce5f0fc7ed9f9c47bba75258ac6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{list_8h_a36fd1ce5f0fc7ed9f9c47bba75258ac6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{list_8h_a70a6826a876d2db40f7cde649a0961ea}\index{list.h@{list.h}!list\_print@{list\_print}}
+\index{list\_print@{list\_print}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_print()}{list\_print()}}
+{\footnotesize\ttfamily \label{list_8h_a70a6826a876d2db40f7cde649a0961ea} 
+void list\+\_\+print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_enemy_list}{Enemy\+List}} \texorpdfstring{$\ast$}{*}}]{list}{}\end{DoxyParamCaption})}
+
+
+
+Prints the contents of the given \doxylink{struct_enemy_list}{Enemy\+List}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & Pointer to the \doxylink{struct_enemy_list}{Enemy\+List} to print. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{list_8h_a4a14b69030fe1f8308653738453fcf9e}\index{list.h@{list.h}!list\_printt@{list\_printt}}
+\index{list\_printt@{list\_printt}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_printt()}{list\_printt()}}
+{\footnotesize\ttfamily \label{list_8h_a4a14b69030fe1f8308653738453fcf9e} 
+void list\+\_\+printt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tower_list}{Tower\+List}} \texorpdfstring{$\ast$}{*}}]{list}{}\end{DoxyParamCaption})}
+
+
+
+Prints the contents of the given \doxylink{struct_tower_list}{Tower\+List}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & Pointer to the \doxylink{struct_tower_list}{Tower\+List} to print. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{list_8h_a5af8bf8b5843133a7ebc98406ea4b677}\index{list.h@{list.h}!list\_remove@{list\_remove}}
+\index{list\_remove@{list\_remove}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_remove()}{list\_remove()}}
+{\footnotesize\ttfamily \label{list_8h_a5af8bf8b5843133a7ebc98406ea4b677} 
+void list\+\_\+remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_enemy_list}{Enemy\+List}} \texorpdfstring{$\ast$}{*}}]{list}{, }\item[{\mbox{\hyperlink{struct_enemy}{Enemy}} \texorpdfstring{$\ast$}{*}}]{enemy}{}\end{DoxyParamCaption})}
+
+
+
+Removes an enemy from the given \doxylink{struct_enemy_list}{Enemy\+List}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & Pointer to the \doxylink{struct_enemy_list}{Enemy\+List}. \\
+\hline
+{\em enemy} & Pointer to the enemy to remove. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{list_8h_a5af8bf8b5843133a7ebc98406ea4b677_cgraph}
+\end{center}
+\end{figure}
